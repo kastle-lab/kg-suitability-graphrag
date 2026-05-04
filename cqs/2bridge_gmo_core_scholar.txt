@@ -1,0 +1,9 @@
+What people are associated with both cruises or expeditions and scholarly publications?
+What organizations involved in cruises are also associated with universities, departments, or publications?
+What research topics or fields of study correspond to cruises, samples, datasets, or expeditions?
+Which publications are associated with authors or contributors who also participated in cruises or expeditions?
+Which departments or universities are linked to people, organizations, or fields of study connected to oceanographic cruises?
+Which cruises involved people or organizations that also appear in scholarly publications by publication type, field of study, or date?
+Which scholarly fields of study are represented by publications from people who participated in cruises that collected samples or produced datasets?
+Which cruise events, funding awards, agent roles, organizations, datasets, samples, publications, authors, departments, universities, and publication dates are connected through shared scientific participation?
+Which people or organizations involved in cruises also appear as authors, contributors, departments, or universities in scholarly publications?

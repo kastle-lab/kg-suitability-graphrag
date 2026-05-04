@@ -1,0 +1,9 @@
+What cruises or expeditions occurred in places that also have recorded hazard events?
+What vessels or platforms are associated with cruises in hazard-affected places?
+What hazard types are recorded for regions where cruises, expeditions, samples, or datasets are available?
+Which cruises have temporal information that overlaps with hazard events in the same or nearby places?
+For each hazard-affected region, which cruises, vessels, sponsoring organizations, and physical samples are recorded?
+Which cruises or expeditions collected samples in places with climate, flood, storm, fire, or earthquake attributes?
+For each region, how do cruise trajectories, sample locations, hazard geometries, and hazard temporal scopes overlap?
+Which organizations or people participated in cruises that collected samples in hazard-affected regions, and what hazard details, damage observations, or climate attributes are linked to those regions?
+Which cruises or expeditions occurred in regions and time periods affected by hazards, and what vessels, organizations, or samples were associated with those cruises?

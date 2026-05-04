@@ -1,0 +1,15 @@
+What are all the covered topics?
+What are all the available learning media?
+What are the different types of media resources?
+Who are all the available authors?
+What levels are assigned to each module?
+How many modules belong to each category?
+Which persona is associated with which learning path, and what are the learning steps within that path?
+What are the top 10 most referenced media resources?
+What are the most common relationships?
+Which authors have contributed to multiple media resources?
+What are the media resources linked to multiple topics?
+Which authors have co-authored the most media resources?
+Which topics have the most cross-references?
+Are there Personas that have overlapping Learning Paths?
+What are the "prerequisite chains" in learning paths?

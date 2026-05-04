@@ -1,0 +1,135 @@
+edu-ont:Article ⊑ edu-ont:Media
+edu-ont:Author ⊑ ∃ edu-ont:hasName xsd:string
+edu-ont:Category ⊑ ∃ edu-ont:belongTo⁻ edu-ont:Module
+edu-ont:Category ⊑ ∃ edu-ont:hasTitle xsd:string
+edu-ont:Curriculum ⊑ ∃ edu-ont:hasTitle xsd:string
+edu-ont:Curriculum ⊑ ∃ edu-ont:hasModule edu-ont:Module
+edu-ont:Event ⊑ ∃ edu-ont:provides edu-ont:Media
+edu-ont:Event ⊑ ≥ 0 edu-ont:hasSubEvent edu-ont:Event
+edu-ont:FirstLearningStep ⊑ ≤ 0 edu-ont:hasPreviousLearningStep edu-ont:LearningStep
+edu-ont:FirstLearningStep ⊑ = edu-ont:refersTo edu-ont:Module
+edu-ont:FirstLearningStep ⊑ edu-ont:LearningStep
+edu-ont:Foundations ⊑ edu-ont:Category
+edu-ont:LastLearningStep ⊑ = edu-ont:refersTo edu-ont:Module
+edu-ont:LastLearningStep ⊑ edu-ont:LearningStep
+edu-ont:LastLearningStep ⊑ ≤ 0 edu-ont:hasNextLearningStep edu-ont:LearningStep
+edu-ont:LearningPath ⊑ ∃ edu-ont:scopedBy edu-ont:Curriculum
+edu-ont:LearningPath ⊑ ∃ edu-ont:hasLearningStep edu-ont:LearningStep
+edu-ont:LearningPath ⊑ ∃ edu-ont:determines⁻ edu-ont:Persona
+edu-ont:LearningStep ⊑ ≥ 0 edu-ont:hasNextLearningStep edu-ont:LearningStep
+edu-ont:LearningStep ⊑ ≤ 1 edu-ont:hasNextLearningStep edu-ont:LearningStep
+edu-ont:LearningStep ⊑ ≤ 1 edu-ont:hasPreviousLearningStep edu-ont:LearningStep
+edu-ont:LearningStep ⊑ ≥ 0 edu-ont:hasPreviousLearningStep edu-ont:LearningStep
+edu-ont:LearningStep ⊑ = edu-ont:refersTo edu-ont:Module
+edu-ont:Media ⊑ ∃ edu-ont:hasTitle xsd:string
+edu-ont:Media ⊑ ∃ edu-ont:hasMediaSourceLink xsd:string
+edu-ont:Media ⊑ ∃ edu-ont:hasLanguage edu-ont:Language
+edu-ont:Media ⊑ ∃ edu-ont:hasRecomended edu-ont:Audience
+edu-ont:Media ⊑ ∃ edu-ont:coversTopic edu-ont:Topic
+edu-ont:Media ⊑ ∃ edu-ont:hasAuthor edu-ont:Author
+edu-ont:Module ⊑ ∃ edu-ont:belongTo edu-ont:Category
+edu-ont:Module ⊑ ∃ edu-ont:hasTitle xsd:string
+edu-ont:Module ⊑ ∃ edu-ont:references edu-ont:Media
+edu-ont:Module ⊑ ∃ edu-ont:coversTopic edu-ont:Topic
+edu-ont:Module ⊑ ∃ edu-ont:hasLevel edu-ont:Level
+edu-ont:Person ⊑ ∃ edu-ont:assumesAuthorship edu-ont:Author
+edu-ont:Person ⊑ ∃ edu-ont:assumesPersona edu-ont:Persona
+edu-ont:Persona ⊑ = edu-ont:determines edu-ont:LearningPath
+edu-ont:Persona ⊑ = edu-ont:hasProfession edu-ont:Profession
+edu-ont:Persona ⊑ ∃ edu-ont:hasType edu-ont:PersonaType
+edu-ont:Persona ⊑ ∃ edu-ont:assumesPersona⁻ edu-ont:Person
+edu-ont:Podcast ⊑ edu-ont:Media
+edu-ont:Presentation ⊑ edu-ont:Event
+edu-ont:Profession ⊑ ∃ edu-ont:asString xsd:string
+edu-ont:Standards ⊑ edu-ont:Category
+edu-ont:Topic ⊑ = edu-ont:asString
+edu-ont:Topic ⊑ ≥ 0 edu-ont:broaderThan edu-ont:Topic
+edu-ont:Topic ⊑ ≥ 0 edu-ont:narrowerThan edu-ont:Topic
+edu-ont:Transcript ⊑ edu-ont:Media
+edu-ont:Tutorial ⊑ edu-ont:Event
+edu-ont:Video ⊑ edu-ont:Media
+edu-ont:Workshop ⊑ edu-ont:Event
+∃ edu-ont:assumesAuthorship Thing ⊑ edu-ont:Person
+⊤ ⊑ ∀ edu-ont:assumesAuthorship edu-ont:Author
+∃ edu-ont:assumesPersona Thing ⊑ edu-ont:Person
+⊤ ⊑ ∀ edu-ont:assumesPersona edu-ont:Persona
+∃ edu-ont:belongTo Thing ⊑ edu-ont:Module
+⊤ ⊑ ∀ edu-ont:belongTo edu-ont:Category
+∃ edu-ont:broaderThan Thing ⊑ edu-ont:Topic
+⊤ ⊑ ∀ edu-ont:broaderThan edu-ont:Topic
+∃ edu-ont:coversTopic Thing ⊑ edu-ont:Media ⊔ edu-ont:Module
+⊤ ⊑ ∀ edu-ont:coversTopic edu-ont:Topic
+∃ edu-ont:determines Thing ⊑ edu-ont:Persona
+⊤ ⊑ ∀ edu-ont:determines edu-ont:LearningPath
+∃ edu-ont:hasAuthor Thing ⊑ edu-ont:Media
+⊤ ⊑ ∀ edu-ont:hasAuthor edu-ont:Author
+∃ edu-ont:hasLanguage Thing ⊑ edu-ont:Media
+⊤ ⊑ ∀ edu-ont:hasLanguage edu-ont:Language
+∃ edu-ont:hasLearningStep Thing ⊑ edu-ont:LearningPath
+⊤ ⊑ ∀ edu-ont:hasLearningStep edu-ont:LearningStep
+∃ edu-ont:hasLevel Thing ⊑ edu-ont:Module
+⊤ ⊑ ∀ edu-ont:hasLevel edu-ont:Level
+∃ edu-ont:hasModule Thing ⊑ edu-ont:Curriculum
+⊤ ⊑ ∀ edu-ont:hasModule edu-ont:Module
+∃ edu-ont:hasNextLearningStep Thing ⊑ edu-ont:LearningStep
+⊤ ⊑ ∀ edu-ont:hasNextLearningStep edu-ont:LearningStep
+∃ edu-ont:hasPreviousLearningStep Thing ⊑ edu-ont:LearningStep
+⊤ ⊑ ∀ edu-ont:hasPreviousLearningStep edu-ont:LearningStep
+∃ edu-ont:hasProfession Thing ⊑ edu-ont:Persona
+⊤ ⊑ ∀ edu-ont:hasProfession edu-ont:Profession
+∃ edu-ont:hasRecomended Thing ⊑ edu-ont:Media
+⊤ ⊑ ∀ edu-ont:hasRecomended edu-ont:Audience
+∃ edu-ont:hasSubEvent Thing ⊑ edu-ont:Event
+⊤ ⊑ ∀ edu-ont:hasSubEvent edu-ont:Event
+∃ edu-ont:hasType Thing ⊑ edu-ont:Persona
+⊤ ⊑ ∀ edu-ont:hasType edu-ont:PersonaType
+∃ edu-ont:narrowerThan Thing ⊑ edu-ont:Topic
+⊤ ⊑ ∀ edu-ont:narrowerThan edu-ont:Topic
+∃ edu-ont:provides Thing ⊑ edu-ont:Event
+⊤ ⊑ ∀ edu-ont:provides edu-ont:Media
+∃ edu-ont:references Thing ⊑ edu-ont:Module
+⊤ ⊑ ∀ edu-ont:references edu-ont:Media
+∃ edu-ont:refersTo Thing ⊑ edu-ont:LearningStep
+⊤ ⊑ ∀ edu-ont:refersTo edu-ont:Module
+∃ edu-ont:scopedBy Thing ⊑ edu-ont:LearningPath
+⊤ ⊑ ∀ edu-ont:scopedBy edu-ont:Curriculum
+∃ edu-ont:asString rdfs:Literal ⊑ edu-ont:Event ⊔ edu-ont:LearningPath ⊔ edu-ont:LearningStep ⊔ edu-ont:Persona ⊔ edu-ont:PersonaType ⊔ edu-ont:Profession ⊔ edu-ont:Topic
+⊤ ⊑ ∀ edu-ont:asString xsd:string
+∃ edu-ont:hasMediaSourceLink rdfs:Literal ⊑ edu-ont:Media
+⊤ ⊑ ∀ edu-ont:hasMediaSourceLink xsd:string
+∃ edu-ont:hasName rdfs:Literal ⊑ edu-ont:Author
+⊤ ⊑ ∀ edu-ont:hasName xsd:string
+∃ edu-ont:hasTitle rdfs:Literal ⊑ edu-ont:Curriculum ⊔ edu-ont:Media ⊔ edu-ont:Module
+⊤ ⊑ ∀ edu-ont:hasTitle xsd:string
+edu-r:Cameron : edu-ont:Persona
+edu-r:Carla : edu-ont:Persona
+edu-r:Chris : edu-ont:Persona
+edu-r:Collaborator : edu-ont:PersonaType
+edu-r:Connie : edu-ont:Persona
+edu-r:Consultant : edu-ont:PersonaType
+edu-r:Contributor : edu-ont:PersonaType
+edu-r:Courtney : edu-ont:Persona
+edu-r:CurriculumDeveloper : edu-ont:PersonaType
+edu-r:Darwin : edu-ont:Persona
+edu-r:Debbie : edu-ont:Persona
+edu-r:Developer : edu-ont:PersonaType
+DeveloperTrainer : edu-ont:PersonaType
+edu-r:EducationalFacilitator : edu-ont:PersonaType
+edu-r:Edward : edu-ont:Persona
+edu-r:Elias : edu-ont:Persona
+edu-r:Ella : edu-ont:Persona
+edu-r:Enthusiast : edu-ont:PersonaType
+edu-r:Ethan : edu-ont:Persona
+edu-r:Executive : edu-ont:PersonaType
+edu-r:ExecutiveEngagementSpecialist : edu-ont:PersonaType
+edu-r:KGResearcher : edu-ont:PersonaType
+edu-r:Kai : edu-ont:Persona
+edu-r:Oratius : edu-ont:Persona
+edu-r:ResourceDeveloper : edu-ont:PersonaType
+edu-r:Ronnie : edu-ont:Persona
+edu-r:Silas : edu-ont:Persona
+edu-r:Stella : edu-ont:Persona
+edu-r:SupplyChainManagementSpecialist : edu-ont:PersonaType
+edu-r:UserEngagementFacilitator : edu-ont:PersonaType
+edu-r:Usman : edu-ont:Persona
+VocabularyExpert : edu-ont:PersonaType

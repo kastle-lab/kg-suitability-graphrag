@@ -1,0 +1,9 @@
+What learning media resources and scholarly publications share the same or related topics?
+What authors are associated with both learning media resources and scholarly publications?
+What curriculum topics correspond to fields of study represented in scholarly publications?
+Which learning modules cover topics that also appear in publications submitted by authors from specific departments?
+Which media resources and publications are associated with the same topic, author name, publication type, or field of study?
+Which learning paths include modules whose topics match fields of study with publications from universities in specific cities or states?
+Which curriculum topics are supported by both learning resources and scholarly publications, and how do authors, contributors, departments, and publication dates relate to those topics?
+Which learning paths recommend media resources authored by people who also submitted scholarly publications in matching fields of study, including department, university, and publication-type details?
+Which learning media resources cover topics that also appear as fields of study in scholarly publications, and which authors or contributors are associated with both?

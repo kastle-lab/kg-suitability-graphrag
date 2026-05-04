@@ -1,0 +1,30 @@
+What are the different workplace behaviors?
+What knowledge is in the database about behavior?
+What are the dependent tasks for task z?
+What tasks are decomposable?
+What are the classifications/categories of a set of objects?
+What objects are required to complete task x?
+What set of agents are required to complete primary goal y?
+Which tasks directly follow task x?
+Which tasks directly precede task x?
+What archetype does agent A fulfill?
+What knowledge is in the database about behavior?
+Which agent can perform task z?
+What agents are required to complete task x?
+What goals can be achieved from task X?
+What tasks consist of at least X tasks?
+What tasks are the atomic level tasks?
+What are the task(s) that can be achieved by the presence of object o?
+What is the sequence/task list of tasks required to complete primary goal g?
+What tasks require a given capability c?
+Which objects satisfy the requirements of task x?
+How does Robot X handle a sudden change?
+If scenario Y happens, what is robot X’s response?
+How does the robot reason about the behaviors of its human agent?
+How does robot X handle individualism in human behaviors?
+Which tasks share common dependent tasks across different goals?
+What were the states of the agent following a failed task?
+What is an alternative path from task x to task y?
+What objects are required for goal g?
+Which archetypes are required across all tasks in goal g?
+What capabilities are missing to achieve goal g?

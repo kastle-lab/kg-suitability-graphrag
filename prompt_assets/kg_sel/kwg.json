@@ -1,0 +1,38 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "What are all the available fire-specific hazard attributes and their details related to all geographical places?",
+      "answer": "kwg"
+    },
+    {
+      "cq": "What are all the available fire hazards, their details, and their types?",
+      "answer": "kwg"
+    },
+    {
+      "cq": "What are all the available landslide-specific hazard attributes and their details related to all geographical places?",
+      "answer": "kwg"
+    },
+    {
+      "cq": "What are all the damage details available done by flood-specific hazards that are related to a geographical place within a certain temporal extent?",
+      "answer": "kwg"
+    },
+    {
+      "cq": "What are all the damage details available done by landslide-specific hazards that are related to a geographical place within a certain temporal extent?",
+      "answer": "kwg"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify the main entities and relationships mentioned in the competency question.",
+    "Next, compare those needs against the provided schema contexts for each candidate KG.",
+    "Finally, choose the single KG whose schema most directly supports answering the question."
+  ],
+  "reasoning_example": {
+    "cq": "What are all the available fire-specific hazard attributes and their details related to all geographical places?",
+    "reasoning": [
+      "First, I identify that the main entities in the question are 'fire-specific hazard attributes' and 'geographical places'.",
+      "I then look at the provided schema contexts for each candidate KG to see which one includes detailed information about fire hazards and their attributes in relation to geographical places. Upon reviewing the schemas, I find that the 'kwg' KG contains comprehensive data on fire hazards, their attributes, and their connections to geographical locations.",
+      "Therefore, I conclude that the 'kwg' KG is the most suitable choice for answering this question."
+    ],
+    "answer": "kwg"
+  }
+}

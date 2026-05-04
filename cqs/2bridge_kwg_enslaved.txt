@@ -1,0 +1,9 @@
+What geographical places are recorded in both enslaved-person records and hazard records?
+What years or time periods are available for places that appear in both enslaved-person records and hazard records?
+What hazard types are recorded for places associated with enslaved individuals?
+Which places associated with enslaved individuals experienced hazards during the same century as the enslaved-person records?
+For each shared place, what enslaved population counts and hazard event counts are available by year or period?
+Which enslaved-person locations have both demographic details and hazard damage details within matching temporal ranges?
+Which places and time periods link enslaved individuals, recorded owners or events, hazard types, and hazard impact details?
+For each shared place, how do enslaved population records by gender, ethnicity, or age align with hazard events and damage observations over time?
+Which geographical places associated with enslaved individuals also experienced hazards during overlapping time periods, and what were the hazard types and recorded enslaved populations?

@@ -1,0 +1,38 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "What are all available publications and their titles?",
+      "answer": "core_scholar"
+    },
+    {
+      "cq": "What publications were submitted by authors who have a recorded role?",
+      "answer": "core_scholar"
+    },
+    {
+      "cq": "What publications were published after a certain date?",
+      "answer": "core_scholar"
+    },
+    {
+      "cq": "What fields of study are represented by publications from universities in each state?",
+      "answer": "core_scholar"
+    },
+    {
+      "cq": "Which authors or agents associated with publications are missing email addresses?",
+      "answer": "core_scholar"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify the main entities and relationships mentioned in the competency question.",
+    "Next, compare those needs against the provided schema contexts for each candidate KG.",
+    "Finally, choose the single KG whose schema most directly supports answering the question."
+  ],
+  "reasoning_example": {
+    "cq": "What are all available publications and their titles?",
+    "reasoning": [
+      "First, I identify that the main entities in the question are 'publications' and their 'titles'.",
+      "I then look at the provided schema contexts for each candidate KG to see which one includes detailed information about publications and their attributes in relation to a title. Upon reviewing the schemas, I find that the 'core_scholar' KG contains comprehensive data on publications and their titles.",
+      "Therefore, I conclude that the 'core_scholar' KG is the most suitable choice for answering this question."
+    ],
+    "answer": "core_scholar"
+  }
+}

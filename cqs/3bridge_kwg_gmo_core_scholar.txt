@@ -1,0 +1,10 @@
+What scholarly publications are associated with topics about cruises in hazard-affected regions?
+What people or organizations connected to cruises also appear in publications about hazards, climate, or geographical places?
+What fields of study correspond to cruises, samples, datasets, and hazard-affected places?
+Which publications involve authors or departments connected to cruises that occurred in places with recorded hazard events?
+Which cruise participants or sponsoring organizations are linked to publications about fields of study associated with hazard-affected regions?
+Which publications, cruises, vessels, organizations, and hazard events share overlapping places, regions, or time periods?
+Which authors, departments, universities, cruise participants, vessels, organizations, samples, hazard events, places, and time periods are connected through marine research in hazard-affected regions?
+Which scholarly publications describe fields of study related to samples or datasets collected by cruises in places with climate, storm, flood, fire, or earthquake records?
+Which publication networks, institutional affiliations, cruise roles, vessels, funding organizations, datasets, physical samples, hazard geometries, temporal scopes, and damage or climate observations are connected for hazard-affected marine regions?
+Which scholarly publications are associated with people, organizations, or fields of study connected to cruises that occurred in places and time periods affected by hazards?

@@ -1,0 +1,39 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "What media resources are linked to only one topic?",
+      "answer": "currkg"
+    },
+    {
+      "cq": "What topics have the most associated media resources?",
+      "answer": "currkg"
+    },
+    {
+      "cq": "What media resource is associated with multiple authors?",
+      "answer": "currkg"
+    },
+    {
+      "cq": "What media resources belong to a only one type and is referenced by 2 or more module within a curriculum?",
+      "answer": "currkg"
+    },
+    {
+      "cq": "What are the topics that are broader than a topic and is associated with atleast one media resource?",
+      "answer": "currkg"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify the main entities and relationships mentioned in the competency question.",
+    "Next, compare those needs against the provided schema contexts for each candidate KG.",
+    "Finally, choose the single KG whose schema most directly supports answering the question."
+  ],
+  "reasoning_example": {
+    "cq": "What media resources are linked to only one topic?",
+    "reasoning": [
+      "First, I identify that the main entity in the question is 'media resources' and the specific information being sought is their association with 'topics'.",
+      "Next, I look at the provided schema contexts for each candidate KG to see which one includes information about media resources and their relationships with topics. ",
+      "The 'currkg' KG is likely to contain detailed information about media resources and their associations with topics, while other KGs may not have this specific focus. ",
+      "Therefore, I conclude that the 'currkg' KG is the most appropriate choice to answer this question."
+    ],
+    "answer": "currkg"
+  }
+}

@@ -1,0 +1,9 @@
+What learning media resources cover topics related to cruises, vessels, expeditions, samples, or datasets?
+What curriculum modules reference media resources about oceanographic cruises or sampling?
+What learning topics correspond to cruise types, vessels, platforms, organizations, or physical samples?
+Which learning paths include modules about topics represented by cruises, expeditions, datasets, or physical samples?
+Which media resources cover topics associated with cruises that have spatial and temporal information?
+Which personas are linked to learning paths that include oceanographic cruise, vessel, sampling, or dataset topics?
+Which learning media resources explain topics associated with cruises conducted by specific vessels or sponsored by specific organizations?
+Which curriculum paths connect learner personas to media resources about cruises, vessels, samples, datasets, people, organizations, places, and time periods represented in oceanographic KGs?
+Which learning media resources reference topics, datasets, cruises, vessels, or samples represented in oceanographic cruise knowledge graphs?

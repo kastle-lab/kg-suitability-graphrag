@@ -1,0 +1,38 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "What are all the documented literacy statuses of enslaved individuals?",
+      "answer": "enslaved"
+    },
+    {
+      "cq": "What are all the known addresses or properties that were inhabited by enslaved individuals?",
+      "answer": "enslaved"
+    },
+    {
+      "cq": "What are all the known slave rebellions, their participants, locations, and dates?",
+      "answer": "enslaved"
+    },
+    {
+      "cq": "What are all the enslaved individuals who were later recorded as slave owners, including details of their ownership activities?",
+      "answer": "enslaved"
+    },
+    {
+      "cq": "What are all the known economic values assigned to enslaved individuals, categorized by ethnicity, skills, gender, and period?",
+      "answer": "enslaved"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify the main entities and relationships mentioned in the competency question.",
+    "Next, compare those needs against the provided schema contexts for each candidate KG.",
+    "Finally, choose the single KG whose schema most directly supports answering the question."
+  ],
+  "reasoning_example": {
+    "cq": "What are all the documented literacy statuses of enslaved individuals?",
+    "reasoning": [
+      "First, I identify that the main entity in the question is 'enslaved individuals' and the specific information being sought is their 'documented literacy statuses'.",
+      "Next, I look at the provided schema contexts for each candidate KG to see which one includes information about enslaved individuals and their literacy. The 'enslaved' KG is likely to contain detailed historical records about enslaved individuals, including their literacy statuses, while other KGs may not have this specific focus.",
+      "Therefore, I conclude that the 'enslaved' KG is the most appropriate choice to answer this question."
+    ],
+    "answer": "enslaved"
+  }
+}

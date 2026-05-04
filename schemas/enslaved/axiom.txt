@@ -1,0 +1,296 @@
+enslaved:AgeRecord ⊑ ≤ 1 enslaved:hasValue enslaved:AgeCategory
+enslaved:AgeRecord ⊑ ∃ enslaved:hasValue enslaved:AgeCategory ⊔ ∃ enslaved:hasAgeValue xsd:double
+enslaved:AgeRecord ⊑ ≤ 1 enslaved:hasAgeValue
+enslaved:AgeRecord ⊑ enslaved:AgentRecord
+enslaved:Agent ⊑ ≥ 0 enslaved:hasAgentRecord enslaved:AgentRecord
+enslaved:Agent ⊑ ≥ 0 enslaved:hasExternalReference enslaved:ExternalReference
+enslaved:Agent ⊑ ≥ 0 enslaved:hasDescriptionText enslaved:Description
+enslaved:AgentRecord ⊑ = enslaved:hasTemporalExtent enslaved:TemporalExtent
+enslaved:AgentRecord ⊑ ≤ 1 enslaved:isDirectlyBasedOn enslaved:EntityWithProvenance
+enslaved:AgentRecord ⊑ = enslaved:hasAgentRecord⁻ enslaved:Agent
+enslaved:AgentRecord ⊑ enslaved:EntityWithProvenance
+enslaved:AgentRecord ⊑ ∃ enslaved:agentRecordSelfProperty Self
+enslaved:AgentRecord ⊑ ≤ 1 enslaved:reportsOn enslaved:Event
+enslaved:AgentRecord ⊑ ≤ 1 enslaved:recordedAt enslaved:Event
+enslaved:Coordinates ⊑ = enslaved:hasLongitude
+enslaved:Coordinates ⊑ enslaved:SpatialExtent
+enslaved:Coordinates ⊑ = enslaved:hasLatitude
+enslaved:Description ⊑ = enslaved:asText
+enslaved:Description ⊑ enslaved:EntityWithProvenance
+enslaved:EntityWithProvenance ⊑ ∃ enslaved:availableFrom xsd:string
+enslaved:EntityWithProvenance ⊑ ∀ enslaved:attributedTo enslaved:Agent
+enslaved:EntityWithProvenance ⊑ ∀ enslaved:used enslaved:EntityWithProvenance
+enslaved:EntityWithProvenance ⊑ ∀ enslaved:availableFrom xsd:string
+enslaved:EntityWithProvenance ⊑ ≥ 0 enslaved:hasReferenceURI
+enslaved:EntityWithProvenance ⊑ ≥ 0 enslaved:reportsOn enslaved:Event
+enslaved:EntityWithProvenance ⊑ ∃ enslaved:hasLicenseInformation enslaved:LicenseInformation
+enslaved:EntityWithProvenance ⊑ ∀ enslaved:generatedBy enslaved:ProvenanceActivity
+enslaved:EntityWithProvenance ⊑ ∀ enslaved:isDirectlyBasedOn enslaved:EntityWithProvenance
+enslaved:EntityWithProvenance ⊑ ≤ 1 enslaved:hasOriginalSourceType enslaved:DocumentTypes
+enslaved:EntityWithProvenance ⊑ ∀ enslaved:hasLicenseInformation enslaved:LicenseInformation
+enslaved:EntityWithProvenance ⊑ ∀ enslaved:hasOriginalSourceType enslaved:DocumentTypes
+enslaved:Event ⊑ ∃ enslaved:eventSelfProperty Self
+enslaved:Event ⊑ ∀ enslaved:hasEventType enslaved:EventTypes
+enslaved:Event ⊑ ≥ 1 enslaved:providesParticipantRole enslaved:ParticipantRoleRecord
+enslaved:Event ⊑ = enslaved:hasTemporalExtent enslaved:TemporalExtent
+enslaved:Event ⊑ ≥ 0 enslaved:hasDescriptionText enslaved:Description
+enslaved:Event ⊑ ≥ 1 enslaved:hasExternalReference enslaved:ExternalReference
+enslaved:Event ⊑ ∃ enslaved:atPlace enslaved:Place
+enslaved:Event ⊑ ≥ 1 enslaved:hasName
+enslaved:Event ⊑ = enslaved:hasEventType enslaved:EventTypes
+enslaved:ExternalReference ⊑ ∀ enslaved:withID xsd:string
+enslaved:ExternalReference ⊑ ≤ 1 enslaved:refersTo enslaved:ExternalReferent ⊓ ≤ 1 enslaved:withID
+enslaved:ExternalReference ⊑ ∃ enslaved:refersTo enslaved:ExternalReferent ⊔ ∃ enslaved:withID xsd:string
+enslaved:ExternalReference ⊑ ∀ enslaved:refersTo enslaved:ExternalReferent
+enslaved:InterAgentRelationshipRecord ⊑ ∀ enslaved:hasInterAgentRelationshipType enslaved:InterAgentRelationshipTypes
+enslaved:InterAgentRelationshipRecord ⊑ = enslaved:isRelationshipTo enslaved:Agent
+enslaved:InterAgentRelationshipRecord ⊑ = enslaved:isRelationshipFrom enslaved:Agent
+enslaved:InterAgentRelationshipRecord ⊑ ≤ 1 enslaved:hasInterAgentRelationshipType enslaved:InterAgentRelationshipTypes
+enslaved:InterAgentRelationshipRecord ⊑ enslaved:AgentRecord
+enslaved:InterAgentRelationshipRecord ⊑ ∀ enslaved:isRelationshipFrom enslaved:Agent
+enslaved:InterAgentRelationshipRecord ⊑ ∀ enslaved:isRelationshipTo enslaved:Agent
+enslaved:Match ⊑ ≥ 2 enslaved:matches owl:Thing
+enslaved:Match ⊑ = enslaved:hasMatchType enslaved:MatchType
+enslaved:Match ⊑ enslaved:EntityWithProvenance
+enslaved:NameRecord ⊑ = enslaved:fullNameAsString
+enslaved:NameRecord ⊑ ≤ 1 enslaved:hasPreferredNameVariant enslaved:NameVariant
+enslaved:NameRecord ⊑ ≤ 1 enslaved:hasFirstNameAsString
+enslaved:NameRecord ⊑ enslaved:AgentRecord
+enslaved:NameRecord ⊑ ∃ enslaved:hasNameVariant enslaved:NameVariant
+enslaved:NameRecord ⊑ ≤ 1 enslaved:hasSurnameAsString
+enslaved:OccupationRecord ⊑ enslaved:AgentRecord
+enslaved:OccupationRecord ⊑ = enslaved:hasValue enslaved:Occupations
+enslaved:OccupationRecord ⊑ ≥ 0 enslaved:hasDescriptiveOccupation
+enslaved:Organization ⊑ enslaved:Agent
+enslaved:OriginRecord ⊑ ∀ enslaved:refersToPlaceOfOrigin enslaved:Place
+enslaved:OriginRecord ⊑ enslaved:AgentRecord
+enslaved:OriginRecord ⊑ ≤ 1 enslaved:hasECVO enslaved:ECVO
+enslaved:OriginRecord ⊑ ∀ enslaved:hasECVO enslaved:ECVO
+enslaved:OriginRecord ⊑ ≥ 0 enslaved:hasDescriptiveEthnonym
+enslaved:OriginRecord ⊑ ∃ enslaved:hasECVO enslaved:ECVO ⊔ ∃ enslaved:refersToPlaceOfOrigin enslaved:Place
+enslaved:ParticipantRoleRecord ⊑ enslaved:AgentRecord
+enslaved:ParticipantRoleRecord ⊑ ∀ enslaved:hasParticipantRoleType enslaved:ParticipantRoleTypes
+enslaved:ParticipantRoleRecord ⊑ ≤ 1 enslaved:hasParticipantRoleType enslaved:ParticipantRoleTypes
+enslaved:ParticipantRoleRecord ⊑ = enslaved:providesParticipantRole⁻ enslaved:Event
+enslaved:Person ⊑ ≥ 0 enslaved:hasPersonRecord enslaved:PersonRecord
+enslaved:Person ⊑ enslaved:Agent
+enslaved:PersonRecord ⊑ = enslaved:hasPersonRecord⁻ enslaved:Person
+enslaved:PersonRecord ⊑ enslaved:AgentRecord
+enslaved:PersonStatusRecord ⊑ enslaved:AgentRecord
+enslaved:PersonStatusRecord ⊑ = enslaved:hasValue enslaved:PSCategories
+enslaved:PersonStatusRecord ⊑ ∀ enslaved:hasStatusGeneratedEvent enslaved:Event
+enslaved:Place ⊑ ≥ 0 enslaved:isAdministrativePartOf enslaved:PlaceCV
+enslaved:Place ⊑ ≥ 0 enslaved:hasAlternateName
+enslaved:Place ⊑ enslaved:EntityWithProvenance
+enslaved:Place ⊑ ≥ 0 enslaved:hasDescriptionText enslaved:Description
+enslaved:Place ⊑ ≥ 0 enslaved:isSpatiallyLocatedIn enslaved:PlaceCV
+enslaved:Place ⊑ ≤ 1 enslaved:hasSpatialExtent enslaved:SpatialExtent
+enslaved:Place ⊑ ≤ 1 enslaved:hasPlaceTypeCV enslaved:PlaceTypeCV
+enslaved:Place ⊑ ≥ 0 enslaved:isSpatiallyLocatedIn enslaved:Place
+enslaved:Place ⊑ ≥ 0 enslaved:hasBroader enslaved:PlaceCV
+enslaved:Place ⊑ ≤ 1 enslaved:hasTemporalExtent enslaved:TemporalExtent
+enslaved:Place ⊑ = enslaved:hasName
+enslaved:PlaceCV ⊑ ≥ 0 enslaved:hasBroader enslaved:PlaceCV
+enslaved:PlaceCV ⊑ = enslaved:hasName
+enslaved:PlaceCV ⊑ ≥ 0 enslaved:hasAlternateName
+enslaved:PlaceCV ⊑ ≥ 0 enslaved:isSpatiallyLocatedIn enslaved:PlaceCV
+enslaved:PlaceCV ⊑ ≥ 0 enslaved:isAdministrativePartOf enslaved:PlaceCV
+enslaved:PlaceCV ⊑ ≥ 0 enslaved:hasDescriptionText enslaved:Description
+enslaved:PlaceCV ⊑ ≤ 1 enslaved:hasPlaceTypeCV enslaved:PlaceTypeCV
+enslaved:ProvenanceActivity ⊑ ∀ enslaved:performedBy enslaved:Agent
+enslaved:ProvenanceActivity ⊑ ∀ enslaved:used enslaved:EntityWithProvenance
+enslaved:RaceRecord ⊑ enslaved:AgentRecord
+enslaved:RaceRecord ⊑ ≤ 1 enslaved:asText
+enslaved:ResearchProject ⊑ enslaved:Event
+enslaved:ResearchProject ⊑ enslaved:ProvenanceActivity
+enslaved:ResearchProjectContributorRole ⊑ ∀ enslaved:providesParticipantRole⁻ enslaved:ResearchProject
+enslaved:ResearchProjectContributorRole ⊑ enslaved:Researcher
+enslaved:ResearchProjectPIRole ⊑ ∀ enslaved:providesParticipantRole⁻ enslaved:ResearchProject
+enslaved:ResearchProjectPIRole ⊑ enslaved:Researcher
+enslaved:SexRecord ⊑ = enslaved:hasValue enslaved:SexTypes
+enslaved:SexRecord ⊑ enslaved:AgentRecord
+enslaved:TemporalExtent ⊑ ∀ enslaved:contains xsd:date
+enslaved:TemporalExtent ⊑ ∀ enslaved:startsAt xsd:date
+enslaved:TemporalExtent ⊑ ∀ enslaved:fallsWithin enslaved:TimeSpan
+enslaved:TemporalExtent ⊑ ∀ enslaved:endsAt xsd:date
+enslaved:TemporalExtent ⊑ ∀ enslaved:occursBefore xsd:date
+enslaved:TemporalExtent ⊑ ∀ enslaved:occursAfter xsd:date
+owl:Thing ⊑ ∀ enslaved:hasFirstNameAsString xsd:string
+owl:Thing ⊑ ≤ 1 enslaved:hasExternalReference⁻ owl:Thing
+owl:Thing ⊑ ∀ enslaved:hasTemporalExtent enslaved:TemporalExtent
+owl:Thing ⊑ ∀ enslaved:hasSurnameAsString xsd:string
+owl:Thing ⊑ ∀ enslaved:hasDescriptionText enslaved:Description
+owl:Thing ⊑ ∀ enslaved:fullNameAsString xsd:string
+owl:Thing ⊑ ∀ enslaved:hasSpatialExtent enslaved:SpatialExtent
+owl:Thing ⊑ ∀ enslaved:hasLatitude xsd:double
+owl:Thing ⊑ ∀ enslaved:atPlace enslaved:Place
+owl:Thing ⊑ ≤ 1 enslaved:hasDescriptionText⁻ owl:Thing
+owl:Thing ⊑ ∀ enslaved:hasName xsd:string
+owl:Thing ⊑ ∀ enslaved:hasLongitude xsd:double
+owl:Thing ⊑ ∀ enslaved:hasNameVariant enslaved:NameVariant
+owl:Thing ⊑ ∀ enslaved:subeventOf enslaved:Event
+owl:Thing ⊑ ∀ enslaved:providesParticipantRole enslaved:ParticipantRoleRecord
+owl:Thing ⊑ ∀ enslaved:refersToEvent enslaved:Event
+owl:Thing ⊑ ∀ enslaved:hasCoordinates enslaved:Coordinates
+owl:Thing ⊑ ∀ enslaved:hasExternalReference enslaved:ExternalReference
+owl:Thing ⊑ ∀ enslaved:hasAlternateName xsd:string
+enslaved:TimeSpan ⊑ ∃ enslaved:startsAt xsd:date
+enslaved:TimeSpan ⊑ ∃ enslaved:endsAt xsd:date
+enslaved:TimeSpan ⊑ enslaved:TemporalExtent
+∃ enslaved:agentRecordSelfProperty owl:Thing ⊑ enslaved:AgentRecord
+⊤ ⊑ ∀ enslaved:agentRecordSelfProperty enslaved:AgentRecord
+∃ enslaved:asPlaceCV owl:Thing ⊑ enslaved:Place
+⊤ ⊑ ∀ enslaved:asPlaceCV enslaved:PlaceCV
+∃ enslaved:atPlace owl:Thing ⊑ enslaved:Event
+⊤ ⊑ ∀ enslaved:atPlace enslaved:Place
+∃ enslaved:attributedTo owl:Thing ⊑ enslaved:EntityWithProvenance
+⊤ ⊑ ∀ enslaved:attributedTo enslaved:Agent
+∃ enslaved:eventSelfProperty owl:Thing ⊑ enslaved:Event
+⊤ ⊑ ∀ enslaved:eventSelfProperty enslaved:Event
+∃ enslaved:fallsWithin owl:Thing ⊑ enslaved:TemporalExtent
+⊤ ⊑ ∀ enslaved:fallsWithin enslaved:TimeSpan
+∃ enslaved:generatedBy owl:Thing ⊑ enslaved:EntityWithProvenance
+⊤ ⊑ ∀ enslaved:generatedBy enslaved:ProvenanceActivity
+⊑ enslaved:hasPersonRecord
+∃ enslaved:hasAgeRecord owl:Thing ⊑ enslaved:Person
+⊤ ⊑ ∀ enslaved:hasAgeRecord enslaved:AgeRecord
+∃ enslaved:hasAgentRecord owl:Thing ⊑ enslaved:Agent
+⊤ ⊑ ∀ enslaved:hasAgentRecord enslaved:AgentRecord
+∃ enslaved:hasBroader owl:Thing ⊑ enslaved:Place ⊔ enslaved:PlaceCV
+⊤ ⊑ ∀ enslaved:hasBroader enslaved:PlaceCV
+∃ enslaved:hasCoordinates owl:Thing ⊑ enslaved:Place
+⊤ ⊑ ∀ enslaved:hasCoordinates enslaved:Coordinates
+∃ enslaved:hasDescriptionText owl:Thing ⊑ enslaved:Agent ⊔ enslaved:Event ⊔ enslaved:Place
+⊤ ⊑ ∀ enslaved:hasDescriptionText enslaved:Description
+⊑ owl:topObjectProperty
+∃ enslaved:hasECVO owl:Thing ⊑ enslaved:OriginRecord
+⊤ ⊑ ∀ enslaved:hasECVO enslaved:ECVO
+∃ enslaved:hasEventType owl:Thing ⊑ enslaved:Event
+⊤ ⊑ ∀ enslaved:hasEventType enslaved:EventTypes
+∃ enslaved:hasExternalReference owl:Thing ⊑ enslaved:Agent ⊔ enslaved:Event
+⊤ ⊑ ∀ enslaved:hasExternalReference enslaved:ExternalReference
+⊑ enslaved:hasAgentRecord
+∃ enslaved:hasInterAgentRelationshipRecord owl:Thing ⊑ enslaved:Agent
+⊤ ⊑ ∀ enslaved:hasInterAgentRelationshipRecord enslaved:InterAgentRelationshipRecord
+∃ enslaved:hasInterAgentRelationshipType owl:Thing ⊑ enslaved:InterAgentRelationshipRecord
+⊤ ⊑ ∀ enslaved:hasInterAgentRelationshipType enslaved:InterAgentRelationshipTypes
+∃ enslaved:hasLicenseInformation owl:Thing ⊑ enslaved:EntityWithProvenance
+⊤ ⊑ ∀ enslaved:hasLicenseInformation enslaved:LicenseInformation
+∃ enslaved:hasMatchType owl:Thing ⊑ enslaved:Match
+⊤ ⊑ ∀ enslaved:hasMatchType enslaved:MatchType
+⊑ enslaved:hasAgentRecord
+∃ enslaved:hasNameRecord owl:Thing ⊑ enslaved:Agent
+⊤ ⊑ ∀ enslaved:hasNameRecord enslaved:NameRecord
+∃ enslaved:hasNameVariant owl:Thing ⊑ enslaved:NameRecord
+⊤ ⊑ ∀ enslaved:hasNameVariant enslaved:NameVariant
+⊑ enslaved:hasPersonRecord
+∃ enslaved:hasOccupationRecord owl:Thing ⊑ enslaved:Person
+⊤ ⊑ ∀ enslaved:hasOccupationRecord enslaved:OccupationRecord
+⊑ enslaved:hasPersonRecord
+∃ enslaved:hasOriginRecord owl:Thing ⊑ enslaved:Person
+⊤ ⊑ ∀ enslaved:hasOriginRecord enslaved:OriginRecord
+∃ enslaved:hasOriginalSourceType owl:Thing ⊑ enslaved:EntityWithProvenance
+⊤ ⊑ ∀ enslaved:hasOriginalSourceType enslaved:DocumentTypes
+⊑ enslaved:hasAgentRecord
+enslaved:hasParticipantRoleRecord ≡ enslaved:roleProvidedBy⁻
+∃ enslaved:hasParticipantRoleRecord owl:Thing ⊑ enslaved:Agent
+⊤ ⊑ ∀ enslaved:hasParticipantRoleRecord enslaved:ParticipantRoleRecord
+∃ enslaved:hasParticipantRoleType owl:Thing ⊑ enslaved:ParticipantRoleRecord
+⊤ ⊑ ∀ enslaved:hasParticipantRoleType enslaved:ParticipantRoleTypes
+⊑ enslaved:hasAgentRecord
+∃ enslaved:hasPersonRecord owl:Thing ⊑ enslaved:Person
+⊤ ⊑ ∀ enslaved:hasPersonRecord enslaved:PersonRecord
+⊑ enslaved:hasPersonRecord
+∃ enslaved:hasPersonStatusRecord owl:Thing ⊑ enslaved:Person
+⊤ ⊑ ∀ enslaved:hasPersonStatusRecord enslaved:PersonStatusRecord
+∃ enslaved:hasPlaceTypeCV owl:Thing ⊑ enslaved:Place ⊔ enslaved:PlaceCV
+⊤ ⊑ ∀ enslaved:hasPlaceTypeCV enslaved:PlaceTypeCV
+⊑ enslaved:hasNameVariant
+∃ enslaved:hasPreferredNameVariant owl:Thing ⊑ enslaved:NameRecord
+⊤ ⊑ ∀ enslaved:hasPreferredNameVariant enslaved:NameVariant
+⊑ enslaved:hasPersonRecord
+∃ enslaved:hasRaceRecord owl:Thing ⊑ enslaved:Person
+⊤ ⊑ ∀ enslaved:hasRaceRecord enslaved:RaceRecord
+⊑ enslaved:hasPersonRecord
+∃ enslaved:hasSexRecord owl:Thing ⊑ enslaved:Person
+⊤ ⊑ ∀ enslaved:hasSexRecord enslaved:SexRecord
+∃ enslaved:hasSpatialExtent owl:Thing ⊑ enslaved:Place
+⊤ ⊑ ∀ enslaved:hasSpatialExtent enslaved:SpatialExtent
+⊑ enslaved:refersToEvent
+∃ enslaved:hasStatusGeneratedEvent owl:Thing ⊑ enslaved:PersonStatusRecord
+⊤ ⊑ ∀ enslaved:hasStatusGeneratedEvent enslaved:Event
+∃ enslaved:hasTemporalExtent owl:Thing ⊑ enslaved:AgentRecord ⊔ enslaved:Event ⊔ enslaved:Place
+⊤ ⊑ ∀ enslaved:hasTemporalExtent enslaved:TemporalExtent
+∃ enslaved:hasValue owl:Thing ⊑ enslaved:AgeRecord ⊔ enslaved:OccupationRecord ⊔ enslaved:PersonStatusRecord ⊔ enslaved:SexRecord
+⊤ ⊑ ∀ enslaved:hasValue (enslaved:AgeCategory ⊔ enslaved:Occupations ⊔ enslaved:PSCategories ⊔ enslaved:SexTypes)
+∃ enslaved:isAdministrativePartOf owl:Thing ⊑ enslaved:Place ⊔ enslaved:PlaceCV
+⊤ ⊑ ∀ enslaved:isAdministrativePartOf enslaved:PlaceCV
+∃ enslaved:isDirectlyBasedOn owl:Thing ⊑ enslaved:EntityWithProvenance
+⊤ ⊑ ∀ enslaved:isDirectlyBasedOn enslaved:EntityWithProvenance
+∃ enslaved:isRelationshipFrom owl:Thing ⊑ enslaved:InterAgentRelationshipRecord
+⊤ ⊑ ∀ enslaved:isRelationshipFrom enslaved:Agent
+∃ enslaved:isRelationshipTo owl:Thing ⊑ enslaved:InterAgentRelationshipRecord
+⊤ ⊑ ∀ enslaved:isRelationshipTo enslaved:Agent
+∃ enslaved:isSpatiallyLocatedIn owl:Thing ⊑ enslaved:Place ⊔ enslaved:PlaceCV
+⊤ ⊑ ∀ enslaved:isSpatiallyLocatedIn (enslaved:Place ⊔ enslaved:PlaceCV)
+∃ enslaved:matches owl:Thing ⊑ enslaved:Match
+⊤ ⊑ ∀ enslaved:matches owl:Thing
+∃ enslaved:performedBy owl:Thing ⊑ enslaved:ProvenanceActivity
+⊤ ⊑ ∀ enslaved:performedBy enslaved:Agent
+∃ enslaved:providesParticipantRole owl:Thing ⊑ enslaved:Event
+⊤ ⊑ ∀ enslaved:providesParticipantRole enslaved:ParticipantRoleRecord
+∃ enslaved:recordedAt owl:Thing ⊑ enslaved:AgentRecord
+⊤ ⊑ ∀ enslaved:recordedAt enslaved:Event
+∃ enslaved:refersTo owl:Thing ⊑ enslaved:ExternalReference
+⊤ ⊑ ∀ enslaved:refersTo enslaved:ExternalReferent
+∃ enslaved:refersToEvent owl:Thing ⊑ enslaved:PersonStatusRecord
+⊤ ⊑ ∀ enslaved:refersToEvent enslaved:Event
+∃ enslaved:refersToPlaceOfOrigin owl:Thing ⊑ enslaved:OriginRecord
+⊤ ⊑ ∀ enslaved:refersToPlaceOfOrigin enslaved:Place
+∃ enslaved:reportsOn owl:Thing ⊑ enslaved:EntityWithProvenance
+⊤ ⊑ ∀ enslaved:reportsOn enslaved:Event
+enslaved:hasParticipantRoleRecord ≡ enslaved:roleProvidedBy⁻
+∃ enslaved:roleProvidedBy owl:Thing ⊑ enslaved:ParticipantRoleRecord
+⊤ ⊑ ∀ enslaved:roleProvidedBy enslaved:Agent
+∃ enslaved:subeventOf owl:Thing ⊑ enslaved:Event
+⊤ ⊑ ∀ enslaved:subeventOf enslaved:Event
+∃ enslaved:used owl:Thing ⊑ enslaved:ProvenanceActivity
+⊤ ⊑ ∀ enslaved:used enslaved:EntityWithProvenance
+∃ enslaved:asText rdfs:Literal ⊑ enslaved:Description ⊔ enslaved:RaceRecord
+⊤ ⊑ ∀ enslaved:asText xsd:string
+∃ enslaved:availableFrom rdfs:Literal ⊑ enslaved:EntityWithProvenance
+⊤ ⊑ ∀ enslaved:availableFrom xsd:string
+∃ enslaved:contains rdfs:Literal ⊑ enslaved:TemporalExtent
+⊤ ⊑ ∀ enslaved:contains xsd:date
+∃ enslaved:endsAt rdfs:Literal ⊑ enslaved:TemporalExtent
+⊤ ⊑ ∀ enslaved:endsAt xsd:date
+∃ enslaved:fullNameAsString rdfs:Literal ⊑ enslaved:NameRecord
+⊤ ⊑ ∀ enslaved:fullNameAsString xsd:string
+∃ enslaved:hasAgeValue rdfs:Literal ⊑ enslaved:AgeRecord
+⊤ ⊑ ∀ enslaved:hasAgeValue xsd:double
+∃ enslaved:hasAlternateName rdfs:Literal ⊑ enslaved:Place ⊔ enslaved:PlaceCV
+⊤ ⊑ ∀ enslaved:hasAlternateName xsd:string
+∃ enslaved:hasDescriptiveEthnonym rdfs:Literal ⊑ enslaved:OriginRecord
+⊤ ⊑ ∀ enslaved:hasDescriptiveEthnonym xsd:string
+∃ enslaved:hasDescriptiveOccupation rdfs:Literal ⊑ enslaved:OccupationRecord
+⊤ ⊑ ∀ enslaved:hasDescriptiveOccupation xsd:string
+∃ enslaved:hasFirstNameAsString rdfs:Literal ⊑ enslaved:NameRecord
+⊤ ⊑ ∀ enslaved:hasFirstNameAsString xsd:string
+∃ enslaved:hasLatitude rdfs:Literal ⊑ enslaved:Coordinates
+⊤ ⊑ ∀ enslaved:hasLatitude xsd:double
+∃ enslaved:hasLongitude rdfs:Literal ⊑ enslaved:Coordinates
+⊤ ⊑ ∀ enslaved:hasLongitude xsd:double
+∃ enslaved:hasName rdfs:Literal ⊑ enslaved:Event ⊔ enslaved:Place
+⊤ ⊑ ∀ enslaved:hasName xsd:string
+∃ enslaved:hasReferenceURI rdfs:Literal ⊑ enslaved:EntityWithProvenance
+⊤ ⊑ ∀ enslaved:hasReferenceURI xsd:anyURI
+∃ enslaved:hasSurnameAsString rdfs:Literal ⊑ enslaved:NameRecord
+⊤ ⊑ ∀ enslaved:hasSurnameAsString xsd:string
+∃ enslaved:occursAfter rdfs:Literal ⊑ enslaved:TemporalExtent
+⊤ ⊑ ∀ enslaved:occursAfter xsd:date
+∃ enslaved:occursBefore rdfs:Literal ⊑ enslaved:TemporalExtent
+⊤ ⊑ ∀ enslaved:occursBefore xsd:date
+∃ enslaved:startsAt rdfs:Literal ⊑ enslaved:TemporalExtent
+⊤ ⊑ ∀ enslaved:startsAt xsd:date
+∃ enslaved:withID rdfs:Literal ⊑ enslaved:ExternalReference
+⊤ ⊑ ∀ enslaved:withID xsd:string

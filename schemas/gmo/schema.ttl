@@ -1,0 +1,3272 @@
+@prefix : <http://example.org/gmo> .
+@prefix gml: <http://www.opengis.net/ont/gml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix agentrole: <http://example.org/gmo#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@base <http://example.org/gmo> .
+
+<http://example.org/gmo> rdf:type owl:Ontology ;
+                          owl:imports <http://www.opengis.net/ont/geosparql> ,
+                                      <http://www.w3.org/2006/time> ;
+                          rdfs:label "GeoLink Modular Ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://example.org/gmo#DASE_RULE
+agentrole:DASE_RULE rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/gmo#alsoKnownAs
+agentrole:alsoKnownAs rdf:type owl:AnnotationProperty ;
+                      rdfs:range xsd:string .
+
+
+###  http://example.org/gmo#associatedWithProgram
+agentrole:associatedWithProgram rdf:type owl:AnnotationProperty ;
+                                rdfs:range agentrole:Program .
+
+
+###  http://example.org/gmo#atPort
+agentrole:atPort rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/gmo#describedBy
+agentrole:describedBy rdf:type owl:AnnotationProperty ;
+                      rdfs:range agentrole:InformationObject .
+
+
+###  http://example.org/gmo#endsOnDate
+agentrole:endsOnDate rdf:type owl:AnnotationProperty ;
+                     rdfs:range time:Instant .
+
+
+###  http://example.org/gmo#familyOrSurname
+agentrole:familyOrSurname rdf:type owl:AnnotationProperty ;
+                          rdfs:range xsd:string .
+
+
+###  http://example.org/gmo#firstOrGivenName
+agentrole:firstOrGivenName rdf:type owl:AnnotationProperty ;
+                           rdfs:range xsd:string .
+
+
+###  http://example.org/gmo#fullName
+agentrole:fullName rdf:type owl:AnnotationProperty ;
+                   rdfs:range xsd:string .
+
+
+###  http://example.org/gmo#fundedBy
+agentrole:fundedBy rdf:type owl:AnnotationProperty ;
+                   rdfs:range agentrole:FundingAward .
+
+
+###  http://example.org/gmo#hasCanonicalName
+agentrole:hasCanonicalName rdf:type owl:AnnotationProperty ;
+                           rdfs:range xsd:string .
+
+
+###  http://example.org/gmo#hasDescription
+agentrole:hasDescription rdf:type owl:AnnotationProperty ;
+                         rdfs:range xsd:string .
+
+
+###  http://example.org/gmo#hasIdentifierScheme
+agentrole:hasIdentifierScheme rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/gmo#hasIdentifierValue
+agentrole:hasIdentifierValue rdf:type owl:AnnotationProperty ;
+                             rdfs:range xsd:string .
+
+
+###  http://example.org/gmo#hasLiteralValue
+agentrole:hasLiteralValue rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/gmo#hasPersonInfoItem
+agentrole:hasPersonInfoItem rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/gmo#hasPersonName
+agentrole:hasPersonName rdf:type owl:AnnotationProperty ;
+                        rdfs:range agentrole:PersonName .
+
+
+###  http://example.org/gmo#hasPrimaryIdentifier
+agentrole:hasPrimaryIdentifier rdf:type owl:AnnotationProperty ;
+                               rdfs:range agentrole:Identifier .
+
+
+###  http://example.org/gmo#performedBy
+agentrole:performedBy rdf:type owl:AnnotationProperty ;
+                      rdfs:range agentrole:Agent .
+
+
+###  http://example.org/gmo#providesAgentRole
+agentrole:providesAgentRole rdf:type owl:AnnotationProperty ;
+                            rdfs:range agentrole:AgentRole .
+
+
+###  http://example.org/gmo#startsOnDate
+agentrole:startsOnDate rdf:type owl:AnnotationProperty ;
+                       rdfs:range time:Instant .
+
+
+###  http://purl.org/dc/terms/contributor
+terms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+terms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+terms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+terms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/isVersionOf
+terms:isVersionOf rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+terms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+terms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+terms:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#pattern
+xsd:pattern rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/time#inXSDDate
+time:inXSDDate rdf:type owl:AnnotationProperty ;
+               rdfs:range xsd:date .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML
+rdf:HTML rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateTimeStamp
+xsd:dateTimeStamp rdfs:label "sello de tiempo"@es .
+
+
+###  http://www.w3.org/2001/XMLSchema#duration
+xsd:duration rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gDay
+xsd:gDay rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonth
+xsd:gMonth rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearMonth
+xsd:gYearMonth rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2006/time#generalDay
+time:generalDay rdf:type rdfs:Datatype ;
+                rdfs:comment """Day of month - formulated as a text string with a pattern constraint to reproduce the same lexical form as gDay, except that values up to 99 are permitted, in order to support calendars with more than 31 days in a month. 
+Note that the value-space is not defined, so a generic OWL2 processor cannot compute ordering relationships of values of this type."""@en ,
+                             """Día del mes - formulado como una cadena de texto con una restricción patrón para reproducir la misma forma léxica que gDay, excepto que se permiten valores hasta el 99, con el propósito de proporcionar soporte a calendarios con meses con más de 31 días.
+            Nótese que el espacio de valores no está definido, por tanto, un procesador genérico de OWL2 no puede computar relaciones de orden de valores de este tipo."""@es ;
+                rdfs:label "Día generalizado"@es ,
+                           "Generalized day"@en .
+
+
+###  http://www.w3.org/2006/time#generalMonth
+time:generalMonth rdf:type rdfs:Datatype ;
+                  rdfs:comment """Mes del año - formulado como una cadena de texto con una restricción patrón para reproducir la misma forma léxica que gMonth, excepto que se permiten valores hasta el 20, con el propósito de proporcionar soporte a calendarios con años con más de 12 meses.
+            Nótese que el espacio de valores no está definido, por tanto, un procesador genérico de OWL2 no puede computar relaciones de orden de valores de este tipo."""@es ,
+                               """Month of year - formulated as a text string with a pattern constraint to reproduce the same lexical form as gMonth, except that values up to 20 are permitted, in order to support calendars with more than 12 months in the year. 
+Note that the value-space is not defined, so a generic OWL2 processor cannot compute ordering relationships of values of this type."""@en ;
+                  rdfs:label "Generalized month"@en ,
+                             "Mes generalizado"@es .
+
+
+###  http://www.w3.org/2006/time#generalYear
+time:generalYear rdf:type rdfs:Datatype ;
+                 rdfs:comment """Número de año - formulado como una cadena de texto con una restricción patrón para reproducir la misma forma léxica que gYear, aunque no está restringido a valores del calendario gregoriano.
+            Nótese que el espacio de valores no está definido, por tanto, un procesador genérico de OWL2 no puede computar relaciones de orden de valores de este tipo."""@es ,
+                              """Year number - formulated as a text string with a pattern constraint to reproduce the same lexical form as gYear, but not restricted to values from the Gregorian calendar. 
+Note that the value-space is not defined, so a generic OWL2 processor cannot compute ordering relationships of values of this type."""@en ;
+                 rdfs:label "Año generalizado"@es ,
+                            "Generalized year"@en .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/gmo#agentRoleIn
+agentrole:agentRoleIn rdf:type owl:ObjectProperty ;
+                      owl:inverseOf agentrole:providesAgentRole ;
+                      rdfs:domain agentrole:AgentRole ;
+                      rdfs:comment "agentRoleIn connects a role to the thing thing in which the role is performed by the agent." ;
+                      rdfs:label "agentRoleIn" .
+
+
+###  http://example.org/gmo#associatedWithProgram
+agentrole:associatedWithProgram rdf:type owl:ObjectProperty ;
+                                rdfs:domain agentrole:Cruise .
+
+
+###  http://example.org/gmo#atPort
+agentrole:atPort rdf:type owl:ObjectProperty ;
+                 owl:propertyChainAxiom _:genid4 .
+
+_:genid4 rdf:type rdf:List ;
+          rdf:first agentrole:hasPosition ;
+          rdf:rest ( [ owl:inverseOf agentrole:hasSpatialFootprint
+                     ]
+                     agentrole:r_Port
+                   ) .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource agentrole:atPort ;
+   owl:annotatedProperty owl:propertyChainAxiom ;
+   owl:annotatedTarget _:genid4 ;
+   agentrole:DASE_RULE "R2___trajectory:hasPosition(?x,?y) ^ place:hasSpatialFootprint(?z,?y) ^ :Port(?z) -> :atPort(?x,?z)___If position of a fix corresponds to a (spatial footprint of a) port, then that fix is at that port.___http://gmo#freshObjectProperty1"
+ ] .
+
+
+###  http://example.org/gmo#atTime
+agentrole:atTime rdf:type owl:ObjectProperty ;
+                 rdfs:domain agentrole:Fix ;
+                 rdfs:range time:TemporalEntity ;
+                 rdfs:comment "Provides temporal information of a fix." ;
+                 rdfs:label "atTime" .
+
+
+###  http://example.org/gmo#derivedUsing
+agentrole:derivedUsing rdf:type owl:ObjectProperty ;
+                       rdfs:domain agentrole:PhysicalSample ;
+                       rdfs:range agentrole:SamplingProcess .
+
+
+###  http://example.org/gmo#describedBy
+agentrole:describedBy rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/gmo#endsAtFix
+agentrole:endsAtFix rdf:type owl:ObjectProperty ;
+                    rdfs:domain agentrole:Segment ;
+                    rdfs:range agentrole:Fix ;
+                    owl:propertyChainAxiom ( agentrole:startsFromFix
+                                             agentrole:hasNextFix
+                                           ) ;
+                    rdfs:comment "Provides the fix where the segment ends." ;
+                    rdfs:label "endsAtFix" .
+
+
+###  http://example.org/gmo#endsAtTime
+agentrole:endsAtTime rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf agentrole:occursAtTime ;
+                     rdfs:range time:Instant ;
+                     rdfs:label "endsAtTime" .
+
+
+###  http://example.org/gmo#endsOnDate
+agentrole:endsOnDate rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/gmo#fundedBy
+agentrole:fundedBy rdf:type owl:ObjectProperty ;
+                   rdfs:domain agentrole:Cruise .
+
+
+###  http://example.org/gmo#hasAgentRoleType
+agentrole:hasAgentRoleType rdf:type owl:ObjectProperty ;
+                           rdfs:domain agentrole:AgentRole ;
+                           rdfs:range agentrole:AgentRoleType ;
+                           rdfs:label "hasAgentRoleType" .
+
+
+###  http://example.org/gmo#hasAlternativeIdentifier
+agentrole:hasAlternativeIdentifier rdf:type owl:ObjectProperty ;
+                                   rdfs:domain agentrole:InformationObject ;
+                                   rdfs:range agentrole:Identifier ;
+                                   rdfs:label "hasAlternativeIdentifier" .
+
+
+###  http://example.org/gmo#hasAttribute
+agentrole:hasAttribute rdf:type owl:ObjectProperty ;
+                       rdfs:range agentrole:Attribute ;
+                       rdfs:comment "Provides an attribute of a fix or a segment." ;
+                       rdfs:label "hasAttribute" .
+
+
+###  http://example.org/gmo#hasAwardAmount
+agentrole:hasAwardAmount rdf:type owl:ObjectProperty ;
+                         rdfs:domain agentrole:FundingAward ;
+                         rdfs:range agentrole:AwardAmount .
+
+
+###  http://example.org/gmo#hasCurrencyCode
+agentrole:hasCurrencyCode rdf:type owl:ObjectProperty ;
+                          rdfs:domain agentrole:AwardAmount ;
+                          rdfs:range agentrole:CurrencyCode .
+
+
+###  http://example.org/gmo#hasDataSource
+agentrole:hasDataSource rdf:type owl:ObjectProperty ;
+                        rdfs:domain agentrole:Fix ;
+                        rdfs:range agentrole:Source ;
+                        rdfs:comment "Provides the source (e.g., a sensor, a device, etc.) from which information about the fix was obtained." ;
+                        rdfs:label "hasDataSource" .
+
+
+###  http://example.org/gmo#hasFix
+agentrole:hasFix rdf:type owl:ObjectProperty ;
+                 owl:propertyChainAxiom ( agentrole:hasFix
+                                          agentrole:hasNextFix
+                                        ) ;
+                 rdfs:comment "Provides a fix for the trajectory." ;
+                 rdfs:label "hasFix" .
+
+
+###  http://example.org/gmo#hasInputFeature
+agentrole:hasInputFeature rdf:type owl:ObjectProperty ;
+                          rdfs:domain agentrole:SamplingProcess ;
+                          rdfs:range agentrole:Feature .
+
+
+###  http://example.org/gmo#hasNextFix
+agentrole:hasNextFix rdf:type owl:ObjectProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain agentrole:Fix ;
+                     rdfs:range agentrole:Fix ;
+                     rdfs:comment "Provides the next fix after this fix in the sequence." ;
+                     rdfs:label "hasNextFix" .
+
+
+###  http://example.org/gmo#hasPersonName
+agentrole:hasPersonName rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf agentrole:hasPersonalInfoItem ;
+                        rdfs:domain agentrole:Person .
+
+
+###  http://example.org/gmo#hasPersonalInfoItem
+agentrole:hasPersonalInfoItem rdf:type owl:ObjectProperty ;
+                              rdfs:domain agentrole:Person ;
+                              rdfs:range agentrole:PersonalInfoItem ;
+                              rdfs:label "hasPersonalInfoItem" .
+
+
+###  http://example.org/gmo#hasPosition
+agentrole:hasPosition rdf:type owl:ObjectProperty ;
+                      rdfs:domain agentrole:Fix ;
+                      rdfs:range agentrole:Position ;
+                      rdfs:comment "Provides a geographical location of a fix." ;
+                      rdfs:label "hasPosition" .
+
+
+###  http://example.org/gmo#hasPrimaryIdentifier
+agentrole:hasPrimaryIdentifier rdf:type owl:ObjectProperty ;
+                               rdfs:domain agentrole:InformationObject .
+
+
+###  http://example.org/gmo#hasProperty
+agentrole:hasProperty rdf:type owl:ObjectProperty ;
+                      rdfs:range agentrole:Property ;
+                      rdfs:label "hasProperty" .
+
+
+###  http://example.org/gmo#hasRelatedCruise
+agentrole:hasRelatedCruise rdf:type owl:ObjectProperty ;
+                           rdfs:domain agentrole:Cruise ;
+                           rdfs:range agentrole:Cruise ;
+                           rdfs:label "hasRelatedCruise" .
+
+
+###  http://example.org/gmo#hasSegment
+agentrole:hasSegment rdf:type owl:ObjectProperty ;
+                     rdfs:domain agentrole:Trajectory ;
+                     rdfs:range agentrole:Segment ;
+                     owl:propertyChainAxiom ( agentrole:hasFix
+                                              [ owl:inverseOf agentrole:startsFromFix
+                                              ]
+                                            ) ;
+                     rdfs:comment "Provides a segment of the trajectory." ;
+                     rdfs:label "hasSegment" .
+
+
+###  http://example.org/gmo#hasSite
+agentrole:hasSite rdf:type owl:ObjectProperty ;
+                  rdfs:domain agentrole:Organization ;
+                  rdfs:range agentrole:Place ;
+                  rdfs:label "hasSite" .
+
+
+###  http://example.org/gmo#hasSpatialFootprint
+agentrole:hasSpatialFootprint rdf:type owl:ObjectProperty ;
+                              rdfs:comment "Provides to a spatial footprint of the place, which is specified as a geometry." ;
+                              rdfs:label "hasSpatialFootprint" .
+
+
+###  http://example.org/gmo#hasSubOrganization
+agentrole:hasSubOrganization rdf:type owl:ObjectProperty ,
+                                      owl:TransitiveProperty ;
+                             rdfs:domain agentrole:Organization ;
+                             rdfs:range agentrole:Organization ;
+                             rdfs:label "hasSubOrganization" .
+
+
+###  http://example.org/gmo#hasTemporalExtent
+agentrole:hasTemporalExtent rdf:type owl:ObjectProperty ;
+                            rdfs:domain agentrole:AgentRole ;
+                            rdfs:range time:TemporalEntity ;
+                            rdfs:comment "hasTemporalExtent points to information about the temporal extent of the agent role, e.g., the duration in which the role is valid for the agent in concern." ;
+                            rdfs:label "hasTemporalExtent" .
+
+
+###  http://example.org/gmo#hasTrajectory
+agentrole:hasTrajectory rdf:type owl:ObjectProperty ;
+                        rdfs:domain agentrole:Cruise ;
+                        rdfs:range agentrole:CruiseTrajectory ;
+                        rdfs:comment "The hasTrajectory connects a cruise to its trajectory." ;
+                        rdfs:label "hasTrajectory" .
+
+
+###  http://example.org/gmo#hasUnit
+agentrole:hasUnit rdf:type owl:ObjectProperty ;
+                  rdfs:domain agentrole:Property ;
+                  rdfs:range agentrole:PropertyUnit ;
+                  rdfs:label "hasUnit" .
+
+
+###  http://example.org/gmo#hasValue
+agentrole:hasValue rdf:type owl:ObjectProperty ;
+                   rdfs:domain agentrole:PersonalInfoItem .
+
+
+###  http://example.org/gmo#occursAtPlace
+agentrole:occursAtPlace rdf:type owl:ObjectProperty ;
+                        rdfs:domain agentrole:Event ;
+                        rdfs:range agentrole:Place ;
+                        rdfs:label "occursAtPlace" .
+
+
+###  http://example.org/gmo#occursAtTime
+agentrole:occursAtTime rdf:type owl:ObjectProperty ;
+                       rdfs:domain agentrole:Event ;
+                       rdfs:range time:TemporalEntity ;
+                       rdfs:label "occursAtTime" .
+
+
+###  http://example.org/gmo#originatesFrom
+agentrole:originatesFrom rdf:type owl:ObjectProperty ;
+                         rdfs:domain agentrole:PhysicalSample ;
+                         rdfs:range agentrole:Feature ;
+                         owl:propertyChainAxiom ( agentrole:derivedUsing
+                                                  agentrole:hasInputFeature
+                                                ) .
+
+
+###  http://example.org/gmo#performedBy
+agentrole:performedBy rdf:type owl:ObjectProperty ;
+                      owl:inverseOf agentrole:performsAgentRole ;
+                      rdfs:domain agentrole:AgentRole .
+
+
+###  http://example.org/gmo#performsAgentRole
+agentrole:performsAgentRole rdf:type owl:ObjectProperty ;
+                            rdfs:label "performsAgentRole" .
+
+
+###  http://example.org/gmo#providesAgentRole
+agentrole:providesAgentRole rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/gmo#r_Port
+agentrole:r_Port rdf:type owl:ObjectProperty ;
+                 rdfs:domain agentrole:Port ;
+                 rdfs:comment "The class Port typecasted as an object property. Logically, r_Port(x,x) <-> Port(x)" ;
+                 rdfs:label "r_Port" .
+
+
+###  http://example.org/gmo#realizationAbout
+agentrole:realizationAbout rdf:type owl:ObjectProperty ;
+                           rdfs:domain agentrole:InformationRealization ;
+                           owl:propertyChainAxiom ( [ owl:inverseOf agentrole:realizedBy
+                                                    ]
+                                                    [ owl:inverseOf agentrole:describedBy
+                                                    ]
+                                                  ) ;
+                           rdfs:label "realizationAbout" .
+
+
+###  http://example.org/gmo#realizedBy
+agentrole:realizedBy rdf:type owl:ObjectProperty ;
+                     rdfs:domain agentrole:InformationObject ;
+                     rdfs:range agentrole:InformationRealization ;
+                     rdfs:label "realizedBy" .
+
+
+###  http://example.org/gmo#startsAtTime
+agentrole:startsAtTime rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf agentrole:occursAtTime ;
+                       rdfs:range time:Instant ;
+                       rdfs:label "startsAtTime" .
+
+
+###  http://example.org/gmo#startsFromFix
+agentrole:startsFromFix rdf:type owl:ObjectProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain agentrole:Segment ;
+                        rdfs:range agentrole:Fix ;
+                        rdfs:comment "Provides the fix from which the segment starts." ;
+                        rdfs:label "startsFromFix" .
+
+
+###  http://example.org/gmo#startsOnDate
+agentrole:startsOnDate rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/gmo#traveledBy
+agentrole:traveledBy rdf:type owl:ObjectProperty ;
+                     rdfs:domain agentrole:CruiseTrajectory ;
+                     rdfs:range agentrole:Vessel ;
+                     owl:propertyChainAxiom ( [ owl:inverseOf agentrole:hasTrajectory
+                                              ]
+                                              agentrole:undertakenBy
+                                            ) ;
+                     rdfs:comment "If a cruise is undertaken by a vessel, then its trajectory is traveled by the vessel." ;
+                     rdfs:label "traveledBy" .
+
+
+###  http://example.org/gmo#traversedBy
+agentrole:traversedBy rdf:type owl:ObjectProperty ;
+                      rdfs:domain agentrole:Segment ;
+                      rdfs:range agentrole:MovingObject ;
+                      owl:propertyChainAxiom _:genid23 ;
+                      rdfs:comment "Provides a moving object that traverses the segment." ;
+                      rdfs:label "traversedBy" .
+
+_:genid23 rdf:type rdf:List ;
+           rdf:first [ owl:inverseOf agentrole:hasSegment
+                     ] ;
+           rdf:rest ( agentrole:traveledBy
+                    ) .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource agentrole:traversedBy ;
+   owl:annotatedProperty owl:propertyChainAxiom ;
+   owl:annotatedTarget _:genid23 ;
+   rdfs:comment """This axiom is equivalent to the rule: 
+:traveledBy(?x,?y) ^ trajectory:hasSegment(?x,?z) -> trajectory:traversedBy(?z,?y)"""
+ ] .
+
+
+###  http://example.org/gmo#undertakenBy
+agentrole:undertakenBy rdf:type owl:ObjectProperty ;
+                       rdfs:domain agentrole:Cruise ;
+                       rdfs:range agentrole:Vessel ;
+                       rdfs:comment "This connects a cruise to the vessel on which the cruise is conducted." ;
+                       rdfs:label "undertakenBy" .
+
+
+###  http://www.w3.org/2006/time#after
+time:after rdf:type owl:ObjectProperty ;
+           owl:inverseOf time:before ;
+           rdfs:domain time:TemporalEntity ;
+           rdfs:range time:TemporalEntity ;
+           rdfs:comment "Asume una dirección en el tiempo. Si una entidad temporal T1 está después de otra entidad temporal T2, entonces el principio de T1 está después del final de T2."@es ,
+                        "Gives directionality to time. If a temporal entity T1 is after another temporal entity T2, then the beginning of T1 is after the end of T2."@en ;
+           rdfs:label "after"@en ,
+                      "después"@es .
+
+
+###  http://www.w3.org/2006/time#before
+time:before rdf:type owl:ObjectProperty ,
+                     owl:TransitiveProperty ;
+            rdfs:domain time:TemporalEntity ;
+            rdfs:range time:TemporalEntity ;
+            rdfs:comment "Asume una dirección en el tiempo. Si una entidad temporal T1 está antes que otra entidad temporal T2, entonces el final de T1 está antes que el principio de T2. Así, \"antes\" se puede considerar básica para instantes y derivada para intervalos."@es ,
+                         "Gives directionality to time. If a temporal entity T1 is before another temporal entity T2, then the end of T1 is before the beginning of T2. Thus, \"before\" can be considered to be basic to instants and derived for intervals."@en ;
+            rdfs:label "antes"@es ,
+                       "before"@en .
+
+
+###  http://www.w3.org/2006/time#dayOfWeek
+time:dayOfWeek rdf:type owl:ObjectProperty ;
+               rdfs:domain time:GeneralDateTimeDescription ;
+               rdfs:range time:DayOfWeek ;
+               rdfs:comment "The day of week, whose value is a member of the class time:DayOfWeek"@en ,
+                            "El día de la semana, cuyo valor es un miembro de la clase 'día de la semana'." ;
+               rdfs:label "day of week"@en ,
+                          "día de la semana"@es .
+
+
+###  http://www.w3.org/2006/time#hasBeginning
+time:hasBeginning rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf time:hasTime ;
+                  rdfs:domain time:TemporalEntity ;
+                  rdfs:range time:Instant ;
+                  rdfs:comment "Beginning of a temporal entity"@en ,
+                               "Comienzo de una entidad temporal."@es ;
+                  rdfs:label "has beginning"@en ,
+                             "tiene principio"@es .
+
+
+###  http://www.w3.org/2006/time#hasDateTimeDescription
+time:hasDateTimeDescription rdf:type owl:ObjectProperty ;
+                            rdfs:domain time:DateTimeInterval ;
+                            rdfs:range time:GeneralDateTimeDescription ;
+                            rdfs:comment "Valor de intervalo de fecha-hora expresado como un valor estructurado. El principio y el final del intervalo coincide con los límites del elemento más corto en la descripción."@es ,
+                                         "Value of DateTimeInterval expressed as a structured value. The beginning and end of the interval coincide with the limits of the shortest element in the description."@en ;
+                            rdfs:label "has Date-Time description"@en ,
+                                       "tiene descripción fecha-hora"@es .
+
+
+###  http://www.w3.org/2006/time#hasDuration
+time:hasDuration rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf time:hasTemporalDuration ;
+                 rdfs:range time:Duration ;
+                 rdfs:comment "Duración de una entidad temporal, expresada como un valor escalado o un valor nominal."@es ,
+                              "Duration of a temporal entity, expressed as a scaled value or nominal value"@en ;
+                 rdfs:label "has duration"@en ,
+                            "tiene duración"@es .
+
+
+###  http://www.w3.org/2006/time#hasDurationDescription
+time:hasDurationDescription rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf time:hasTemporalDuration ;
+                            rdfs:range time:GeneralDurationDescription ;
+                            rdfs:comment "Duración de una entidad temporal, expresada utilizando una descripción estructurada."@es ,
+                                         "Duration of a temporal entity, expressed using a structured description"@en ;
+                            rdfs:label "has duration description"@en ,
+                                       "tiene descripción de duración"@es .
+
+
+###  http://www.w3.org/2006/time#hasEnd
+time:hasEnd rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf time:hasTime ;
+            rdfs:domain time:TemporalEntity ;
+            rdfs:range time:Instant ;
+            rdfs:comment "End of a temporal entity."@en ,
+                         "Final de una entidad temporal."@es ;
+            rdfs:label "has end"@en ,
+                       "tiene fin"@es .
+
+
+###  http://www.w3.org/2006/time#hasTRS
+time:hasTRS rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( time:GeneralDurationDescription
+                                        time:TemporalPosition
+                                      )
+                        ] ;
+            rdfs:range time:TRS ;
+            rdfs:comment "El sistema de referencia temporal utilizado por una posición temporal o descripción de extensión."@es ,
+                         "The temporal reference system used by a temporal position or extent description. "@en ;
+            rdfs:label "Temporal reference system used"@en ,
+                       "sistema de referencia temporal utilizado"@es .
+
+
+###  http://www.w3.org/2006/time#hasTemporalDuration
+time:hasTemporalDuration rdf:type owl:ObjectProperty ;
+                         rdfs:domain time:TemporalEntity ;
+                         rdfs:range time:TemporalDuration ;
+                         rdfs:comment "Duración de una entidad temporal."@es ,
+                                      "Duration of a temporal entity."@en ;
+                         rdfs:label "has temporal duration"@en ,
+                                    "tiene duración temporal"@es .
+
+
+###  http://www.w3.org/2006/time#hasTime
+time:hasTime rdf:type owl:ObjectProperty ;
+             rdfs:range time:TemporalEntity ;
+             rdfs:comment "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa."@es ,
+                          "Supports the association of a temporal entity (instant or interval) to any thing"@en ;
+             rdfs:label "has time"@en ,
+                        "tiene tiempo"@es .
+
+
+###  http://www.w3.org/2006/time#inDateTime
+time:inDateTime rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf time:inTemporalPosition ;
+                rdfs:domain time:Instant ;
+                rdfs:range time:GeneralDateTimeDescription ;
+                rdfs:comment "Posición de un instante, expresada utilizando una descripción estructurada."@es ,
+                             "Position of an instant, expressed using a structured description"@en ;
+                rdfs:label "en descripción de fecha-hora"@es ,
+                           "in date-time description"@en .
+
+
+###  http://www.w3.org/2006/time#inTemporalPosition
+time:inTemporalPosition rdf:type owl:ObjectProperty ;
+                        rdfs:domain time:Instant ;
+                        rdfs:range time:TemporalPosition ;
+                        rdfs:comment "Posición de un instante de tiempo."@es ,
+                                     "Position of a time instant"@en ;
+                        rdfs:label "Temporal position"@en ,
+                                   "posición temporal"@es .
+
+
+###  http://www.w3.org/2006/time#inTimePosition
+time:inTimePosition rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf time:inTemporalPosition ;
+                    rdfs:domain time:Instant ;
+                    rdfs:range time:TimePosition ;
+                    rdfs:comment "Posición de un instante, expresada como una coordenada temporal o un valor nominal."@es ,
+                                 "Position of an instant, expressed as a temporal coordinate or nominal value"@en ;
+                    rdfs:label "Time position"@en ,
+                               "posición de tiempo"@es .
+
+
+###  http://www.w3.org/2006/time#inside
+time:inside rdf:type owl:ObjectProperty ;
+            rdfs:domain time:Interval ;
+            rdfs:range time:Instant ;
+            rdfs:comment "An instant that falls inside the interval. It is not intended to include beginnings and ends of intervals."@en ,
+                         "Un instante que cae dentro del intervalo. Se asume que no es ni el principio ni el final de ningún intervalo."@es ;
+            rdfs:label "has time instant inside"@en ,
+                       "tiene instante de tiempo dentro"@es .
+
+
+###  http://www.w3.org/2006/time#intervalAfter
+time:intervalAfter rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf time:after ,
+                                      time:intervalDisjoint ;
+                   owl:inverseOf time:intervalBefore ;
+                   rdfs:domain time:ProperInterval ;
+                   rdfs:range time:ProperInterval ;
+                   rdfs:comment "If a proper interval T1 is intervalAfter another proper interval T2, then the beginning of T1 is after the end of T2."@en ,
+                                "Si un intervalo propio T1 es posterior a otro intervalo propio T2, entonces el principio de T1 está después que el final de T2." ;
+                   rdfs:label "interval after"@en ,
+                              "intervalo posterior"@es .
+
+
+###  http://www.w3.org/2006/time#intervalBefore
+time:intervalBefore rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf time:before ,
+                                       time:intervalDisjoint ;
+                    rdfs:domain time:ProperInterval ;
+                    rdfs:range time:ProperInterval ;
+                    rdfs:comment "If a proper interval T1 is intervalBefore another proper interval T2, then the end of T1 is before the beginning of T2."@en ,
+                                 "Si un intervalo propio T1 está antes que otro intervalo propio T2, entonces el final de T1 está antes que el principio de T2."@es ;
+                    rdfs:label "interval before"@en ,
+                               "intervalo anterior"@es .
+
+
+###  http://www.w3.org/2006/time#intervalContains
+time:intervalContains rdf:type owl:ObjectProperty ;
+                      owl:inverseOf time:intervalDuring ;
+                      rdfs:domain time:ProperInterval ;
+                      rdfs:range time:ProperInterval ;
+                      rdfs:comment "If a proper interval T1 is intervalContains another proper interval T2, then the beginning of T1 is before the beginning of T2, and the end of T1 is after the end of T2."@en ,
+                                   "Si un intervalo propio T1 contiene otro intervalo propio T2, entonces el principio de T1 está antes que el principio de T2, y el final de T1 está después del final de T2."@es ;
+                      rdfs:label "interval contains"@en ,
+                                 "intervalo contiene"@es .
+
+
+###  http://www.w3.org/2006/time#intervalDisjoint
+time:intervalDisjoint rdf:type owl:ObjectProperty ;
+                      rdfs:domain time:ProperInterval ;
+                      rdfs:range time:ProperInterval ;
+                      rdfs:comment "If a proper interval T1 is intervalDisjoint another proper interval T2, then the beginning of T1 is after the end of T2, or the end of T1 is before the beginning of T2, i.e. the intervals do not overlap in any way, but their ordering relationship is not known."@en ,
+                                   "Si un intervalo propio T1 es disjunto con otro intervalo propio T2, entonces el principio de T1 está después del final de T2, o el final de T1 está antes que el principio de T2, es decir, los intervalos no se solapan de ninguna forma, aunque su relación de orden no se conozca."@es ;
+                      rdfs:label "interval disjoint"@en ,
+                                 "intervalo disjunto"@es .
+
+
+###  http://www.w3.org/2006/time#intervalDuring
+time:intervalDuring rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf time:intervalIn ;
+                    rdfs:domain time:ProperInterval ;
+                    rdfs:range time:ProperInterval ;
+                    rdfs:comment "If a proper interval T1 is intervalDuring another proper interval T2, then the beginning of T1 is after the beginning of T2, and the end of T1 is before the end of T2."@en ,
+                                 "Si un intervalo propio T1 está durante otro intervalo propio T2, entonces del principio de T1 está después del principio de T2, y el final de T1 está antes que el final de T2."@es ;
+                    rdfs:label "interval during"@en ,
+                               "intervalo durante"@es .
+
+
+###  http://www.w3.org/2006/time#intervalEquals
+time:intervalEquals rdf:type owl:ObjectProperty ;
+                    rdfs:domain time:ProperInterval ;
+                    rdfs:range time:ProperInterval ;
+                    owl:propertyDisjointWith time:intervalIn ;
+                    rdfs:comment "If a proper interval T1 is intervalEquals another proper interval T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is coincident with the end of T2."@en ,
+                                 "Si un intervalo propio T1 es igual a otro intervalo propio T2, entonces el principio de T1 coincide con el principio de T2, y el final de T1 coincide con el final de T2."@es ;
+                    rdfs:label "interval equals"@en ,
+                               "intervalo igual"@es .
+
+
+###  http://www.w3.org/2006/time#intervalFinishedBy
+time:intervalFinishedBy rdf:type owl:ObjectProperty ;
+                        owl:inverseOf time:intervalFinishes ;
+                        rdfs:domain time:ProperInterval ;
+                        rdfs:range time:ProperInterval ;
+                        rdfs:comment "If a proper interval T1 is intervalFinishedBy another proper interval T2, then the beginning of T1 is before the beginning of T2, and the end of T1 is coincident with the end of T2."@en ,
+                                     "Si un intervalo propio T1 está terminado por otro intervalo propio T2, entonces el principio de T1 está antes que el principio de T2, y el final de T1 coincide con el final de T2."@es ;
+                        rdfs:label "interval finished by"@en ,
+                                   "intervalo terminado por"@es .
+
+
+###  http://www.w3.org/2006/time#intervalFinishes
+time:intervalFinishes rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf time:intervalIn ;
+                      rdfs:domain time:ProperInterval ;
+                      rdfs:range time:ProperInterval ;
+                      rdfs:comment "If a proper interval T1 is intervalFinishes another proper interval T2, then the beginning of T1 is after the beginning of T2, and the end of T1 is coincident with the end of T2."@en ,
+                                   "Si un intervalo propio T1 termina otro intervalo propio T2, entonces del principio de T1 está después del principio de T2, y el final de T1 coincide con el final de T2."@es ;
+                      rdfs:label "interval finishes"@en ,
+                                 "intervalo termina"@es .
+
+
+###  http://www.w3.org/2006/time#intervalIn
+time:intervalIn rdf:type owl:ObjectProperty ;
+                rdfs:domain time:ProperInterval ;
+                rdfs:range time:ProperInterval ;
+                rdfs:comment "If a proper interval T1 is intervalIn another proper interval T2, then the beginning of T1 is after the beginning of T2 or is coincident with the beginning of T2, and the end of T1 is before the end of T2, or is coincident with the end of T2, except that end of T1 may not be coincident with the end of T2 if the beginning of T1 is coincident with the beginning of T2."@en ,
+                             "Si un intervalo propio T1 es un intervalo interior a otro intervalo propio T2, entonces el principio de T1 está después del principio de T2 o coincide con el principio de T2, y el final de T1 está antes que el final de T2, o coincide con el final de T2, excepto que el final de T1 puede no coincidir con el final de T2 si el principio de T1 coincide con el principio de T2."@es ;
+                rdfs:label "interval in"@en ,
+                           "intervalo interior"@es .
+
+
+###  http://www.w3.org/2006/time#intervalMeets
+time:intervalMeets rdf:type owl:ObjectProperty ;
+                   owl:inverseOf time:intervalMetBy ;
+                   rdfs:domain time:ProperInterval ;
+                   rdfs:range time:ProperInterval ;
+                   rdfs:comment "If a proper interval T1 is intervalMeets another proper interval T2, then the end of T1 is coincident with the beginning of T2."@en ,
+                                "Si un intervalo propio T1 se encuentra con otro intervalo propio T2, entonces el final de T1 coincide con el principio de T2."@es ;
+                   rdfs:label "interval meets"@en ,
+                              "intervalo se encuentra"@es .
+
+
+###  http://www.w3.org/2006/time#intervalMetBy
+time:intervalMetBy rdf:type owl:ObjectProperty ;
+                   rdfs:domain time:ProperInterval ;
+                   rdfs:range time:ProperInterval ;
+                   rdfs:comment "If a proper interval T1 is intervalMetBy another proper interval T2, then the beginning of T1 is coincident with the end of T2."@en ,
+                                "Si un intervalo propio T1 es 'intervalo encontrado por' otro intervalo propio T2, entonces el principio de T1 coincide con el final de T2."@es ;
+                   rdfs:label "interval met by"@en ,
+                              "intervalo encontrado por"@es .
+
+
+###  http://www.w3.org/2006/time#intervalOverlappedBy
+time:intervalOverlappedBy rdf:type owl:ObjectProperty ;
+                          owl:inverseOf time:intervalOverlaps ;
+                          rdfs:domain time:ProperInterval ;
+                          rdfs:range time:ProperInterval ;
+                          rdfs:comment "If a proper interval T1 is intervalOverlappedBy another proper interval T2, then the beginning of T1 is after the beginning of T2, the beginning of T1 is before the end of T2, and the end of T1 is after the end of T2."@en ,
+                                       "Si un intervalo propio T1 es 'intervalo solapado por' otro intervalo propio T2, entonces el principio de T1 es posterior al principio de T2, y el principio de T1 es anterior al final de T2, y el final de T1 es posterior al final de T2."@es ;
+                          rdfs:label "interval overlapped by"@en ,
+                                     "intervalo solapado por"@es .
+
+
+###  http://www.w3.org/2006/time#intervalOverlaps
+time:intervalOverlaps rdf:type owl:ObjectProperty ;
+                      rdfs:domain time:ProperInterval ;
+                      rdfs:range time:ProperInterval ;
+                      rdfs:comment "Asume una dirección en el tiempo. Si una entidad temporal T1 está después de otra entidad temporal T2, entonces el principio de T1 está después del final de T2."@es ,
+                                   "If a proper interval T1 is intervalOverlaps another proper interval T2, then the beginning of T1 is before the beginning of T2, the end of T1 is after the beginning of T2, and the end of T1 is before the end of T2."@en ,
+                                   "Si un intervalo propio T1 se solapa con otro intervalo propio T2, entonces el principio de T1 es anterior al principio de T2, el final de T1 es posterior al principio de T2, y el final de T1 es anterior al final de T2."@es ;
+                      rdfs:label "interval overlaps"@en ,
+                                 "intervalo se solapa"@es .
+
+
+###  http://www.w3.org/2006/time#intervalStartedBy
+time:intervalStartedBy rdf:type owl:ObjectProperty ;
+                       owl:inverseOf time:intervalStarts ;
+                       rdfs:domain time:ProperInterval ;
+                       rdfs:range time:ProperInterval ;
+                       rdfs:comment "If a proper interval T1 is intervalStarted another proper interval T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is after the end of T2."@en ,
+                                    "Si un intervalo propio T1 es empezado por otro intervalo propio T2, entonces el principio de T1 coincide con el principio de T2, y el final de T1 es posterior al final de T2."@es ;
+                       rdfs:label "interval started by"@en .
+
+
+###  http://www.w3.org/2006/time#intervalStarts
+time:intervalStarts rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf time:intervalIn ;
+                    rdfs:domain time:ProperInterval ;
+                    rdfs:range time:ProperInterval ;
+                    rdfs:comment "If a proper interval T1 is intervalStarts another proper interval T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is before the end of T2."@en ,
+                                 "Si un intervalo propio T1 empieza otro intervalo propio T2, entonces del principio de T1 con el principio de T2, y el final de T1 es anterior al final de T2."@es ;
+                    rdfs:label "interval starts"@en ,
+                               "intervalo empieza"@es .
+
+
+###  http://www.w3.org/2006/time#monthOfYear
+time:monthOfYear rdf:type owl:ObjectProperty ;
+                 rdfs:domain time:GeneralDateTimeDescription ;
+                 rdfs:range time:MonthOfYear ;
+                 rdfs:comment "El mes del año, cuyo valor es un miembro de la clase 'mes del año'."@es ,
+                              "The month of the year, whose value is a member of the class time:MonthOfYear"@en ;
+                 rdfs:label "mes del año"@es ,
+                            "month of year"@en .
+
+
+###  http://www.w3.org/2006/time#timeZone
+time:timeZone rdf:type owl:ObjectProperty ;
+              rdfs:domain time:GeneralDateTimeDescription ;
+              rdfs:range time:TimeZone ;
+              rdfs:comment "The time zone for clock elements in the temporal position"@en ;
+              rdfs:label "en huso horario"@es ,
+                         "in time zone"@en .
+
+
+###  http://www.w3.org/2006/time#unitType
+time:unitType rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( time:Duration
+                                          time:GeneralDateTimeDescription
+                                        )
+                          ] ;
+              rdfs:range time:TemporalUnit ;
+              rdfs:comment "La unidad de tiempo que proporciona la precisión de un valor fecha-hora o la escala de una extensión temporal."@es ,
+                           "The temporal unit which provides the precision of a date-time value or scale of a temporal extent"@en ;
+              rdfs:label "temporal unit type"@en ,
+                         "tipo de unidad temporal"@es .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/gmo#alsoKnownAs
+agentrole:alsoKnownAs rdf:type owl:DatatypeProperty ;
+                      rdfs:domain agentrole:InformationObject .
+
+
+###  http://example.org/gmo#familyOrSurname
+agentrole:familyOrSurname rdf:type owl:DatatypeProperty ;
+                          rdfs:domain agentrole:PersonName .
+
+
+###  http://example.org/gmo#firstOrGivenName
+agentrole:firstOrGivenName rdf:type owl:DatatypeProperty ;
+                           rdfs:domain agentrole:PersonName .
+
+
+###  http://example.org/gmo#fullName
+agentrole:fullName rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf agentrole:hasLiteralValue ;
+                   rdfs:domain agentrole:PersonName .
+
+
+###  http://example.org/gmo#hasCanonicalName
+agentrole:hasCanonicalName rdf:type owl:DatatypeProperty ;
+                           rdfs:domain agentrole:InformationObject .
+
+
+###  http://example.org/gmo#hasCurrencyValue
+agentrole:hasCurrencyValue rdf:type owl:DatatypeProperty ;
+                           rdfs:domain agentrole:AwardAmount ;
+                           rdfs:range xsd:decimal .
+
+
+###  http://example.org/gmo#hasDescription
+agentrole:hasDescription rdf:type owl:DatatypeProperty ;
+                         rdfs:domain agentrole:InformationObject .
+
+
+###  http://example.org/gmo#hasIdentifierScheme
+agentrole:hasIdentifierScheme rdf:type owl:DatatypeProperty ;
+                              rdfs:domain agentrole:Identifier .
+
+
+###  http://example.org/gmo#hasIdentifierValue
+agentrole:hasIdentifierValue rdf:type owl:DatatypeProperty ;
+                             rdfs:domain agentrole:Identifier .
+
+
+###  http://example.org/gmo#hasLiteralValue
+agentrole:hasLiteralValue rdf:type owl:DatatypeProperty ;
+                          rdfs:domain agentrole:PersonalInfoItem .
+
+
+###  http://example.org/gmo#hasName
+agentrole:hasName rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "hasName" .
+
+
+###  http://example.org/gmo#hasWebpage
+agentrole:hasWebpage rdf:type owl:DatatypeProperty ;
+                     rdfs:domain agentrole:InformationObject ;
+                     rdfs:range xsd:anyURI ;
+                     rdfs:label "hasWebpage" .
+
+
+###  http://www.w3.org/2006/time#day
+time:day rdf:type owl:DatatypeProperty ;
+         rdfs:domain time:GeneralDateTimeDescription ;
+         rdfs:comment """Day position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar day from any calendar. """@en ,
+                      "Posición de día en un sistema calendario-reloj."@es ;
+         rdfs:label "day"@en ,
+                    "día"@es .
+
+
+###  http://www.w3.org/2006/time#dayOfYear
+time:dayOfYear rdf:type owl:DatatypeProperty ;
+               rdfs:domain time:GeneralDateTimeDescription ;
+               rdfs:range xsd:nonNegativeInteger ;
+               rdfs:comment "El número de día en el año."@es ,
+                            "The number of the day within the year"@en ;
+               rdfs:label "day of year"@en ,
+                          "día del año"@es .
+
+
+###  http://www.w3.org/2006/time#days
+time:days rdf:type owl:DatatypeProperty ;
+          rdfs:domain time:GeneralDurationDescription ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "Longitud de, o elemento de la longitud de, una extensión temporal expresada en días."@es ,
+                       "length of, or element of the length of, a temporal extent expressed in days"@en ;
+          rdfs:label "days duration"@en ,
+                     "duración en días"@es .
+
+
+###  http://www.w3.org/2006/time#hasXSDDuration
+time:hasXSDDuration rdf:type owl:DatatypeProperty ;
+                    rdfs:domain time:TemporalEntity ;
+                    rdfs:range xsd:duration ;
+                    rdfs:comment "Extensión de una entidad temporal, expresada utilizando xsd:duration."@es ,
+                                 "Extent of a temporal entity, expressed using xsd:duration"@en ;
+                    rdfs:label "has XSD duration"@en ,
+                               "tiene duración XSD"@es .
+
+
+###  http://www.w3.org/2006/time#hour
+time:hour rdf:type owl:DatatypeProperty ;
+          rdfs:domain time:GeneralDateTimeDescription ;
+          rdfs:range xsd:nonNegativeInteger ;
+          rdfs:comment "Hour position in a calendar-clock system."@en ,
+                       "Posición de hora en un sistema calendario-reloj."@es ;
+          rdfs:label "hora"@es ,
+                     "hour"@en .
+
+
+###  http://www.w3.org/2006/time#hours
+time:hours rdf:type owl:DatatypeProperty ;
+           rdfs:domain time:GeneralDurationDescription ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "Longitud de, o elemento de la longitud de, una extensión temporal expresada en horas."@es ,
+                        "length of, or element of the length of, a temporal extent expressed in hours"@en ;
+           rdfs:label "duración en horas"@es ,
+                      "hours duration"@en .
+
+
+###  http://www.w3.org/2006/time#inXSDDate
+time:inXSDDate rdf:type owl:DatatypeProperty ;
+               rdfs:domain time:Instant .
+
+
+###  http://www.w3.org/2006/time#inXSDDateTime
+time:inXSDDateTime rdf:type owl:DatatypeProperty ;
+                   rdfs:domain time:Instant ;
+                   rdfs:range xsd:dateTime ;
+                   rdfs:comment "Posición de un instante, expresado utilizando xsd:dateTime."@es ,
+                                "Position of an instant, expressed using xsd:dateTime"@en ;
+                   rdfs:label "en fecha-tiempo XSD"@es ,
+                              "in XSD Date-Time"@en ;
+                   owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://www.w3.org/2006/time#inXSDDateTimeStamp
+time:inXSDDateTimeStamp rdf:type owl:DatatypeProperty ;
+                        rdfs:domain time:Instant ;
+                        rdfs:range xsd:dateTimeStamp ;
+                        rdfs:comment "Posición de un instante, expresado utilizando xsd:dateTimeStamp."@es ,
+                                     "Position of an instant, expressed using xsd:dateTimeStamp"@en ;
+                        rdfs:label "en fecha-sello de tiempo XSD"@es ,
+                                   "in XSD Date-Time-Stamp"@en .
+
+
+###  http://www.w3.org/2006/time#inXSDgYear
+time:inXSDgYear rdf:type owl:DatatypeProperty ;
+                rdfs:domain time:Instant ;
+                rdfs:range xsd:gYear ;
+                rdfs:comment "Posición de un instante, expresado utilizando xsd:gYear."@es ,
+                             "Position of an instant, expressed using xsd:gYear"@en ;
+                rdfs:label "en año gregoriano XSD"@es ,
+                           "in XSD g-Year"@en .
+
+
+###  http://www.w3.org/2006/time#inXSDgYearMonth
+time:inXSDgYearMonth rdf:type owl:DatatypeProperty ;
+                     rdfs:domain time:Instant ;
+                     rdfs:range xsd:gYearMonth ;
+                     rdfs:comment "Posición de un instante, expresado utilizando xsd:gYearMonth."@es ,
+                                  "Position of an instant, expressed using xsd:gYearMonth"@en ;
+                     rdfs:label "en año-mes gregoriano XSD"@es ,
+                                "in XSD g-YearMonth"@en .
+
+
+###  http://www.w3.org/2006/time#minute
+time:minute rdf:type owl:DatatypeProperty ;
+            rdfs:domain time:GeneralDateTimeDescription ;
+            rdfs:range xsd:nonNegativeInteger ;
+            rdfs:comment "Minute position in a calendar-clock system."@en ,
+                         "Posición de minuto en un sistema calendario-reloj."@es ;
+            rdfs:label "minute"@en ,
+                       "minuto"@es .
+
+
+###  http://www.w3.org/2006/time#minutes
+time:minutes rdf:type owl:DatatypeProperty ;
+             rdfs:domain time:GeneralDurationDescription ;
+             rdfs:range xsd:decimal ;
+             rdfs:comment "Longitud de, o elemento de la longitud de, una extensión temporal expresada en minutos."@es ,
+                          "length, or element of, a temporal extent expressed in minutes"@en ;
+             rdfs:label "minutes"@en ,
+                        "minutos"@es .
+
+
+###  http://www.w3.org/2006/time#month
+time:month rdf:type owl:DatatypeProperty ;
+           rdfs:domain time:GeneralDateTimeDescription ;
+           rdfs:comment """Month position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar month from any calendar. """@en ,
+                        """Posición de mes en un sistema calendario-reloj.
+    El rango de esta propiedad no está especificado, por tanto, se puede reemplazar por cualquier representación específica de un mes de calendario de un calendario cualquiera."""@es ;
+           rdfs:label "mes"@es ,
+                      "month"@en .
+
+
+###  http://www.w3.org/2006/time#months
+time:months rdf:type owl:DatatypeProperty ;
+            rdfs:domain time:GeneralDurationDescription ;
+            rdfs:range xsd:decimal ;
+            rdfs:comment "Longitud de, o elemento de la longitud de, una extensión temporal expresada en meses."@es ,
+                         "length of, or element of the length of, a temporal extent expressed in months"@en ;
+            rdfs:label "duración en meses"@es ,
+                       "months duration"@en .
+
+
+###  http://www.w3.org/2006/time#nominalPosition
+time:nominalPosition rdf:type owl:DatatypeProperty ;
+                     rdfs:domain time:TimePosition ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "El valor (nominal) que indica posición temporal en un sistema de referencia ordinal."@es ,
+                                  "The (nominal) value indicating temporal position in an ordinal reference system "@en ;
+                     rdfs:label "Name of temporal position"@en ,
+                                "nombre de posición temporal"@es .
+
+
+###  http://www.w3.org/2006/time#numericDuration
+time:numericDuration rdf:type owl:DatatypeProperty ;
+                     rdfs:domain time:Duration ;
+                     rdfs:range xsd:decimal ;
+                     rdfs:comment "Valor de una extensión temporal expresada como un número decimal escalado por una unidad de tiempo."@es ,
+                                  "Value of a temporal extent expressed as a decimal number scaled by a temporal unit"@en ;
+                     rdfs:label "Numeric value of temporal duration"@en ,
+                                "valor numérico de duración temporal"@es .
+
+
+###  http://www.w3.org/2006/time#numericPosition
+time:numericPosition rdf:type owl:DatatypeProperty ;
+                     rdfs:domain time:TimePosition ;
+                     rdfs:range xsd:decimal ;
+                     rdfs:comment "El valor (numérico) que indica posición temporal en un sistema de referencia ordinal."@es ,
+                                  "The (numeric) value indicating position within a temporal coordinate system "@en ;
+                     rdfs:label "Numeric value of temporal position"@en ,
+                                "valor numérico de posición temporal"@es .
+
+
+###  http://www.w3.org/2006/time#second
+time:second rdf:type owl:DatatypeProperty ;
+            rdfs:domain time:GeneralDateTimeDescription ;
+            rdfs:range xsd:decimal ;
+            rdfs:comment "Posición de segundo en un sistema calendario-reloj."@es ,
+                         "Second position in a calendar-clock system."@en ;
+            rdfs:label "second"@en ,
+                       "segundo"@es .
+
+
+###  http://www.w3.org/2006/time#seconds
+time:seconds rdf:type owl:DatatypeProperty ;
+             rdfs:domain time:GeneralDurationDescription ;
+             rdfs:range xsd:decimal ;
+             rdfs:comment "Longitud de, o elemento de la longitud de, una extensión temporal expresada en segundos."@es ,
+                          "length of, or element of the length of, a temporal extent expressed in seconds"@en ;
+             rdfs:label "duración en segundos"@es ,
+                        "seconds duration"@en ;
+             rdfs:seeAlso <http://www.bipm.org/en/publications/si-brochure/second.html> .
+
+
+###  http://www.w3.org/2006/time#week
+time:week rdf:type owl:DatatypeProperty ;
+          rdfs:domain time:GeneralDateTimeDescription ;
+          rdfs:range xsd:nonNegativeInteger ;
+          rdfs:comment "Número de semana en el año."@es ,
+                       "Week number within the year."@en ;
+          rdfs:label "semana"@es ,
+                     "week"@en .
+
+
+###  http://www.w3.org/2006/time#weeks
+time:weeks rdf:type owl:DatatypeProperty ;
+           rdfs:domain time:GeneralDurationDescription ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "Longitud de, o elemento de la longitud de, una extensión temporal expresada en semanas."@es ,
+                        "length of, or element of the length of, a temporal extent expressed in weeks"@en ;
+           rdfs:label "duración en semanas"@es ,
+                      "weeks duration"@en .
+
+
+###  http://www.w3.org/2006/time#xsdDateTime
+time:xsdDateTime rdf:type owl:DatatypeProperty ;
+                 rdfs:domain time:DateTimeInterval ;
+                 rdfs:range xsd:dateTime ;
+                 rdfs:comment "Valor de 'intervalo de fecha-hora' expresado como un valor compacto."@es ,
+                              "Value of DateTimeInterval expressed as a compact value."@en ;
+                 rdfs:label "has XSD date-time"@en ,
+                            "tiene fecha-hora XSD"@es ;
+                 owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://www.w3.org/2006/time#year
+time:year rdf:type owl:DatatypeProperty ;
+          rdfs:domain time:GeneralDateTimeDescription ;
+          rdfs:comment """Posición de año en un sistema calendario-reloj.
+
+l rango de esta propiedad no está especificado, por tanto, se puede reemplazar por cualquier representación específica de un año de calendario de un calendario cualquiera."""@es ,
+                       """Year position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar year from any calendar. """@en ;
+          rdfs:label "year"@en .
+
+
+###  http://www.w3.org/2006/time#years
+time:years rdf:type owl:DatatypeProperty ;
+           rdfs:domain time:GeneralDurationDescription ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "Longitud de, o elemento de la longitud de, una extensión temporal expresada en años."@es ,
+                        "length of, or element of the length of, a temporal extent expressed in years"@en ;
+           rdfs:label "duración en años"@es ,
+                      "years duration"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/gmo#AgencyProgramManagerRole
+agentrole:AgencyProgramManagerRole rdf:type owl:Class ;
+                                   rdfs:subClassOf agentrole:AgentRole ;
+                                   rdfs:label "AgencyProgramManagerRole" .
+
+
+###  http://example.org/gmo#Agent
+agentrole:Agent rdf:type owl:Class ;
+                rdfs:comment """Represents agents, e.g., persons, organizations, etc.
+Can be used as a hook of a more detailed model of agent.""" ;
+                rdfs:label "Agent" .
+
+
+###  http://example.org/gmo#AgentRole
+agentrole:AgentRole rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty agentrole:hasAgentRoleType ;
+                                      owl:allValuesFrom agentrole:AgentRoleType
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty agentrole:hasTemporalExtent ;
+                                      owl:allValuesFrom time:TemporalEntity
+                                    ] ,
+                                    _:genid34 ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty agentrole:agentRoleIn ;
+                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty agentrole:hasTemporalExtent ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass time:TemporalEntity
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty agentrole:performedBy ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass agentrole:Agent
+                                    ] ;
+                    rdfs:comment "An instance of AgentRole represents a role performed by an agent, which is temporally restricted by a starting and ending time.  Every agent role is performed by exactly one agent. One can create a subclass of AgentRole to model a particular kind of roles." ;
+                    rdfs:label "AgentRole" .
+
+_:genid34 rdf:type owl:Restriction ;
+           owl:onProperty agentrole:performedBy ;
+           owl:allValuesFrom agentrole:Agent .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource agentrole:AgentRole ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid34 ;
+   rdfs:comment "Guarded range for performedBy (range: Agent, guard: AgentRole)"
+ ] .
+
+
+###  http://example.org/gmo#AgentRoleType
+agentrole:AgentRoleType rdf:type owl:Class ;
+                        rdfs:comment "Class that contains types of agent roles. Allows one to put types of agent roles (which can be seen as subclasses of AgentRole) as named individuals, and the axiomatization could infer anonymous subclasses of AgentRole from those individuals." ;
+                        rdfs:label "AgentRoleType" .
+
+
+###  http://example.org/gmo#Attribute
+agentrole:Attribute rdf:type owl:Class ;
+                    rdfs:comment "Represents all kinds of attributes of a fix or a segment in a trajectory." ;
+                    rdfs:label "Attribute" .
+
+
+###  http://example.org/gmo#AwardAmount
+agentrole:AwardAmount rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty agentrole:hasCurrencyCode ;
+                                        owl:allValuesFrom agentrole:CurrencyCode
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty agentrole:hasCurrencyCode ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass agentrole:CurrencyCode
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty agentrole:hasCurrencyValue ;
+                                        owl:allValuesFrom xsd:decimal
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty agentrole:hasCurrencyValue ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:decimal
+                                      ] ;
+                      rdfs:label "AwardAmount" .
+
+
+###  http://example.org/gmo#CoPrincipalInvestigatorRole
+agentrole:CoPrincipalInvestigatorRole rdf:type owl:Class ;
+                                      rdfs:subClassOf agentrole:AgentRole ;
+                                      rdfs:label "CoPrincipalInvestigatorRole" .
+
+
+###  http://example.org/gmo#CollectorRole
+agentrole:CollectorRole rdf:type owl:Class ;
+                        rdfs:subClassOf agentrole:AgentRole ;
+                        rdfs:label "CollectorRole" .
+
+
+###  http://example.org/gmo#ContactRole
+agentrole:ContactRole rdf:type owl:Class ;
+                      rdfs:subClassOf agentrole:AgentRole ;
+                      rdfs:label "ContactRole" .
+
+
+###  http://example.org/gmo#ContributorRole
+agentrole:ContributorRole rdf:type owl:Class ;
+                          rdfs:subClassOf agentrole:AgentRole ;
+                          rdfs:label "ContributorRole" .
+
+
+###  http://example.org/gmo#Cruise
+agentrole:Cruise rdf:type owl:Class ;
+                 rdfs:subClassOf agentrole:Event ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:associatedWithProgram ;
+                                   owl:allValuesFrom agentrole:Program
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:describedBy ;
+                                   owl:allValuesFrom agentrole:InformationObject
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:fundedBy ;
+                                   owl:allValuesFrom agentrole:FundingAward
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:hasRelatedCruise ;
+                                   owl:allValuesFrom agentrole:Cruise
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:hasTrajectory ;
+                                   owl:allValuesFrom agentrole:CruiseTrajectory
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:providesAgentRole ;
+                                   owl:allValuesFrom agentrole:AgentRole
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:undertakenBy ;
+                                   owl:allValuesFrom agentrole:Vessel
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:describedBy ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass agentrole:InformationObject
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:hasTrajectory ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass agentrole:CruiseTrajectory
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:undertakenBy ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass agentrole:Vessel
+                                 ] ;
+                 rdfs:comment """A cruise is an event through the alignment with Event pattern. A cruise has exactly one trajectory, is undertaken by exactly one vessel, and is described by exactly one information object. Additionally, this information object describes exactly only the cruise. If a cruise is undertaken by a vessel, then the trajectory of the cruise has to be traveled by the vessel. Note that since isTraveledBy is implied by a property chain, OWL 2 specification forbids us to express a cardinality restriction using this peroperty. Consequently, we cannot axiomatize that the trajectory of a cruise can only be traveled by one vessel.
+
+Involvements of agents in a cruise is modeled via the AgentRole, which is aligned to the Agent Role pattern. A cruise may be funded by some funding award, associated with some program, and related to some other cruise. These information are attached to the information object associated with a cruise.""" ;
+                 rdfs:label "Cruise" .
+
+
+###  http://example.org/gmo#CruiseTrajectory
+agentrole:CruiseTrajectory rdf:type owl:Class ;
+                           rdfs:subClassOf agentrole:Trajectory ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty agentrole:hasFix ;
+                                             owl:someValuesFrom [ owl:intersectionOf ( agentrole:StartingFix
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty agentrole:hasNextFix ;
+                                                                                         owl:someValuesFrom agentrole:Fix
+                                                                                       ]
+                                                                                     ) ;
+                                                                  rdf:type owl:Class
+                                                                ]
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty agentrole:traveledBy ;
+                                             owl:allValuesFrom agentrole:Vessel
+                                           ] ;
+                           rdfs:comment """A trajectory is given by a collection of fixes, representing time-stamped locations. Non-spatiotemporal information specific to a fix can be included by assigning it some attributes, for example, to indicate that the fix is the arrival to some port stop. The ordering of the fixes is based on their temporal information, although such an ordering is not axiomatized in this pattern. Between two consecutive fixes, we can define a segment, which is traversed by some moving object. There is no requirement forcing that all segments in the trajectory can only be traversed by the same moving object.
+
+In the context of GeoLink project, the data typically already contains ordering of fixes, i.e., the nextFix relation is explicit in the data, and thus, segments are auto-instantiated from it. This is motivated by real scenarios whereby indeed only properties of fixes will often be known, in particular their locations, and temporal extension, whether they are at ports, whether they are arrival or departure fixes from ports, and in which sequence the fixes occurred. The traversing vessel will usually also be known. However, trajectory segments to which the trajectory pattern attaches information about the vessel are usually not explicitly represented in the data.""" ;
+                           rdfs:label "Trajectory" .
+
+
+###  http://example.org/gmo#CuratorRole
+agentrole:CuratorRole rdf:type owl:Class ;
+                      rdfs:subClassOf agentrole:AgentRole ;
+                      rdfs:label "CuratorRole" .
+
+
+###  http://example.org/gmo#CurrencyCode
+agentrole:CurrencyCode rdf:type owl:Class ;
+                       rdfs:label "CurrencyCode" .
+
+
+###  http://example.org/gmo#DataManagerRole
+agentrole:DataManagerRole rdf:type owl:Class ;
+                          rdfs:subClassOf agentrole:AgentRole ;
+                          rdfs:label "DataManagerRole" .
+
+
+###  http://example.org/gmo#EditorRole
+agentrole:EditorRole rdf:type owl:Class ;
+                     rdfs:subClassOf agentrole:AgentRole ;
+                     rdfs:label "EditorRole" .
+
+
+###  http://example.org/gmo#EndingFix
+agentrole:EndingFix rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( agentrole:Fix
+                                                               [ rdf:type owl:Class ;
+                                                                 owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty agentrole:hasNextFix ;
+                                                                                    owl:someValuesFrom agentrole:Fix
+                                                                                  ]
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:comment "An instance of EndingFix represents the final fix in the specification of a trajectory" ;
+                    rdfs:label "EndingFix" .
+
+
+###  http://example.org/gmo#Event
+agentrole:Event rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty agentrole:occursAtPlace ;
+                                  owl:someValuesFrom agentrole:Place
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty agentrole:occursAtTime ;
+                                  owl:someValuesFrom time:TemporalEntity
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty agentrole:endsAtTime ;
+                                  owl:allValuesFrom time:Instant
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty agentrole:occursAtPlace ;
+                                  owl:allValuesFrom agentrole:Place
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty agentrole:occursAtTime ;
+                                  owl:allValuesFrom time:TemporalEntity
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty agentrole:providesAgentRole ;
+                                  owl:allValuesFrom agentrole:AgentRole
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty agentrole:startsAtTime ;
+                                  owl:allValuesFrom time:Instant
+                                ] ;
+                rdfs:label "Event" .
+
+
+###  http://example.org/gmo#Feature
+agentrole:Feature rdf:type owl:Class .
+
+
+###  http://example.org/gmo#Fix
+agentrole:Fix rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty agentrole:atTime ;
+                                owl:someValuesFrom time:TemporalEntity
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty agentrole:hasPosition ;
+                                owl:someValuesFrom agentrole:Position
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty [ owl:inverseOf agentrole:hasFix
+                                               ] ;
+                                owl:someValuesFrom agentrole:Trajectory
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty agentrole:atTime ;
+                                owl:allValuesFrom time:TemporalEntity
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty agentrole:hasAttribute ;
+                                owl:allValuesFrom agentrole:Attribute
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty agentrole:hasDataSource ;
+                                owl:allValuesFrom agentrole:Source
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty agentrole:hasNextFix ;
+                                owl:allValuesFrom agentrole:Fix
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty agentrole:hasPosition ;
+                                owl:allValuesFrom agentrole:Position
+                              ] ;
+              rdfs:comment "A fix represents a spatiotemporal point in the specification of a trajectory.  A fix has a location and a time stamp, and always belongs to one particular trajectory. Also, a fix cannot be followed by more than one other fix, and cannot follow itself. This gives a linear structure in the ordering of the fixes." ;
+              rdfs:label "Fix" .
+
+
+###  http://example.org/gmo#FundingAward
+agentrole:FundingAward rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:providesAgentRole ;
+                                         owl:someValuesFrom agentrole:PrincipalInvestigatorRole
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:providesAgentRole ;
+                                         owl:someValuesFrom agentrole:SponsorRole
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:describedBy ;
+                                         owl:allValuesFrom agentrole:InformationObject
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:endsOnDate ;
+                                         owl:allValuesFrom time:Instant
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:hasAwardAmount ;
+                                         owl:allValuesFrom agentrole:AwardAmount
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:providesAgentRole ;
+                                         owl:allValuesFrom agentrole:AgentRole
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:startsOnDate ;
+                                         owl:allValuesFrom time:Instant
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:describedBy ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass agentrole:InformationObject
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:endsOnDate ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass time:Instant
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:startsOnDate ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass time:Instant
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:hasAwardAmount ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass agentrole:AwardAmount
+                                       ] ;
+                       rdfs:label "FundingAward" .
+
+
+###  http://example.org/gmo#Geometry
+agentrole:Geometry rdf:type owl:Class ;
+                   owl:equivalentClass geosparql:Geometry ;
+                   rdfs:comment "Represents geometry objects. Corresponds to GeoSPARQL's Geometry." ;
+                   rdfs:label "Geometry" .
+
+
+###  http://example.org/gmo#Identifier
+agentrole:Identifier rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Class ;
+                                       owl:complementOf [ rdf:type owl:Restriction ;
+                                                          owl:onProperty agentrole:describedBy ;
+                                                          owl:someValuesFrom agentrole:InformationObject
+                                                        ]
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:hasIdentifierScheme ;
+                                       owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                           owl:unionOf ( xsd:anyURI
+                                                                         xsd:string
+                                                                       )
+                                                         ]
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:hasIdentifierValue ;
+                                       owl:allValuesFrom xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:hasIdentifierValue ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:hasIdentifierScheme ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                         owl:unionOf ( xsd:anyURI
+                                                                       xsd:string
+                                                                     )
+                                                       ]
+                                     ] ;
+                     rdfs:comment "Represents identifiers, each has exactly one identifier value and may have an identifier scheme." ;
+                     rdfs:label "Identifier" .
+
+
+###  http://example.org/gmo#InformationObject
+agentrole:InformationObject rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Class ;
+                                              owl:complementOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty agentrole:describedBy ;
+                                                                 owl:someValuesFrom agentrole:InformationObject
+                                                               ]
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty agentrole:hasAlternativeIdentifier ;
+                                              owl:allValuesFrom agentrole:Identifier
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty agentrole:hasPrimaryIdentifier ;
+                                              owl:allValuesFrom agentrole:Identifier
+                                            ] ,
+                                            _:genid107 ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty [ owl:inverseOf agentrole:describedBy
+                                                             ] ;
+                                              owl:cardinality "1"^^xsd:nonNegativeInteger
+                                            ] ,
+                                            _:genid111 ,
+                                            _:genid113 ,
+                                            _:genid115 ,
+                                            _:genid117 ;
+                            rdfs:comment "An InformationObject describes informational aspect of the described object, which are not definitional in nature, e.g., alternative identifiers, webpages, textual description, etc." ;
+                            rdfs:label "InformationObject" .
+
+_:genid107 rdf:type owl:Restriction ;
+            owl:onProperty agentrole:realizedBy ;
+            owl:allValuesFrom agentrole:InformationRealization .
+
+_:genid111 rdf:type owl:Restriction ;
+            owl:onProperty agentrole:alsoKnownAs ;
+            owl:allValuesFrom xsd:string .
+
+_:genid113 rdf:type owl:Restriction ;
+            owl:onProperty agentrole:hasCanonicalName ;
+            owl:allValuesFrom xsd:string .
+
+_:genid115 rdf:type owl:Restriction ;
+            owl:onProperty agentrole:hasDescription ;
+            owl:allValuesFrom xsd:string .
+
+_:genid117 rdf:type owl:Restriction ;
+            owl:onProperty agentrole:hasWebpage ;
+            owl:allValuesFrom xsd:anyURI .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource agentrole:InformationObject ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid107 ;
+   rdfs:comment "Range of realizedBy is InformationRealization  (guard: InformationObject)"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource agentrole:InformationObject ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid111 ;
+   rdfs:comment "Range of alsoKnownAs is xsd:string  (guard: InformationObject)"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource agentrole:InformationObject ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid113 ;
+   rdfs:comment "Range of hasCanonicalName is xsd:string  (guard: InformationObject)"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource agentrole:InformationObject ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid115 ;
+   rdfs:comment "Range of hasDescription is xsd:string  (guard: InformationObject)"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource agentrole:InformationObject ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid117 ;
+   rdfs:comment "Range of hasWebpage is xsd:anyURI  (guard: InformationObject)"
+ ] .
+
+
+###  http://example.org/gmo#InformationRealization
+agentrole:InformationRealization rdf:type owl:Class ;
+                                 rdfs:subClassOf [ rdf:type owl:Class ;
+                                                   owl:complementOf [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty agentrole:describedBy ;
+                                                                      owl:someValuesFrom agentrole:InformationObject
+                                                                    ]
+                                                 ] ;
+                                 rdfs:comment "Some InformationObjects may be realized in some concrete manifestation, e.g., different digital copies of a publication. InformationRealization captures such manifestations." ;
+                                 rdfs:label "InformationRealization" .
+
+
+###  http://example.org/gmo#MovingObject
+agentrole:MovingObject rdf:type owl:Class ;
+                       rdfs:label "MovingObject" .
+
+
+###  http://example.org/gmo#Organization
+agentrole:Organization rdf:type owl:Class ;
+                       rdfs:subClassOf agentrole:Agent ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:describedBy ;
+                                         owl:allValuesFrom agentrole:InformationObject
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:hasSite ;
+                                         owl:allValuesFrom agentrole:Place
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:hasSubOrganization ;
+                                         owl:allValuesFrom agentrole:Organization
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:providesAgentRole ;
+                                         owl:allValuesFrom agentrole:AgentRole
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty agentrole:describedBy ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass agentrole:InformationObject
+                                       ] ;
+                       rdfs:label "Organization" .
+
+
+###  http://example.org/gmo#Person
+agentrole:Person rdf:type owl:Class ;
+                 rdfs:subClassOf agentrole:Agent ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:hasPersonName ;
+                                   owl:someValuesFrom agentrole:PersonName
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:hasPersonName ;
+                                   owl:allValuesFrom agentrole:PersonName
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:hasPersonalInfoItem ;
+                                   owl:allValuesFrom agentrole:PersonalInfoItem
+                                 ] ;
+                 owl:disjointWith agentrole:PersonName ;
+                 rdfs:label "Person" .
+
+
+###  http://example.org/gmo#PersonName
+agentrole:PersonName rdf:type owl:Class ;
+                     rdfs:subClassOf agentrole:PersonalInfoItem ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:familyOrSurname ;
+                                       owl:allValuesFrom xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:firstOrGivenName ;
+                                       owl:allValuesFrom xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:fullName ;
+                                       owl:allValuesFrom xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:fullName ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:familyOrSurname ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:firstOrGivenName ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] .
+
+
+###  http://example.org/gmo#PersonalInfoItem
+agentrole:PersonalInfoItem rdf:type owl:Class ;
+                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                             owl:onProperty agentrole:endsAtTime ;
+                                             owl:allValuesFrom time:Instant
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty agentrole:startsAtTime ;
+                                             owl:allValuesFrom time:Instant
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty agentrole:startsAtTime ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass time:Instant
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty [ owl:inverseOf agentrole:hasPersonalInfoItem
+                                                            ] ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass agentrole:Person
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty agentrole:endsAtTime ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass time:Instant
+                                           ] ;
+                           rdfs:comment "Represents a personal information item such as names, addresses, etc." ;
+                           rdfs:label "PersonalInfoItem" .
+
+
+###  http://example.org/gmo#PhysicalSample
+agentrole:PhysicalSample rdf:type owl:Class ;
+                         rdfs:subClassOf agentrole:Feature ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty agentrole:derivedUsing ;
+                                           owl:allValuesFrom agentrole:SamplingProcess
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty agentrole:hasProperty ;
+                                           owl:allValuesFrom agentrole:Property
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty agentrole:originatesFrom ;
+                                           owl:allValuesFrom agentrole:Feature
+                                         ] .
+
+
+###  http://example.org/gmo#Place
+agentrole:Place rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty agentrole:describedBy ;
+                                  owl:allValuesFrom agentrole:InformationObject
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty agentrole:hasSpatialFootprint ;
+                                  owl:allValuesFrom agentrole:Geometry
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty agentrole:describedBy ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass agentrole:InformationObject
+                                ] ;
+                rdfs:comment "Represents a generic place, e.g., a port, a city, etc. May have a geometry information." ;
+                rdfs:label "Place" .
+
+
+###  http://example.org/gmo#Platform
+agentrole:Platform rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty agentrole:describedBy ;
+                                     owl:allValuesFrom agentrole:InformationObject
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty agentrole:describedBy ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass agentrole:InformationObject
+                                   ] ;
+                   rdfs:label "Platform" .
+
+
+###  http://example.org/gmo#Port
+agentrole:Port rdf:type owl:Class ;
+               rdfs:subClassOf agentrole:Place ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty agentrole:hasSpatialFootprint ;
+                                 owl:allValuesFrom agentrole:Position
+                               ] ,
+                               _:genid150 ;
+               rdfs:comment "Represents ports that may be relevant for a cruise." ;
+               rdfs:label "Port" .
+
+_:genid150 rdf:type owl:Restriction ;
+            owl:onProperty agentrole:r_Port ;
+            owl:hasSelf "true"^^xsd:boolean .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource agentrole:Port ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid150 ;
+   agentrole:DASE_RULE "R2___trajectory:hasPosition(?x,?y) ^ place:hasSpatialFootprint(?z,?y) ^ :Port(?z) -> :atPort(?x,?z)___If position of a fix corresponds to a (spatial footprint of a) port, then that fix is at that port.___http://gmo#freshObjectProperty1"
+ ] .
+
+
+###  http://example.org/gmo#Position
+agentrole:Position rdf:type owl:Class ;
+                   rdfs:subClassOf gml:Point ;
+                   rdfs:comment "Represents a geospatial location associated with a fix in the trajectory of a cruise. A position is understood as a point in either 2D or 3D space." ;
+                   rdfs:label "Position" .
+
+
+###  http://example.org/gmo#PrincipalInvestigatorRole
+agentrole:PrincipalInvestigatorRole rdf:type owl:Class ;
+                                    rdfs:subClassOf agentrole:AgentRole ;
+                                    rdfs:label "PrincipalInvestigatorRole" .
+
+
+###  http://example.org/gmo#Program
+agentrole:Program rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:describedBy ;
+                                    owl:allValuesFrom agentrole:InformationObject
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:endsOnDate ;
+                                    owl:allValuesFrom time:Instant
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:providesAgentRole ;
+                                    owl:allValuesFrom agentrole:AgentRole
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:startsOnDate ;
+                                    owl:allValuesFrom time:Instant
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:describedBy ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass agentrole:InformationObject
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:endsOnDate ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass time:Instant
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:startsOnDate ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass time:Instant
+                                  ] ;
+                  rdfs:label "Program" .
+
+
+###  http://example.org/gmo#ProgramManagerRole
+agentrole:ProgramManagerRole rdf:type owl:Class ;
+                             rdfs:subClassOf agentrole:AgentRole ;
+                             rdfs:label "ProgramManagerRole" .
+
+
+###  http://example.org/gmo#Property
+agentrole:Property rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty agentrole:hasUnit ;
+                                     owl:allValuesFrom agentrole:PropertyUnit
+                                   ] ;
+                   rdfs:label "Property" .
+
+
+###  http://example.org/gmo#PropertyUnit
+agentrole:PropertyUnit rdf:type owl:Class ;
+                       rdfs:label "PropertyUnit" .
+
+
+###  http://example.org/gmo#RegistrantRole
+agentrole:RegistrantRole rdf:type owl:Class ;
+                         rdfs:subClassOf agentrole:AgentRole ;
+                         rdfs:label "RegistrantRole" .
+
+
+###  http://example.org/gmo#RightsHolderRole
+agentrole:RightsHolderRole rdf:type owl:Class ;
+                           rdfs:subClassOf agentrole:AgentRole ;
+                           rdfs:label "RightsHolderRole" .
+
+
+###  http://example.org/gmo#SamplingProcess
+agentrole:SamplingProcess rdf:type owl:Class ;
+                          rdfs:subClassOf agentrole:Event ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty agentrole:hasInputFeature ;
+                                            owl:allValuesFrom agentrole:Feature
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty agentrole:hasInputFeature ;
+                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass agentrole:Feature
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty [ owl:inverseOf agentrole:derivedUsing
+                                                           ] ;
+                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass agentrole:PhysicalSample
+                                          ] .
+
+
+###  http://example.org/gmo#Segment
+agentrole:Segment rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:endsAtFix ;
+                                    owl:someValuesFrom agentrole:Fix
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:startsFromFix ;
+                                    owl:someValuesFrom agentrole:Fix
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty [ owl:inverseOf agentrole:hasSegment
+                                                   ] ;
+                                    owl:someValuesFrom agentrole:Trajectory
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:endsAtFix ;
+                                    owl:allValuesFrom agentrole:Fix
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:hasAttribute ;
+                                    owl:allValuesFrom agentrole:Attribute
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:startsFromFix ;
+                                    owl:allValuesFrom agentrole:Fix
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty agentrole:traversedBy ;
+                                    owl:allValuesFrom agentrole:MovingObject
+                                  ] ;
+                  rdfs:comment "A segment starts from exactly one fix, and for every fix with a successor fix, there is a segment that starts from it. If a fix belongs to a trajectory and there is a segment that starts from this fix, then the segment belongs to the trajectory. Furthermore, if a segment starts from a fix, then it ends at the successor of the fix." ;
+                  rdfs:label "Segment" .
+
+
+###  http://example.org/gmo#Source
+agentrole:Source rdf:type owl:Class ;
+                 rdfs:label "Source" .
+
+
+###  http://example.org/gmo#SponsorRole
+agentrole:SponsorRole rdf:type owl:Class ;
+                      rdfs:subClassOf agentrole:AgentRole ;
+                      rdfs:label "SponsorRole" .
+
+
+###  http://example.org/gmo#StartingFix
+agentrole:StartingFix rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( agentrole:Fix
+                                                                 [ rdf:type owl:Class ;
+                                                                   owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty [ owl:inverseOf agentrole:hasNextFix
+                                                                                                     ] ;
+                                                                                      owl:someValuesFrom agentrole:Fix
+                                                                                    ]
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:comment "An instance of StartingFix represents the first fix in a specification of a trajectory.  A trajectory is linked to at least two consecutive fixes where the first fix is the starting fix." ;
+                      rdfs:label "StartingFix" .
+
+
+###  http://example.org/gmo#Trajectory
+agentrole:Trajectory rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:hasFix ;
+                                       owl:someValuesFrom agentrole:StartingFix
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:hasFix ;
+                                       owl:allValuesFrom agentrole:Fix
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty agentrole:hasSegment ;
+                                       owl:allValuesFrom agentrole:Segment
+                                     ] ;
+                     rdfs:comment "This class serves as the main access point of the pattern." ;
+                     rdfs:label "Trajectory" .
+
+
+###  http://example.org/gmo#Vessel
+agentrole:Vessel rdf:type owl:Class ;
+                 rdfs:subClassOf agentrole:MovingObject ,
+                                 agentrole:Platform ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:hasProperty ;
+                                   owl:someValuesFrom agentrole:VesselBeam
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:hasProperty ;
+                                   owl:someValuesFrom agentrole:VesselDisplacement
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:hasProperty ;
+                                   owl:someValuesFrom agentrole:VesselDraft
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:hasProperty ;
+                                   owl:someValuesFrom agentrole:VesselLength
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:describedBy ;
+                                   owl:allValuesFrom agentrole:InformationObject
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:hasProperty ;
+                                   owl:allValuesFrom agentrole:Property
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:providesAgentRole ;
+                                   owl:allValuesFrom agentrole:AgentRole
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty agentrole:describedBy ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass agentrole:InformationObject
+                                 ] ;
+                 rdfs:label "Vessel" .
+
+
+###  http://example.org/gmo#VesselBeam
+agentrole:VesselBeam rdf:type owl:Class ;
+                     rdfs:subClassOf agentrole:Property ;
+                     rdfs:comment "The beam of a vessel is the vessel's width at the widest point when measured at the vessel's nonimal waterline." ;
+                     rdfs:label "VesselBeam" .
+
+
+###  http://example.org/gmo#VesselDisplacement
+agentrole:VesselDisplacement rdf:type owl:Class ;
+                             rdfs:subClassOf agentrole:Property ;
+                             rdfs:comment "Displacement is the term used to indicate the vessel's weight" ;
+                             rdfs:label "VesselDisplacement" .
+
+
+###  http://example.org/gmo#VesselDraft
+agentrole:VesselDraft rdf:type owl:Class ;
+                      rdfs:subClassOf agentrole:Property ;
+                      rdfs:comment "The draft of a vessel's hull is the vertical distance between the bottom of the hull and the waterline." ;
+                      rdfs:label "VesselDraft" .
+
+
+###  http://example.org/gmo#VesselLength
+agentrole:VesselLength rdf:type owl:Class ;
+                       rdfs:subClassOf agentrole:Property ;
+                       rdfs:comment "The maximum length of the vessel's hull measured parallel to the waterline." ;
+                       rdfs:label "VesselLength" .
+
+
+###  http://example.org/gmo#VesselOwnerRole
+agentrole:VesselOwnerRole rdf:type owl:Class ;
+                          rdfs:subClassOf agentrole:AgentRole ;
+                          rdfs:label "VesselOwnerRole" .
+
+
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class ;
+                                             rdfs:subClassOf agentrole:Organization .
+
+
+###  http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class ;
+                                             rdfs:subClassOf agentrole:Organization .
+
+
+###  http://org.semanticweb.owlapi/error#Error3
+<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class ;
+                                             rdfs:subClassOf agentrole:Organization .
+
+
+###  http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class ;
+                                             rdfs:subClassOf agentrole:Organization .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+geosparql:Geometry rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/gml#Point
+gml:Point rdf:type owl:Class .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+rdf:List rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty agentrole:describedBy ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass agentrole:InformationObject
+                          ] .
+
+
+###  http://www.w3.org/2006/time#DateTimeDescription
+time:DateTimeDescription rdf:type owl:Class ;
+                         rdfs:subClassOf time:GeneralDateTimeDescription ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty time:day ;
+                                           owl:allValuesFrom xsd:gDay
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty time:month ;
+                                           owl:allValuesFrom xsd:gMonth
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty time:year ;
+                                           owl:allValuesFrom xsd:gYear
+                                         ] ;
+                         rdfs:comment "Descripción de fecha y tiempo estructurada con valores separados para los diferentes elementos de un sistema calendario-reloj. El sistema de referencia temporal está fijado al calendario gregoriano, y el rango de las propiedades año, mes, día restringidas a los correspondientes tipos del XML Schema xsd:gYear, xsd:gMonth y xsd:gDay respectivamente."@es ,
+                                      "Description of date and time structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of year, month, day properties restricted to corresponding XML Schema types xsd:gYear, xsd:gMonth and xsd:gDay, respectively."@en ;
+                         rdfs:label "Date-Time description"@en ,
+                                    "descripción de fecha-tiempo"@es .
+
+
+###  http://www.w3.org/2006/time#DateTimeInterval
+time:DateTimeInterval rdf:type owl:Class ;
+                      rdfs:subClassOf time:ProperInterval ;
+                      rdfs:comment "'intervalo de fecha-hora' es una subclase de 'intervalo propio', definida utilizando el multi-elemento 'descripción de fecha-hora'."@es ,
+                                   "DateTimeInterval is a subclass of ProperInterval, defined using the multi-element DateTimeDescription."@en ;
+                      rdfs:label "Date-time interval"@en ,
+                                 "intervalo de fecha-hora"@es .
+
+
+###  http://www.w3.org/2006/time#DayOfWeek
+time:DayOfWeek rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing ;
+               rdfs:comment "El día de la semana"@es ,
+                            "The day of week"@en ;
+               rdfs:label "Day of week"@en ,
+                          "día de la semana"@es .
+
+
+###  http://www.w3.org/2006/time#Duration
+time:Duration rdf:type owl:Class ;
+              rdfs:subClassOf time:TemporalDuration ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty time:unitType ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty time:numericDuration ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                              ] ;
+              rdfs:comment "Duración de una extensión temporal expresada como un número escalado por una unidad temporal."@es ,
+                           "Duration of a temporal extent expressed as a number scaled by a temporal unit"@en ;
+              rdfs:label "Time duration"@en ,
+                         "duración de tiempo" .
+
+
+###  http://www.w3.org/2006/time#DurationDescription
+time:DurationDescription rdf:type owl:Class ;
+                         rdfs:subClassOf time:GeneralDurationDescription ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty time:days ;
+                                           owl:allValuesFrom xsd:decimal
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty time:hours ;
+                                           owl:allValuesFrom xsd:decimal
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty time:minutes ;
+                                           owl:allValuesFrom xsd:decimal
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty time:months ;
+                                           owl:allValuesFrom xsd:decimal
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty time:seconds ;
+                                           owl:allValuesFrom xsd:decimal
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty time:weeks ;
+                                           owl:allValuesFrom xsd:decimal
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty time:years ;
+                                           owl:allValuesFrom xsd:decimal
+                                         ] ;
+                         rdfs:comment "Descripción de extensión temporal estructurada con valores separados para los distintos elementos de un sistema de horario-calendario. El sistema de referencia temporal se fija al calendario gregoriano, y el intervalo de cada una de las propiedades numéricas se restringe a xsd:decimal."@es ,
+                                      "Description of temporal extent structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of each of the numeric properties is restricted to xsd:decimal"@en ;
+                         rdfs:label "Duration description"@en ,
+                                    "descripción de duración"@es .
+
+
+###  http://www.w3.org/2006/time#GeneralDateTimeDescription
+time:GeneralDateTimeDescription rdf:type owl:Class ;
+                                rdfs:subClassOf time:TemporalPosition ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:unitType ;
+                                                  owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:dayOfWeek ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:monthOfYear ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:timeZone ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:day ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:dayOfYear ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:hour ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:minute ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:month ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:second ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:week ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:year ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ;
+                                rdfs:comment "Descripción de fecha y hora estructurada con valores separados para los distintos elementos de un sistema calendario-reloj."@es ,
+                                             "Description of date and time structured with separate values for the various elements of a calendar-clock system"@en ;
+                                rdfs:label "Generalized date-time description"@en ,
+                                           "descripción de fecha-hora generalizada"@es .
+
+
+###  http://www.w3.org/2006/time#GeneralDurationDescription
+time:GeneralDurationDescription rdf:type owl:Class ;
+                                rdfs:subClassOf time:TemporalDuration ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:hasTRS ;
+                                                  owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:days ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:hours ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:minutes ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:months ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:seconds ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:weeks ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty time:years ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ;
+                                rdfs:comment "Descripción de extensión temporal estructurada con valores separados para los distintos elementos de un sistema de horario-calendario."@es ,
+                                             "Description of temporal extent structured with separate values for the various elements of a calendar-clock system."@en ;
+                                rdfs:label "Generalized duration description"@en ,
+                                           "descripción de duración generalizada"@es .
+
+
+###  http://www.w3.org/2006/time#Instant
+time:Instant rdf:type owl:Class ;
+             rdfs:subClassOf time:TemporalEntity ;
+             owl:disjointWith time:ProperInterval ;
+             rdfs:comment "A temporal entity with zero extent or duration"@en ,
+                          "Una entidad temporal con una extensión o duración cero."@es ;
+             rdfs:label "Time instant"@en ,
+                        "instante de tiempo."@es .
+
+
+###  http://www.w3.org/2006/time#Interval
+time:Interval rdf:type owl:Class ;
+              rdfs:subClassOf time:TemporalEntity ;
+              rdfs:comment "A temporal entity with an extent or duration"@en ,
+                           "Una entidad temporal con una extensión o duración."@es ;
+              rdfs:label "Time interval"@en ,
+                         "intervalo de tiempo"@es .
+
+
+###  http://www.w3.org/2006/time#January
+time:January rdf:type owl:Class ;
+             rdfs:subClassOf time:DateTimeDescription ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty time:month ;
+                               owl:hasValue "--01"
+                             ] ;
+             rdfs:label "January" ;
+             owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://www.w3.org/2006/time#MonthOfYear
+time:MonthOfYear rdf:type owl:Class ;
+                 rdfs:subClassOf time:DateTimeDescription ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty time:day ;
+                                   owl:cardinality "0"^^xsd:nonNegativeInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty time:hour ;
+                                   owl:cardinality "0"^^xsd:nonNegativeInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty time:minute ;
+                                   owl:cardinality "0"^^xsd:nonNegativeInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty time:month ;
+                                   owl:cardinality "1"^^xsd:nonNegativeInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty time:second ;
+                                   owl:cardinality "0"^^xsd:nonNegativeInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty time:week ;
+                                   owl:cardinality "0"^^xsd:nonNegativeInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty time:year ;
+                                   owl:cardinality "0"^^xsd:nonNegativeInteger
+                                 ] ;
+                 rdfs:comment "El mes del año."@es ,
+                              "The month of the year"@en ;
+                 rdfs:label "Month of year"@en ,
+                            "mes del año"@es .
+
+
+###  http://www.w3.org/2006/time#ProperInterval
+time:ProperInterval rdf:type owl:Class ;
+                    rdfs:subClassOf time:Interval ;
+                    rdfs:comment "A temporal entity with non-zero extent or duration, i.e. for which the value of the beginning and end are different"@en ,
+                                 "Una entidad temporal con extensión o duración distinta de cero, es decir, para la cual los valores de principio y fin del intervalo son diferentes."@es ;
+                    rdfs:label "Proper interval"@en ,
+                               "intervalo propio"@es .
+
+
+###  http://www.w3.org/2006/time#TRS
+time:TRS rdf:type owl:Class ;
+         rdfs:comment """A temporal reference system, such as a temporal coordinate system (with an origin, direction, and scale), a calendar-clock combination, or a (possibly hierarchical) ordinal system. 
+
+This is a stub class, representing the set of all temporal reference systems."""@en ,
+                      """Un sistema de referencia temporal, tal como un sistema de coordenadas temporales (con un origen, una dirección y una escala), una combinación calendario-reloj, o un sistema ordinal (posiblemente jerárquico).
+        Esta clase comodín representa el conjunto de todos los sistemas de referencia temporal."""@es ;
+         rdfs:label "Temporal Reference System"@en ,
+                    "sistema de referencia temporal"@es .
+
+
+###  http://www.w3.org/2006/time#TemporalDuration
+time:TemporalDuration rdf:type owl:Class ;
+                      rdfs:comment "Extensión de tiempo; duración de un intervalo de tiempo independiente de su posición de inicio particular."@es ,
+                                   "Time extent; duration of a time interval separate from its particular start position"@en ;
+                      rdfs:label "Temporal duration"@en ,
+                                 "duración temporal"@es .
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+time:TemporalEntity rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Class ;
+                                          owl:unionOf ( time:Instant
+                                                        time:Interval
+                                                      )
+                                        ] ;
+                    rdfs:subClassOf owl:Thing ;
+                    rdfs:comment "A temporal interval or instant."@en ,
+                                 "Un intervalo temporal o un instante."@es ;
+                    rdfs:label "Temporal entity"@en ,
+                               "entidad temporal"@es .
+
+
+###  http://www.w3.org/2006/time#TemporalPosition
+time:TemporalPosition rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty time:hasTRS ;
+                                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                                      ] ;
+                      rdfs:comment "A position on a time-line"@en ,
+                                   "Una posición sobre una línea de tiempo."@es ;
+                      rdfs:label "Temporal position"@en ,
+                                 "posición temporal"@es .
+
+
+###  http://www.w3.org/2006/time#TemporalUnit
+time:TemporalUnit rdf:type owl:Class ;
+                  rdfs:subClassOf time:TemporalDuration ;
+                  rdfs:comment "A standard duration, which provides a scale factor for a time extent, or the granularity or precision for a time position."@en ,
+                               "Una duración estándar, que proporciona un factor de escala para una extensión de tiempo, o la granularidad o precisión para una posición de tiempo."@es ;
+                  rdfs:label "Temporal unit"@en ,
+                             "unidad de tiempo"@es .
+
+
+###  http://www.w3.org/2006/time#TimePosition
+time:TimePosition rdf:type owl:Class ;
+                  rdfs:subClassOf time:TemporalPosition ,
+                                  [ rdf:type owl:Class ;
+                                    owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                    owl:onProperty time:nominalPosition ;
+                                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty time:numericPosition ;
+                                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                  ]
+                                                )
+                                  ] ;
+                  rdfs:comment "A temporal position described using either a (nominal) value from an ordinal reference system, or a (numeric) value in a temporal coordinate system. "@en ,
+                               "Una posición temporal descrita utilizando bien un valor (nominal) de un sistema de referencia ordinal, o un valor (numérico) en un sistema de coordenadas temporales."@es ;
+                  rdfs:label "Time position"@en ,
+                             "posición de tiempo"@es .
+
+
+###  http://www.w3.org/2006/time#TimeZone
+time:TimeZone rdf:type owl:Class ;
+              rdfs:comment """A Time Zone specifies the amount by which the local time is offset from UTC. 
+	A time zone is usually denoted geographically (e.g. Australian Eastern Daylight Time), with a constant value in a given region. 
+The region where it applies and the offset from UTC are specified by a locally recognised governing authority."""@en ,
+                           """Un huso horario especifica la cantidad en que la hora local está desplazada con respecto a UTC.
+        Un huso horario normalmente se denota geográficamente (p.ej. el horario de verano del este de Australia), con un valor constante en una región dada.
+        La región donde aplica y el desplazamiento desde UTC las especifica una autoridad gubernamental localmente reconocida."""@es ;
+              rdfs:label "Time Zone"@en ,
+                         "huso horario"@es .
+
+
+###  http://www.w3.org/2006/time#Year
+time:Year rdf:type owl:Class ;
+          rdfs:subClassOf time:DurationDescription ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty time:days ;
+                            owl:cardinality "0"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty time:hours ;
+                            owl:cardinality "0"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty time:minutes ;
+                            owl:cardinality "0"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty time:months ;
+                            owl:cardinality "0"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty time:seconds ;
+                            owl:cardinality "0"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty time:weeks ;
+                            owl:cardinality "0"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty time:years ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                          ] ;
+          rdfs:comment "Year duration" ;
+          rdfs:label "Year"@en ;
+          owl:deprecated "true"^^xsd:boolean .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+agentrole:alsoKnownAs rdfs:comment "Provides the name alias of the object/entity described by this information object." ;
+                      rdfs:label "alsoKnownAs" .
+
+
+agentrole:associatedWithProgram rdfs:label "associatedWithProgram" .
+
+
+agentrole:atPort rdfs:comment "atPort connects a fix to an instance of Port. It is used when the fix corresponds to a port stop in the beginning, middle, or end of a cruise." ;
+                 rdfs:label "atPort" .
+
+
+agentrole:describedBy rdfs:label "describedBy" .
+
+
+agentrole:endsOnDate rdfs:label "endsOnDate" .
+
+
+agentrole:familyOrSurname rdfs:label "familyOrSurname" .
+
+
+agentrole:firstOrGivenName rdfs:label "firstOrGivenName" .
+
+
+agentrole:fullName rdfs:label "fullName" .
+
+
+agentrole:hasCanonicalName rdfs:label "hasCanonicalName" .
+
+
+agentrole:hasDescription rdfs:label "hasDescription" .
+
+
+agentrole:hasIdentifierScheme rdfs:comment "Provides the scheme of the identifier (as a string or URI), e.g., doi, orcid, etc." ;
+                              rdfs:label "hasIdentifierScheme" .
+
+
+agentrole:hasIdentifierValue rdfs:comment "Provides the value of the identifier (of type xsd:string or xsd:anyURI)" ;
+                             rdfs:label "hasIdentifierValue" .
+
+
+agentrole:hasPersonName rdfs:label "hasPersonName" .
+
+
+agentrole:hasPrimaryIdentifier rdfs:label "hasPrimaryIdentifier" .
+
+
+agentrole:performedBy rdfs:comment "performedBy connects  a role to the agent that performs it." ;
+                      rdfs:label "performedBy" .
+
+
+agentrole:providesAgentRole rdfs:comment "providesAgentRole is the inverse of isAgentRoleIn." ;
+                            rdfs:label "providesAgentRole" .
+
+
+agentrole:startsOnDate rdfs:label "startsOnDate" .
+
+
+time:inXSDDate rdfs:comment "Posición de un instante, expresado utilizando xsd:date."@es ,
+                            "Position of an instant, expressed using xsd:date"@en ;
+               rdfs:label "en fecha XSD"@es ,
+                          "in XSD date"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ owl:intersectionOf ( agentrole:Fix
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty agentrole:atPort ;
+                         owl:someValuesFrom agentrole:Port
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty [ owl:inverseOf agentrole:hasFix
+                                   ] ;
+                    owl:allValuesFrom agentrole:CruiseTrajectory
+                  ]
+] .
+
+
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource [ owl:intersectionOf ( agentrole:Fix
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty [ owl:inverseOf agentrole:hasFix
+                                                              ] ;
+                                               owl:someValuesFrom agentrole:CruiseTrajectory
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class ;
+                        rdfs:subClassOf _:genid257
+                      ] ;
+  owl:annotatedProperty rdfs:subClassOf ;
+  owl:annotatedTarget _:genid257 ;
+  rdfs:comment "Scoped range of atPort is Port where the scope is (inverse hasFix some CruiseTrajectory)"
+] .
+
+_:genid257 rdf:type owl:Restriction ;
+            owl:onProperty agentrole:atPort ;
+            owl:allValuesFrom agentrole:Port .
+
+
+[ owl:intersectionOf ( agentrole:Segment
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty agentrole:traversedBy ;
+                         owl:someValuesFrom agentrole:Vessel
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty [ owl:inverseOf agentrole:hasSegment
+                                   ] ;
+                    owl:allValuesFrom agentrole:CruiseTrajectory
+                  ]
+] .
+
+
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource [ owl:intersectionOf ( agentrole:Segment
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty [ owl:inverseOf agentrole:hasSegment
+                                                              ] ;
+                                               owl:someValuesFrom agentrole:CruiseTrajectory
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class ;
+                        rdfs:subClassOf _:genid270
+                      ] ;
+  owl:annotatedProperty rdfs:subClassOf ;
+  owl:annotatedTarget _:genid270 ;
+  rdfs:comment "Cruise trajectory's segments are traversed by a vessel"
+] .
+
+_:genid270 rdf:type owl:Restriction ;
+            owl:onProperty agentrole:traversedBy ;
+            owl:allValuesFrom agentrole:Vessel .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:agentRoleIn ;
+  owl:someValuesFrom owl:Thing ;
+  rdfs:subClassOf agentrole:AgentRole
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:atPort ;
+  owl:someValuesFrom agentrole:Port ;
+  rdfs:subClassOf agentrole:Fix
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:atTime ;
+  owl:someValuesFrom time:TemporalEntity ;
+  rdfs:subClassOf agentrole:Fix
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:derivedUsing ;
+  owl:someValuesFrom agentrole:SamplingProcess ;
+  rdfs:subClassOf agentrole:PhysicalSample
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:endsAtFix ;
+  owl:someValuesFrom agentrole:Fix ;
+  rdfs:subClassOf agentrole:Segment
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:endsAtTime ;
+  owl:someValuesFrom time:Instant ;
+  rdfs:subClassOf agentrole:Event
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:endsAtTime ;
+  owl:someValuesFrom time:Instant ;
+  rdfs:subClassOf agentrole:PersonalInfoItem
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:endsOnDate ;
+  owl:someValuesFrom time:Instant ;
+  rdfs:subClassOf agentrole:FundingAward
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:endsOnDate ;
+  owl:someValuesFrom time:Instant ;
+  rdfs:subClassOf agentrole:Program
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasAgentRoleType ;
+  owl:someValuesFrom agentrole:AgentRoleType ;
+  rdfs:subClassOf agentrole:AgentRole
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasAlternativeIdentifier ;
+  owl:someValuesFrom agentrole:Identifier ;
+  rdfs:subClassOf agentrole:InformationObject
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasAttribute ;
+  owl:someValuesFrom agentrole:Attribute ;
+  rdfs:subClassOf [ rdf:type owl:Class ;
+                    owl:unionOf ( agentrole:Fix
+                                  agentrole:Segment
+                                )
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasAwardAmount ;
+  owl:someValuesFrom agentrole:AwardAmount ;
+  rdfs:subClassOf agentrole:FundingAward
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasCurrencyCode ;
+  owl:someValuesFrom agentrole:CurrencyCode ;
+  rdfs:subClassOf agentrole:AwardAmount
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasDataSource ;
+  owl:someValuesFrom agentrole:Source ;
+  rdfs:subClassOf agentrole:Fix
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasFix ;
+  owl:someValuesFrom agentrole:Fix ;
+  rdfs:subClassOf agentrole:Trajectory
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasInputFeature ;
+  owl:someValuesFrom agentrole:Feature ;
+  rdfs:subClassOf agentrole:SamplingProcess
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasNextFix ;
+  owl:someValuesFrom agentrole:Fix ;
+  rdfs:subClassOf agentrole:Fix
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasNextFix ;
+  owl:someValuesFrom agentrole:Fix ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty [ owl:inverseOf agentrole:startsFromFix
+                                   ] ;
+                    owl:someValuesFrom agentrole:Segment
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasPersonName ;
+  owl:someValuesFrom agentrole:PersonName ;
+  rdfs:subClassOf agentrole:Person
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasPersonalInfoItem ;
+  owl:someValuesFrom agentrole:PersonalInfoItem ;
+  rdfs:subClassOf agentrole:Person
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasPosition ;
+  owl:someValuesFrom agentrole:Position ;
+  rdfs:subClassOf agentrole:Fix
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasPrimaryIdentifier ;
+  owl:someValuesFrom agentrole:Identifier ;
+  rdfs:subClassOf agentrole:InformationObject
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasProperty ;
+  owl:someValuesFrom agentrole:VesselBeam ;
+  rdfs:subClassOf agentrole:Vessel
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasProperty ;
+  owl:someValuesFrom agentrole:VesselDisplacement ;
+  rdfs:subClassOf agentrole:Vessel
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasProperty ;
+  owl:someValuesFrom agentrole:VesselDraft ;
+  rdfs:subClassOf agentrole:Vessel
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasProperty ;
+  owl:someValuesFrom agentrole:VesselLength ;
+  rdfs:subClassOf agentrole:Vessel
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasRelatedCruise ;
+  owl:someValuesFrom agentrole:Cruise ;
+  rdfs:subClassOf agentrole:Cruise
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasSegment ;
+  owl:someValuesFrom agentrole:Segment ;
+  rdfs:subClassOf agentrole:Trajectory
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasSite ;
+  owl:someValuesFrom agentrole:Place ;
+  rdfs:subClassOf agentrole:Organization
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasSpatialFootprint ;
+  owl:someValuesFrom agentrole:Geometry ;
+  rdfs:subClassOf agentrole:Place
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasSubOrganization ;
+  owl:someValuesFrom agentrole:Organization ;
+  rdfs:subClassOf agentrole:Organization
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasTemporalExtent ;
+  owl:someValuesFrom time:TemporalEntity ;
+  rdfs:subClassOf agentrole:AgentRole
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasTrajectory ;
+  owl:someValuesFrom agentrole:CruiseTrajectory ;
+  rdfs:subClassOf agentrole:Cruise
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasUnit ;
+  owl:someValuesFrom agentrole:PropertyUnit ;
+  rdfs:subClassOf agentrole:Property
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:occursAtPlace ;
+  owl:someValuesFrom agentrole:Place ;
+  rdfs:subClassOf agentrole:Event
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:occursAtTime ;
+  owl:someValuesFrom time:TemporalEntity ;
+  rdfs:subClassOf agentrole:Event
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:originatesFrom ;
+  owl:someValuesFrom agentrole:Feature ;
+  rdfs:subClassOf agentrole:PhysicalSample
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:performedBy ;
+  owl:someValuesFrom agentrole:Agent ;
+  rdfs:subClassOf agentrole:AgentRole
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:providesAgentRole ;
+  owl:someValuesFrom agentrole:CoPrincipalInvestigatorRole ;
+  rdfs:subClassOf agentrole:FundingAward
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:providesAgentRole ;
+  owl:someValuesFrom agentrole:CoPrincipalInvestigatorRole ;
+  rdfs:subClassOf agentrole:Program
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:providesAgentRole ;
+  owl:someValuesFrom agentrole:DataManagerRole ;
+  rdfs:subClassOf agentrole:Program
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:providesAgentRole ;
+  owl:someValuesFrom agentrole:PrincipalInvestigatorRole ;
+  rdfs:subClassOf agentrole:FundingAward
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:providesAgentRole ;
+  owl:someValuesFrom agentrole:PrincipalInvestigatorRole ;
+  rdfs:subClassOf agentrole:Program
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:providesAgentRole ;
+  owl:someValuesFrom agentrole:ProgramManagerRole ;
+  rdfs:subClassOf agentrole:Program
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:providesAgentRole ;
+  owl:someValuesFrom agentrole:SponsorRole ;
+  rdfs:subClassOf agentrole:FundingAward
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:providesAgentRole ;
+  owl:someValuesFrom agentrole:VesselOwnerRole ;
+  rdfs:subClassOf agentrole:Vessel
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:realizedBy ;
+  owl:someValuesFrom agentrole:InformationRealization ;
+  rdfs:subClassOf agentrole:InformationObject
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:startsAtTime ;
+  owl:someValuesFrom time:Instant ;
+  rdfs:subClassOf agentrole:Event
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:startsAtTime ;
+  owl:someValuesFrom time:Instant ;
+  rdfs:subClassOf agentrole:PersonalInfoItem
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:startsFromFix ;
+  owl:someValuesFrom agentrole:Fix ;
+  rdfs:subClassOf agentrole:Segment
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:startsOnDate ;
+  owl:someValuesFrom time:Instant ;
+  rdfs:subClassOf agentrole:FundingAward
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:startsOnDate ;
+  owl:someValuesFrom time:Instant ;
+  rdfs:subClassOf agentrole:Program
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:traveledBy ;
+  owl:someValuesFrom agentrole:Vessel ;
+  rdfs:subClassOf agentrole:CruiseTrajectory
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:traversedBy ;
+  owl:someValuesFrom agentrole:MovingObject ;
+  rdfs:subClassOf agentrole:Segment
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:undertakenBy ;
+  owl:someValuesFrom agentrole:Vessel ;
+  rdfs:subClassOf agentrole:Cruise
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:alsoKnownAs ;
+  owl:someValuesFrom xsd:string ;
+  rdfs:subClassOf agentrole:InformationObject
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:familyOrSurname ;
+  owl:someValuesFrom xsd:string ;
+  rdfs:subClassOf agentrole:PersonName
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:firstOrGivenName ;
+  owl:someValuesFrom xsd:string ;
+  rdfs:subClassOf agentrole:PersonName
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:fullName ;
+  owl:someValuesFrom xsd:string ;
+  rdfs:subClassOf agentrole:PersonName
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasCanonicalName ;
+  owl:someValuesFrom xsd:string ;
+  rdfs:subClassOf agentrole:InformationObject
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasCurrencyValue ;
+  owl:someValuesFrom xsd:decimal ;
+  rdfs:subClassOf agentrole:AwardAmount
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasDescription ;
+  owl:someValuesFrom xsd:string ;
+  rdfs:subClassOf agentrole:InformationObject
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasIdentifierScheme ;
+  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                       owl:unionOf ( xsd:anyURI
+                                     xsd:string
+                                   )
+                     ] ;
+  rdfs:subClassOf agentrole:Identifier
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty agentrole:hasWebpage ;
+  owl:someValuesFrom xsd:anyURI ;
+  rdfs:subClassOf agentrole:InformationObject
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

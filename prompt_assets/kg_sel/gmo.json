@@ -1,0 +1,39 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which cruises were conducted by each vessel?",
+      "answer": "gmo"
+    },
+    {
+      "cq": "Which samples were collected by a given person or organization?",
+      "answer": "gmo"
+    },
+    {
+      "cq": "Which cruises occurred in the same geographic region during overlapping time intervals?",
+      "answer": "gmo"
+    },
+    {
+      "cq": "Which vessels or platforms repeatedly operated in the same region across different cruises?",
+      "answer": "gmo"
+    },
+    {
+      "cq": "Which regions have the highest number of cruises or samples?",
+      "answer": "gmo"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify the main entities and relationships mentioned in the competency question.",
+    "Next, compare those needs against the provided schema contexts for each candidate KG.",
+    "Finally, choose the single KG whose schema most directly supports answering the question."
+  ],
+  "reasoning_example": {
+    "cq": "Which cruises were conducted by each vessel?",
+    "reasoning": 
+    [
+      "First, we identify the main entities in the question: 'cruises' and 'vessel'. The relationship we are interested in is which cruises were conducted by each vessel.",
+      "Next, we look at the provided schema contexts for each candidate KG. We find that the GMO KG has a schema that includes entities for 'Cruise' and 'Vessel', and a relationship that connects them, allowing us to determine which cruises were conducted by each vessel.",
+      "Finally, we conclude that the GMO KG is the most suitable for answering this question, as it directly supports the necessary entities and relationships."
+    ],
+    "answer": "gmo"
+  }
+}

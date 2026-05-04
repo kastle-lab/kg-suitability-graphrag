@@ -1,0 +1,18 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which questions are best answered by this knowledge graph?",
+      "answer": "kwg"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify the main entities and relationships mentioned in the competency question.",
+    "Next, compare those needs against the provided schema contexts for each candidate KG.",
+    "Finally, choose the single KG whose schema most directly supports answering the question."
+  ],
+  "reasoning_example": {
+    "cq": "Which questions are best answered by this knowledge graph?",
+    "reasoning": "I look for the candidate whose schema context most directly matches the entities and relations described in the question, and I choose that KG as the answer.",
+    "answer": "kwg"
+  }
+}

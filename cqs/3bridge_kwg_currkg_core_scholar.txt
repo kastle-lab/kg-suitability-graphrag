@@ -1,0 +1,10 @@
+What learning media resources and scholarly publications cover hazard-related topics?
+What curriculum topics correspond to fields of study about hazards, climate, health, demographics, or geographical places?
+What publications and learning modules are associated with hazard types represented in the KG?
+Which learning paths include modules about topics that also appear in publications and hazard-event records?
+Which authors of media resources or publications are associated with hazard-related topics linked to geographical places?
+Which curriculum modules and scholarly publications cover hazard topics with temporal, damage, impact, or climate details?
+Which personas, learning paths, modules, media resources, topics, authors, publications, departments, hazard events, places, and temporal scopes are connected through hazard-related subject matter?
+Which learning resources and scholarly publications cover hazard types that have real event records, affected places, climate observations, damage details, or demographic attributes?
+Which curriculum paths connect learner personas to media resources and scholarly publications about hazard events, including authors, fields of study, places, temporal intervals, impact observations, damage details, and health or demographic attributes?
+Which curriculum modules or media resources teach hazard-related topics that are also represented in scholarly publications, and what real hazard events or places support those topics?

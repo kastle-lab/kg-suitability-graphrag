@@ -1,0 +1,461 @@
+agentrole:AgencyProgramManagerRole ⊑ agentrole:AgentRole
+agentrole:AgentRole ⊑ ∀ agentrole:performedBy agentrole:Agent
+agentrole:AgentRole ⊑ = agentrole:performedBy agentrole:Agent
+agentrole:AgentRole ⊑ = agentrole:agentRoleIn owl:Thing
+agentrole:AgentRole ⊑ = agentrole:hasTemporalExtent time:TemporalEntity
+agentrole:AgentRole ⊑ ∀ agentrole:hasAgentRoleType agentrole:AgentRoleType
+agentrole:AgentRole ⊑ ∀ agentrole:hasTemporalExtent time:TemporalEntity
+agentrole:AwardAmount ⊑ ∀ agentrole:hasCurrencyCode agentrole:CurrencyCode
+agentrole:AwardAmount ⊑ = agentrole:hasCurrencyValue
+agentrole:AwardAmount ⊑ ∀ agentrole:hasCurrencyValue xsd:decimal
+agentrole:AwardAmount ⊑ = agentrole:hasCurrencyCode agentrole:CurrencyCode
+agentrole:CoPrincipalInvestigatorRole ⊑ agentrole:AgentRole
+agentrole:CollectorRole ⊑ agentrole:AgentRole
+agentrole:ContactRole ⊑ agentrole:AgentRole
+agentrole:ContributorRole ⊑ agentrole:AgentRole
+agentrole:Cruise ⊑ ∀ agentrole:associatedWithProgram agentrole:Program
+agentrole:Cruise ⊑ = agentrole:hasTrajectory agentrole:CruiseTrajectory
+agentrole:Cruise ⊑ = agentrole:describedBy agentrole:InformationObject
+agentrole:Cruise ⊑ ∀ agentrole:undertakenBy agentrole:Vessel
+agentrole:Cruise ⊑ = agentrole:undertakenBy agentrole:Vessel
+agentrole:Cruise ⊑ ∀ agentrole:fundedBy agentrole:FundingAward
+agentrole:Cruise ⊑ ∀ agentrole:hasRelatedCruise agentrole:Cruise
+agentrole:Cruise ⊑ ∀ agentrole:providesAgentRole agentrole:AgentRole
+agentrole:Cruise ⊑ ∀ agentrole:hasTrajectory agentrole:CruiseTrajectory
+agentrole:Cruise ⊑ ∀ agentrole:describedBy agentrole:InformationObject
+agentrole:Cruise ⊑ agentrole:Event
+agentrole:CruiseTrajectory ⊑ agentrole:Trajectory
+agentrole:CruiseTrajectory ⊑ ∀ agentrole:traveledBy agentrole:Vessel
+agentrole:CruiseTrajectory ⊑ ∃ agentrole:hasFix (agentrole:StartingFix ⊓ ∃ agentrole:hasNextFix agentrole:Fix)
+agentrole:CuratorRole ⊑ agentrole:AgentRole
+agentrole:DataManagerRole ⊑ agentrole:AgentRole
+time:DateTimeDescription ⊑ time:GeneralDateTimeDescription
+time:DateTimeDescription ⊑ ∀ time:month xsd:gMonth
+time:DateTimeDescription ⊑ ∀ time:day xsd:gDay
+time:DateTimeDescription ⊑ ∀ time:year xsd:gYear
+time:DateTimeInterval ⊑ time:ProperInterval
+time:DayOfWeek ⊑ owl:Thing
+time:Duration ⊑ = time:numericDuration
+time:Duration ⊑ = time:unitType owl:Thing
+time:Duration ⊑ time:TemporalDuration
+time:DurationDescription ⊑ ∀ time:years xsd:decimal
+time:DurationDescription ⊑ ∀ time:seconds xsd:decimal
+time:DurationDescription ⊑ ∀ time:minutes xsd:decimal
+time:DurationDescription ⊑ ∀ time:weeks xsd:decimal
+time:DurationDescription ⊑ ∀ time:months xsd:decimal
+time:DurationDescription ⊑ ∀ time:days xsd:decimal
+time:DurationDescription ⊑ time:GeneralDurationDescription
+time:DurationDescription ⊑ ∀ time:hours xsd:decimal
+agentrole:EditorRole ⊑ agentrole:AgentRole
+agentrole:EndingFix ≡ agentrole:Fix ⊓ ¬(∃ agentrole:hasNextFix agentrole:Fix)
+Error1 ⊑ agentrole:Organization
+Error2 ⊑ agentrole:Organization
+Error3 ⊑ agentrole:Organization
+Error4 ⊑ agentrole:Organization
+agentrole:Event ⊑ ∃ agentrole:occursAtPlace agentrole:Place
+agentrole:Event ⊑ ∀ agentrole:startsAtTime time:Instant
+agentrole:Event ⊑ ∀ agentrole:endsAtTime time:Instant
+agentrole:Event ⊑ ∃ agentrole:occursAtTime time:TemporalEntity
+agentrole:Event ⊑ ∀ agentrole:occursAtPlace agentrole:Place
+agentrole:Event ⊑ ∀ agentrole:providesAgentRole agentrole:AgentRole
+agentrole:Event ⊑ ∀ agentrole:occursAtTime time:TemporalEntity
+agentrole:Fix ⊑ ∀ agentrole:hasAttribute agentrole:Attribute
+agentrole:Fix ⊑ ∃ agentrole:hasPosition agentrole:Position
+agentrole:Fix ⊑ ∀ agentrole:hasDataSource agentrole:Source
+agentrole:Fix ⊑ ∀ agentrole:hasNextFix agentrole:Fix
+agentrole:Fix ⊑ ∀ agentrole:atTime time:TemporalEntity
+agentrole:Fix ⊑ ∀ agentrole:hasPosition agentrole:Position
+agentrole:Fix ⊑ ∃ agentrole:atTime time:TemporalEntity
+agentrole:Fix ⊑ ∃ agentrole:hasFix⁻ agentrole:Trajectory
+agentrole:FundingAward ⊑ ∃ agentrole:providesAgentRole agentrole:SponsorRole
+agentrole:FundingAward ⊑ ∀ agentrole:endsOnDate time:Instant
+agentrole:FundingAward ⊑ = agentrole:describedBy agentrole:InformationObject
+agentrole:FundingAward ⊑ ≤ 1 agentrole:hasAwardAmount agentrole:AwardAmount
+agentrole:FundingAward ⊑ ∀ agentrole:providesAgentRole agentrole:AgentRole
+agentrole:FundingAward ⊑ ∀ agentrole:startsOnDate time:Instant
+agentrole:FundingAward ⊑ ∀ agentrole:describedBy agentrole:InformationObject
+agentrole:FundingAward ⊑ = agentrole:endsOnDate time:Instant
+agentrole:FundingAward ⊑ ∃ agentrole:providesAgentRole agentrole:PrincipalInvestigatorRole
+agentrole:FundingAward ⊑ = agentrole:startsOnDate time:Instant
+agentrole:FundingAward ⊑ ∀ agentrole:hasAwardAmount agentrole:AwardAmount
+time:GeneralDateTimeDescription ⊑ ≤ 1 time:year
+time:GeneralDateTimeDescription ⊑ ≤ 1 time:week
+time:GeneralDateTimeDescription ⊑ = time:unitType owl:Thing
+time:GeneralDateTimeDescription ⊑ ≤ 1 time:timeZone owl:Thing
+time:GeneralDateTimeDescription ⊑ ≤ 1 time:day
+time:GeneralDateTimeDescription ⊑ ≤ 1 time:dayOfYear
+time:GeneralDateTimeDescription ⊑ ≤ 1 time:monthOfYear owl:Thing
+time:GeneralDateTimeDescription ⊑ ≤ 1 time:hour
+time:GeneralDateTimeDescription ⊑ ≤ 1 time:second
+time:GeneralDateTimeDescription ⊑ ≤ 1 time:minute
+time:GeneralDateTimeDescription ⊑ ≤ 1 time:dayOfWeek owl:Thing
+time:GeneralDateTimeDescription ⊑ time:TemporalPosition
+time:GeneralDateTimeDescription ⊑ ≤ 1 time:month
+time:GeneralDurationDescription ⊑ ≤ 1 time:minutes
+time:GeneralDurationDescription ⊑ ≤ 1 time:days
+time:GeneralDurationDescription ⊑ = time:hasTRS owl:Thing
+time:GeneralDurationDescription ⊑ time:TemporalDuration
+time:GeneralDurationDescription ⊑ ≤ 1 time:years
+time:GeneralDurationDescription ⊑ ≤ 1 time:weeks
+time:GeneralDurationDescription ⊑ ≤ 1 time:months
+time:GeneralDurationDescription ⊑ ≤ 1 time:hours
+time:GeneralDurationDescription ⊑ ≤ 1 time:seconds
+agentrole:Geometry ≡ agentrole:Geometry
+agentrole:Geometry ≡ agentrole:Geometry
+agentrole:Identifier ⊑ ¬(∃ agentrole:describedBy agentrole:InformationObject)
+agentrole:Identifier ⊑ = agentrole:hasIdentifierValue
+agentrole:Identifier ⊑ ∀ agentrole:hasIdentifierScheme xsd:anyURI ⊔ xsd:string
+agentrole:Identifier ⊑ ∀ agentrole:hasIdentifierValue xsd:string
+agentrole:Identifier ⊑ ≤ 1 agentrole:hasIdentifierScheme
+agentrole:InformationObject ⊑ ∀ agentrole:hasCanonicalName xsd:string
+agentrole:InformationObject ⊑ ∀ agentrole:realizedBy agentrole:InformationRealization
+agentrole:InformationObject ⊑ ¬(∃ agentrole:describedBy agentrole:InformationObject)
+agentrole:InformationObject ⊑ ∀ agentrole:hasAlternativeIdentifier agentrole:Identifier
+agentrole:InformationObject ⊑ ∀ agentrole:alsoKnownAs xsd:string
+agentrole:InformationObject ⊑ = agentrole:describedBy⁻ owl:Thing
+agentrole:InformationObject ⊑ ∀ agentrole:hasWebpage xsd:anyURI
+agentrole:InformationObject ⊑ ∀ agentrole:hasDescription xsd:string
+agentrole:InformationObject ⊑ ∀ agentrole:hasPrimaryIdentifier agentrole:Identifier
+agentrole:InformationRealization ⊑ ¬(∃ agentrole:describedBy agentrole:InformationObject)
+time:Instant ⊑ time:TemporalEntity
+time:Instant ⊑ ¬ time:ProperInterval
+time:Interval ⊑ time:TemporalEntity
+time:January ⊑ time:DateTimeDescription
+time:January ⊑ agentrole:hasValue time:month "--01"\^\^xsd:string
+time:MonthOfYear ⊑ = time:month
+time:MonthOfYear ⊑ = time:hour
+time:MonthOfYear ⊑ = time:day
+time:MonthOfYear ⊑ = time:year
+time:MonthOfYear ⊑ time:DateTimeDescription
+time:MonthOfYear ⊑ = time:week
+time:MonthOfYear ⊑ = time:minute
+time:MonthOfYear ⊑ = time:second
+agentrole:Organization ⊑ ∀ agentrole:hasSubOrganization agentrole:Organization
+agentrole:Organization ⊑ ∀ agentrole:hasSite agentrole:Place
+agentrole:Organization ⊑ agentrole:Agent
+agentrole:Organization ⊑ ∀ agentrole:describedBy agentrole:InformationObject
+agentrole:Organization ⊑ ∀ agentrole:providesAgentRole agentrole:AgentRole
+agentrole:Organization ⊑ = agentrole:describedBy agentrole:InformationObject
+agentrole:Person ⊑ agentrole:Agent
+agentrole:Person ⊑ ∀ agentrole:hasPersonalInfoItem agentrole:PersonalInfoItem
+agentrole:Person ⊑ ∃ agentrole:hasPersonName agentrole:PersonName
+agentrole:Person ⊑ ∀ agentrole:hasPersonName agentrole:PersonName
+agentrole:Person ⊑ ¬ agentrole:PersonName
+agentrole:PersonName ⊑ ≤ 1 agentrole:firstOrGivenName
+agentrole:PersonName ⊑ ∀ agentrole:fullName xsd:string
+agentrole:PersonName ⊑ ≤ 1 agentrole:familyOrSurname
+agentrole:PersonName ⊑ = agentrole:fullName
+agentrole:PersonName ⊑ agentrole:PersonalInfoItem
+agentrole:PersonName ⊑ ∀ agentrole:familyOrSurname xsd:string
+agentrole:PersonName ⊑ ∀ agentrole:firstOrGivenName xsd:string
+agentrole:PersonName ⊑ ¬ agentrole:Person
+agentrole:PersonalInfoItem ⊑ ∀ agentrole:endsAtTime time:Instant
+agentrole:PersonalInfoItem ⊑ = agentrole:startsAtTime time:Instant
+agentrole:PersonalInfoItem ⊑ ∀ agentrole:startsAtTime time:Instant
+agentrole:PersonalInfoItem ⊑ = agentrole:hasPersonalInfoItem⁻ agentrole:Person
+agentrole:PersonalInfoItem ⊑ ≤ 1 agentrole:endsAtTime time:Instant
+agentrole:PhysicalSample ⊑ ∀ agentrole:hasProperty agentrole:Property
+agentrole:PhysicalSample ⊑ ∀ agentrole:originatesFrom agentrole:Feature
+agentrole:PhysicalSample ⊑ agentrole:Feature
+agentrole:PhysicalSample ⊑ ∀ agentrole:derivedUsing agentrole:SamplingProcess
+agentrole:Place ⊑ = agentrole:describedBy agentrole:InformationObject
+agentrole:Place ⊑ ∀ agentrole:hasSpatialFootprint agentrole:Geometry
+agentrole:Place ⊑ ∀ agentrole:describedBy agentrole:InformationObject
+agentrole:Platform ⊑ = agentrole:describedBy agentrole:InformationObject
+agentrole:Platform ⊑ ∀ agentrole:describedBy agentrole:InformationObject
+:Port ⊑ ∀ agentrole:hasSpatialFootprint agentrole:Position
+:Port ⊑ ∃ agentrole:r_Port Self
+:Port ⊑ agentrole:Place
+agentrole:Position ⊑ gml:Point
+agentrole:PrincipalInvestigatorRole ⊑ agentrole:AgentRole
+agentrole:Program ⊑ ≤ 1 agentrole:startsOnDate time:Instant
+agentrole:Program ⊑ ∀ agentrole:providesAgentRole agentrole:AgentRole
+agentrole:Program ⊑ ∀ agentrole:startsOnDate time:Instant
+agentrole:Program ⊑ ∀ agentrole:endsOnDate time:Instant
+agentrole:Program ⊑ = agentrole:describedBy agentrole:InformationObject
+agentrole:Program ⊑ ∀ agentrole:describedBy agentrole:InformationObject
+agentrole:Program ⊑ ≤ 1 agentrole:endsOnDate time:Instant
+agentrole:ProgramManagerRole ⊑ agentrole:AgentRole
+time:ProperInterval ⊑ time:Interval
+time:ProperInterval ⊑ ¬ time:Instant
+agentrole:Property ⊑ ∀ agentrole:hasUnit agentrole:PropertyUnit
+agentrole:RegistrantRole ⊑ agentrole:AgentRole
+agentrole:RightsHolderRole ⊑ agentrole:AgentRole
+agentrole:SamplingProcess ⊑ = agentrole:derivedUsing⁻ agentrole:PhysicalSample
+agentrole:SamplingProcess ⊑ ∀ agentrole:hasInputFeature agentrole:Feature
+agentrole:SamplingProcess ⊑ agentrole:Event
+agentrole:SamplingProcess ⊑ = agentrole:hasInputFeature agentrole:Feature
+agentrole:Segment ⊑ ∀ agentrole:hasAttribute agentrole:Attribute
+agentrole:Segment ⊑ ∀ agentrole:endsAtFix agentrole:Fix
+agentrole:Segment ⊑ ∀ agentrole:startsFromFix agentrole:Fix
+agentrole:Segment ⊑ ∃ agentrole:endsAtFix agentrole:Fix
+agentrole:Segment ⊑ ∃ agentrole:hasSegment⁻ agentrole:Trajectory
+agentrole:Segment ⊑ ∃ agentrole:startsFromFix agentrole:Fix
+agentrole:Segment ⊑ ∀ agentrole:traversedBy agentrole:MovingObject
+agentrole:SponsorRole ⊑ agentrole:AgentRole
+agentrole:StartingFix ≡ agentrole:Fix ⊓ ¬(∃ agentrole:hasNextFix⁻ agentrole:Fix)
+time:TemporalEntity ≡ time:Instant ⊔ time:Interval
+time:TemporalEntity ⊑ owl:Thing
+time:TemporalPosition ⊑ = time:hasTRS owl:Thing
+time:TemporalUnit ⊑ time:TemporalDuration
+owl:Thing ⊑ ≤ 1 agentrole:describedBy agentrole:InformationObject
+time:TimePosition ⊑ time:TemporalPosition
+time:TimePosition ⊑ = time:nominalPosition ⊔ = time:numericPosition
+agentrole:Trajectory ⊑ ∀ agentrole:hasFix agentrole:Fix
+agentrole:Trajectory ⊑ ∀ agentrole:hasSegment agentrole:Segment
+agentrole:Trajectory ⊑ ∃ agentrole:hasFix agentrole:StartingFix
+agentrole:Vessel ⊑ = agentrole:describedBy agentrole:InformationObject
+agentrole:Vessel ⊑ ∃ agentrole:hasProperty agentrole:VesselLength
+agentrole:Vessel ⊑ ∃ agentrole:hasProperty agentrole:VesselDraft
+agentrole:Vessel ⊑ agentrole:MovingObject
+agentrole:Vessel ⊑ ∃ agentrole:hasProperty agentrole:VesselDisplacement
+agentrole:Vessel ⊑ ∃ agentrole:hasProperty agentrole:VesselBeam
+agentrole:Vessel ⊑ ∀ agentrole:hasProperty agentrole:Property
+agentrole:Vessel ⊑ ∀ agentrole:describedBy agentrole:InformationObject
+agentrole:Vessel ⊑ ∀ agentrole:providesAgentRole agentrole:AgentRole
+agentrole:Vessel ⊑ agentrole:Platform
+agentrole:VesselBeam ⊑ agentrole:Property
+agentrole:VesselDisplacement ⊑ agentrole:Property
+agentrole:VesselDraft ⊑ agentrole:Property
+agentrole:VesselLength ⊑ agentrole:Property
+agentrole:VesselOwnerRole ⊑ agentrole:AgentRole
+time:Year ⊑ = time:minutes
+time:Year ⊑ = time:months
+time:Year ⊑ time:DurationDescription
+time:Year ⊑ = time:days
+time:Year ⊑ = time:years
+time:Year ⊑ = time:hours
+time:Year ⊑ = time:seconds
+time:Year ⊑ = time:weeks
+time:after ≡ time:before⁻
+∃ time:after owl:Thing ⊑ time:TemporalEntity
+⊤ ⊑ ∀ time:after time:TemporalEntity
+agentrole:agentRoleIn ≡ agentrole:providesAgentRole⁻
+∃ agentrole:agentRoleIn owl:Thing ⊑ agentrole:AgentRole
+∃ agentrole:associatedWithProgram owl:Thing ⊑ agentrole:Cruise
+∃ agentrole:atTime owl:Thing ⊑ agentrole:Fix
+⊤ ⊑ ∀ agentrole:atTime time:TemporalEntity
+time:after ≡ time:before⁻
+owl:TransitiveProperty: time:before
+∃ time:before owl:Thing ⊑ time:TemporalEntity
+⊤ ⊑ ∀ time:before time:TemporalEntity
+∃ time:dayOfWeek owl:Thing ⊑ time:GeneralDateTimeDescription
+⊤ ⊑ ∀ time:dayOfWeek time:DayOfWeek
+∃ agentrole:derivedUsing owl:Thing ⊑ agentrole:PhysicalSample
+⊤ ⊑ ∀ agentrole:derivedUsing agentrole:SamplingProcess
+∃ agentrole:endsAtFix owl:Thing ⊑ agentrole:Segment
+⊤ ⊑ ∀ agentrole:endsAtFix agentrole:Fix
+⊑ agentrole:occursAtTime
+⊤ ⊑ ∀ agentrole:endsAtTime time:Instant
+∃ agentrole:fundedBy owl:Thing ⊑ agentrole:Cruise
+∃ agentrole:hasAgentRoleType owl:Thing ⊑ agentrole:AgentRole
+⊤ ⊑ ∀ agentrole:hasAgentRoleType agentrole:AgentRoleType
+∃ agentrole:hasAlternativeIdentifier owl:Thing ⊑ agentrole:InformationObject
+⊤ ⊑ ∀ agentrole:hasAlternativeIdentifier agentrole:Identifier
+⊤ ⊑ ∀ agentrole:hasAttribute agentrole:Attribute
+∃ agentrole:hasAwardAmount owl:Thing ⊑ agentrole:FundingAward
+⊤ ⊑ ∀ agentrole:hasAwardAmount agentrole:AwardAmount
+⊑ time:hasTime
+∃ time:hasBeginning owl:Thing ⊑ time:TemporalEntity
+⊤ ⊑ ∀ time:hasBeginning time:Instant
+∃ agentrole:hasCurrencyCode owl:Thing ⊑ agentrole:AwardAmount
+⊤ ⊑ ∀ agentrole:hasCurrencyCode agentrole:CurrencyCode
+∃ agentrole:hasDataSource owl:Thing ⊑ agentrole:Fix
+⊤ ⊑ ∀ agentrole:hasDataSource agentrole:Source
+∃ time:hasDateTimeDescription owl:Thing ⊑ time:DateTimeInterval
+⊤ ⊑ ∀ time:hasDateTimeDescription time:GeneralDateTimeDescription
+⊑ time:hasTemporalDuration
+⊤ ⊑ ∀ time:hasDuration time:Duration
+⊑ time:hasTemporalDuration
+⊤ ⊑ ∀ time:hasDurationDescription time:GeneralDurationDescription
+⊑ time:hasTime
+∃ time:hasEnd owl:Thing ⊑ time:TemporalEntity
+⊤ ⊑ ∀ time:hasEnd time:Instant
+∃ agentrole:hasInputFeature owl:Thing ⊑ agentrole:SamplingProcess
+⊤ ⊑ ∀ agentrole:hasInputFeature agentrole:Feature
+⊤ ⊑ ≤ 1 agentrole:hasNextFix owl:Thing
+∃ agentrole:hasNextFix owl:Thing ⊑ agentrole:Fix
+⊤ ⊑ ∀ agentrole:hasNextFix agentrole:Fix
+⊑ agentrole:hasPersonalInfoItem
+∃ agentrole:hasPersonName owl:Thing ⊑ agentrole:Person
+∃ agentrole:hasPersonalInfoItem owl:Thing ⊑ agentrole:Person
+⊤ ⊑ ∀ agentrole:hasPersonalInfoItem agentrole:PersonalInfoItem
+∃ agentrole:hasPosition owl:Thing ⊑ agentrole:Fix
+⊤ ⊑ ∀ agentrole:hasPosition agentrole:Position
+∃ agentrole:hasPrimaryIdentifier owl:Thing ⊑ agentrole:InformationObject
+⊤ ⊑ ∀ agentrole:hasProperty agentrole:Property
+∃ agentrole:hasRelatedCruise owl:Thing ⊑ agentrole:Cruise
+⊤ ⊑ ∀ agentrole:hasRelatedCruise agentrole:Cruise
+∃ agentrole:hasSegment owl:Thing ⊑ agentrole:Trajectory
+⊤ ⊑ ∀ agentrole:hasSegment agentrole:Segment
+∃ agentrole:hasSite owl:Thing ⊑ agentrole:Organization
+⊤ ⊑ ∀ agentrole:hasSite agentrole:Place
+owl:TransitiveProperty: agentrole:hasSubOrganization
+∃ agentrole:hasSubOrganization owl:Thing ⊑ agentrole:Organization
+⊤ ⊑ ∀ agentrole:hasSubOrganization agentrole:Organization
+⊤ ⊑ ≤ 1 time:hasTRS owl:Thing
+∃ time:hasTRS owl:Thing ⊑ time:GeneralDurationDescription ⊔ time:TemporalPosition
+⊤ ⊑ ∀ time:hasTRS time:TRS
+∃ time:hasTemporalDuration owl:Thing ⊑ time:TemporalEntity
+⊤ ⊑ ∀ time:hasTemporalDuration time:TemporalDuration
+∃ agentrole:hasTemporalExtent owl:Thing ⊑ agentrole:AgentRole
+⊤ ⊑ ∀ agentrole:hasTemporalExtent time:TemporalEntity
+⊤ ⊑ ∀ time:hasTime time:TemporalEntity
+∃ agentrole:hasTrajectory owl:Thing ⊑ agentrole:Cruise
+⊤ ⊑ ∀ agentrole:hasTrajectory agentrole:CruiseTrajectory
+∃ agentrole:hasUnit owl:Thing ⊑ agentrole:Property
+⊤ ⊑ ∀ agentrole:hasUnit agentrole:PropertyUnit
+∃ agentrole:hasValue owl:Thing ⊑ agentrole:PersonalInfoItem
+⊑ time:inTemporalPosition
+∃ time:inDateTime owl:Thing ⊑ time:Instant
+⊤ ⊑ ∀ time:inDateTime time:GeneralDateTimeDescription
+∃ time:inTemporalPosition owl:Thing ⊑ time:Instant
+⊤ ⊑ ∀ time:inTemporalPosition time:TemporalPosition
+⊑ time:inTemporalPosition
+∃ time:inTimePosition owl:Thing ⊑ time:Instant
+⊤ ⊑ ∀ time:inTimePosition time:TimePosition
+∃ time:inside owl:Thing ⊑ time:Interval
+⊤ ⊑ ∀ time:inside time:Instant
+⊑ time:intervalDisjoint
+⊑ time:after
+time:intervalAfter ≡ time:intervalBefore⁻
+∃ time:intervalAfter owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalAfter time:ProperInterval
+⊑ time:before
+⊑ time:intervalDisjoint
+time:intervalAfter ≡ time:intervalBefore⁻
+∃ time:intervalBefore owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalBefore time:ProperInterval
+time:intervalContains ≡ time:intervalDuring⁻
+∃ time:intervalContains owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalContains time:ProperInterval
+∃ time:intervalDisjoint owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalDisjoint time:ProperInterval
+⊑ time:intervalIn
+time:intervalContains ≡ time:intervalDuring⁻
+∃ time:intervalDuring owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalDuring time:ProperInterval
+∃ time:intervalEquals owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalEquals time:ProperInterval
+DisjointObjectProperties: time:intervalEquals time:intervalIn
+time:intervalFinishedBy ≡ time:intervalFinishes⁻
+∃ time:intervalFinishedBy owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalFinishedBy time:ProperInterval
+⊑ time:intervalIn
+time:intervalFinishedBy ≡ time:intervalFinishes⁻
+∃ time:intervalFinishes owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalFinishes time:ProperInterval
+∃ time:intervalIn owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalIn time:ProperInterval
+DisjointObjectProperties: time:intervalEquals time:intervalIn
+time:intervalMeets ≡ time:intervalMetBy⁻
+∃ time:intervalMeets owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalMeets time:ProperInterval
+time:intervalMeets ≡ time:intervalMetBy⁻
+∃ time:intervalMetBy owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalMetBy time:ProperInterval
+time:intervalOverlappedBy ≡ time:intervalOverlaps⁻
+∃ time:intervalOverlappedBy owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalOverlappedBy time:ProperInterval
+time:intervalOverlappedBy ≡ time:intervalOverlaps⁻
+∃ time:intervalOverlaps owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalOverlaps time:ProperInterval
+time:intervalStartedBy ≡ time:intervalStarts⁻
+∃ time:intervalStartedBy owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalStartedBy time:ProperInterval
+⊑ time:intervalIn
+time:intervalStartedBy ≡ time:intervalStarts⁻
+∃ time:intervalStarts owl:Thing ⊑ time:ProperInterval
+⊤ ⊑ ∀ time:intervalStarts time:ProperInterval
+∃ time:monthOfYear owl:Thing ⊑ time:GeneralDateTimeDescription
+⊤ ⊑ ∀ time:monthOfYear time:MonthOfYear
+∃ agentrole:occursAtPlace owl:Thing ⊑ agentrole:Event
+⊤ ⊑ ∀ agentrole:occursAtPlace agentrole:Place
+∃ agentrole:occursAtTime owl:Thing ⊑ agentrole:Event
+⊤ ⊑ ∀ agentrole:occursAtTime time:TemporalEntity
+∃ agentrole:originatesFrom owl:Thing ⊑ agentrole:PhysicalSample
+⊤ ⊑ ∀ agentrole:originatesFrom agentrole:Feature
+agentrole:performedBy ≡ agentrole:performsAgentRole⁻
+∃ agentrole:performedBy owl:Thing ⊑ agentrole:AgentRole
+agentrole:performedBy ≡ agentrole:performsAgentRole⁻
+agentrole:agentRoleIn ≡ agentrole:providesAgentRole⁻
+∃ agentrole:r_Port owl:Thing ⊑ :Port
+∃ agentrole:realizationAbout owl:Thing ⊑ agentrole:InformationRealization
+∃ agentrole:realizedBy owl:Thing ⊑ agentrole:InformationObject
+⊤ ⊑ ∀ agentrole:realizedBy agentrole:InformationRealization
+⊑ agentrole:occursAtTime
+⊤ ⊑ ∀ agentrole:startsAtTime time:Instant
+⊤ ⊑ ≤ 1 agentrole:startsFromFix owl:Thing
+∃ agentrole:startsFromFix owl:Thing ⊑ agentrole:Segment
+⊤ ⊑ ∀ agentrole:startsFromFix agentrole:Fix
+∃ time:timeZone owl:Thing ⊑ time:GeneralDateTimeDescription
+⊤ ⊑ ∀ time:timeZone time:TimeZone
+∃ agentrole:traveledBy owl:Thing ⊑ agentrole:CruiseTrajectory
+⊤ ⊑ ∀ agentrole:traveledBy agentrole:Vessel
+∃ agentrole:traversedBy owl:Thing ⊑ agentrole:Segment
+⊤ ⊑ ∀ agentrole:traversedBy agentrole:MovingObject
+∃ agentrole:undertakenBy owl:Thing ⊑ agentrole:Cruise
+⊤ ⊑ ∀ agentrole:undertakenBy agentrole:Vessel
+∃ time:unitType owl:Thing ⊑ time:Duration ⊔ time:GeneralDateTimeDescription
+⊤ ⊑ ∀ time:unitType time:TemporalUnit
+∃ agentrole:alsoKnownAs rdfs:Literal ⊑ agentrole:InformationObject
+∃ time:day rdfs:Literal ⊑ time:GeneralDateTimeDescription
+∃ time:dayOfYear rdfs:Literal ⊑ time:GeneralDateTimeDescription
+⊤ ⊑ ∀ time:dayOfYear xsd:nonNegativeInteger
+∃ time:days rdfs:Literal ⊑ time:GeneralDurationDescription
+⊤ ⊑ ∀ time:days xsd:decimal
+∃ agentrole:familyOrSurname rdfs:Literal ⊑ agentrole:PersonName
+∃ agentrole:firstOrGivenName rdfs:Literal ⊑ agentrole:PersonName
+⊑ agentrole:hasLiteralValue
+∃ agentrole:fullName rdfs:Literal ⊑ agentrole:PersonName
+∃ agentrole:hasCanonicalName rdfs:Literal ⊑ agentrole:InformationObject
+∃ agentrole:hasCurrencyValue rdfs:Literal ⊑ agentrole:AwardAmount
+⊤ ⊑ ∀ agentrole:hasCurrencyValue xsd:decimal
+∃ agentrole:hasDescription rdfs:Literal ⊑ agentrole:InformationObject
+∃ agentrole:hasIdentifierScheme rdfs:Literal ⊑ agentrole:Identifier
+∃ agentrole:hasIdentifierValue rdfs:Literal ⊑ agentrole:Identifier
+∃ agentrole:hasLiteralValue rdfs:Literal ⊑ agentrole:PersonalInfoItem
+⊤ ⊑ ∀ agentrole:hasName xsd:string
+∃ agentrole:hasWebpage rdfs:Literal ⊑ agentrole:InformationObject
+⊤ ⊑ ∀ agentrole:hasWebpage xsd:anyURI
+∃ time:hasXSDDuration rdfs:Literal ⊑ time:TemporalEntity
+⊤ ⊑ ∀ time:hasXSDDuration xsd:duration
+∃ time:hour rdfs:Literal ⊑ time:GeneralDateTimeDescription
+⊤ ⊑ ∀ time:hour xsd:nonNegativeInteger
+∃ time:hours rdfs:Literal ⊑ time:GeneralDurationDescription
+⊤ ⊑ ∀ time:hours xsd:decimal
+∃ time:inXSDDate rdfs:Literal ⊑ time:Instant
+∃ time:inXSDDateTime rdfs:Literal ⊑ time:Instant
+⊤ ⊑ ∀ time:inXSDDateTime xsd:dateTime
+∃ time:inXSDDateTimeStamp rdfs:Literal ⊑ time:Instant
+⊤ ⊑ ∀ time:inXSDDateTimeStamp xsd:dateTimeStamp
+∃ time:inXSDgYear rdfs:Literal ⊑ time:Instant
+⊤ ⊑ ∀ time:inXSDgYear xsd:gYear
+∃ time:inXSDgYearMonth rdfs:Literal ⊑ time:Instant
+⊤ ⊑ ∀ time:inXSDgYearMonth xsd:gYearMonth
+∃ time:minute rdfs:Literal ⊑ time:GeneralDateTimeDescription
+⊤ ⊑ ∀ time:minute xsd:nonNegativeInteger
+∃ time:minutes rdfs:Literal ⊑ time:GeneralDurationDescription
+⊤ ⊑ ∀ time:minutes xsd:decimal
+∃ time:month rdfs:Literal ⊑ time:GeneralDateTimeDescription
+∃ time:months rdfs:Literal ⊑ time:GeneralDurationDescription
+⊤ ⊑ ∀ time:months xsd:decimal
+∃ time:nominalPosition rdfs:Literal ⊑ time:TimePosition
+⊤ ⊑ ∀ time:nominalPosition xsd:string
+∃ time:numericDuration rdfs:Literal ⊑ time:Duration
+⊤ ⊑ ∀ time:numericDuration xsd:decimal
+∃ time:numericPosition rdfs:Literal ⊑ time:TimePosition
+⊤ ⊑ ∀ time:numericPosition xsd:decimal
+∃ time:second rdfs:Literal ⊑ time:GeneralDateTimeDescription
+⊤ ⊑ ∀ time:second xsd:decimal
+∃ time:seconds rdfs:Literal ⊑ time:GeneralDurationDescription
+⊤ ⊑ ∀ time:seconds xsd:decimal
+∃ time:week rdfs:Literal ⊑ time:GeneralDateTimeDescription
+⊤ ⊑ ∀ time:week xsd:nonNegativeInteger
+∃ time:weeks rdfs:Literal ⊑ time:GeneralDurationDescription
+⊤ ⊑ ∀ time:weeks xsd:decimal
+∃ time:xsdDateTime rdfs:Literal ⊑ time:DateTimeInterval
+⊤ ⊑ ∀ time:xsdDateTime xsd:dateTime
+∃ time:year rdfs:Literal ⊑ time:GeneralDateTimeDescription
+∃ time:years rdfs:Literal ⊑ time:GeneralDurationDescription
+⊤ ⊑ ∀ time:years xsd:decimal

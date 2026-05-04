@@ -1,0 +1,15 @@
+What are all available cruises or expeditions?
+What names or titles are associated with each cruise?
+What type or category is assigned to each cruise?
+What identifiers are assigned to each vessel, platform, or cruise?
+What formats are available for digital objects?
+What people participated in each cruise, and what roles did they have?
+Which organizations sponsored or funded each cruise?
+Which vessel or platform was used for each cruise?
+Which cruises have both temporal and spatial information?
+Which samples are associated with a given place or feature?
+Which people participated in multiple cruises, and did their roles change across cruises?
+Which cruises involved the same PI, vessel, and sponsoring organization?
+Which cruises are missing vessel, date, place, or identifier information?
+Which vessels conducted the most cruises?
+Which organizations sponsored the most cruises?

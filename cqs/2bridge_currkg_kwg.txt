@@ -1,0 +1,9 @@
+What learning media resources cover topics related to hazards?
+What curriculum modules cover climate, hazard, damage, health, demographic, or geographical-place topics?
+What hazard types are represented by topics covered in learning paths or media resources?
+Which modules or media resources cover topics corresponding to hazard events recorded for specific geographical places?
+Which learning paths include modules about hazards that have temporal, damage, impact, or climate details in the KG?
+Which personas are associated with learning paths that include media resources about hazard types affecting geographical places?
+Which curriculum modules reference media resources about hazard types that also have damage observations, impact observations, climate attributes, or demographic attributes for affected places?
+Which learning paths teach hazard-related topics in an order that can be linked to real hazard events, affected places, temporal intervals, damage details, health concerns, and demographic attributes?
+Which learning modules or media resources cover hazard-related topics, and which hazard events, places, or climate attributes from the KG correspond to those topics?
