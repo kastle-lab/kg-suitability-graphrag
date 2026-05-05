@@ -4,7 +4,7 @@ This repository contains competency questions, prompt templates, prompt assets, 
 
 ## Directory and File Overview
 
-* **cqs/** — Competency question lists used as SPARQL generation tasks.
+* **cqs/** — Competency question lists used as KG selection tasks.
 * **prompt_assets/** — JSON prompt support assets used by the KG selection workflow.
 * **prompts/** — Python prompt template modules used to assemble LLM requests for KG selection.
 * **results/** — KG selection and evaluation outputs.
