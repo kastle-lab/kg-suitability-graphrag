@@ -224,95 +224,95 @@ kgsel_0shot_temp0_nen_axiom_ttl.jsonl,222,"What are any and all available hazard
 kgsel_0shot_temp0_nen_axiom_ttl.jsonl,223,"What are all the enslaved individuals who contributed labor to construction projects, such as the state capitol, and what were their roles?",enslaved,ttl,0_shot,temp0.0,moderate,enslaved,enslaved,enslaved,enslaved,1
 kgsel_0shot_temp0_nen_axiom_ttl.jsonl,224,Which organizations sponsored or funded each cruise?,gmo,ttl,0_shot,temp0.0,moderate,gmo,gmo,gmo,gmo,1
 kgsel_0shot_temp0_nen_axiom_ttl.jsonl,225,What authors are advised by which advisors?,core_scholar_rich,axiom,0_shot,temp0.0,moderate,core_scholar_rich,core_scholar_rich,core_scholar_rich,core_scholar_rich,1
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,1,What agents are required to complete task x?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,2,Which agent can perform task z?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,1,What agents are required to complete task x?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,2,Which agent can perform task z?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,3,What objects are required for goal g?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,4,What are the classifications/categories of a set of objects?,no_kg,ttl,0_shot,temp0.0,simple,consolidated_kgs,kwg,no_kg,kwg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,5,What tasks require a given capability c?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,6,What archetype does agent A fulfill?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,5,What tasks require a given capability c?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,6,What archetype does agent A fulfill?,no_kg,axiom,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,7,What is an alternative path from task x to task y?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,8,What were the states of the agent following a failed task?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,core_scholar_rich,no_kg,core_scholar_rich,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,9,What knowledge is in the database about behavior?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,10,What are the task(s) that can be achieved by the presence of object o?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,9,What knowledge is in the database about behavior?,no_kg,axiom,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,10,What are the task(s) that can be achieved by the presence of object o?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,11,Which tasks share common dependent tasks across different goals?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,12,What are the dependent tasks for task z?,no_kg,axiom,0_shot,temp0.0,simple,consolidated_kgs,prowltoonto26currkg,no_kg,invalid_prediction,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,13,Which tasks directly follow task x?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,13,Which tasks directly follow task x?,no_kg,nen,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,14,What tasks are decomposable?,no_kg,axiom,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,15,What capabilities are missing to achieve goal g?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,16,What knowledge is in the database about behavior?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,16,What knowledge is in the database about behavior?,no_kg,ttl,0_shot,temp0.0,simple,consolidated_kgs,no_kg,no_kg,no_kg,1
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,17,What is an alternative path from task x to task y?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,18,What tasks consist of at least X tasks?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,19,Which agent can perform task z?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,enslaved,no_kg,enslaved,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,20,What tasks are the atomic level tasks?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,18,What tasks consist of at least X tasks?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,19,Which agent can perform task z?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,enslaved,no_kg,enslaved,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,20,What tasks are the atomic level tasks?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,21,How does robot X handle individualism in human behaviors?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,22,What are the dependent tasks for task z?,no_kg,nen,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,23,How does the robot reason about the behaviors of its human agent?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,24,What objects are required for goal g?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,25,What knowledge is in the database about behavior?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,25,What knowledge is in the database about behavior?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,26,What capabilities are missing to achieve goal g?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,27,What goals can be achieved from task X?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,28,What goals can be achieved from task X?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,27,What goals can be achieved from task X?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,28,What goals can be achieved from task X?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,29,How does robot X handle individualism in human behaviors?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,30,What agents are required to complete task x?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,31,What agents are required to complete task x?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,32,What is the sequence/task list of tasks required to complete primary goal g?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,33,What archetype does agent A fulfill?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,34,What are the task(s) that can be achieved by the presence of object o?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,30,What agents are required to complete task x?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,31,What agents are required to complete task x?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,32,What is the sequence/task list of tasks required to complete primary goal g?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,33,What archetype does agent A fulfill?,no_kg,nen,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,34,What are the task(s) that can be achieved by the presence of object o?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,35,What objects are required for goal g?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,36,What tasks are the atomic level tasks?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,37,What is the sequence/task list of tasks required to complete primary goal g?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,36,What tasks are the atomic level tasks?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,37,What is the sequence/task list of tasks required to complete primary goal g?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,38,What are the classifications/categories of a set of objects?,no_kg,axiom,0_shot,temp0.0,simple,consolidated_kgs,kwg,no_kg,kwg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,39,"If scenario Y happens, what is robot X’s response?",no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,40,Which archetypes are required across all tasks in goal g?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,41,How does the robot reason about the behaviors of its human agent?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,42,Which tasks directly precede task x?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,43,What tasks consist of at least X tasks?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,42,Which tasks directly precede task x?,no_kg,ttl,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,43,What tasks consist of at least X tasks?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,44,How does robot X handle individualism in human behaviors?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,45,What are the task(s) that can be achieved by the presence of object o?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,45,What are the task(s) that can be achieved by the presence of object o?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,46,How does Robot X handle a sudden change?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,47,What is the sequence/task list of tasks required to complete primary goal g?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,48,Which tasks directly follow task x?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,49,What objects are required to complete task x?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,50,What tasks require a given capability c?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,51,What objects are required to complete task x?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,47,What is the sequence/task list of tasks required to complete primary goal g?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,48,Which tasks directly follow task x?,no_kg,axiom,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,49,What objects are required to complete task x?,no_kg,nen,0_shot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,50,What tasks require a given capability c?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,51,What objects are required to complete task x?,no_kg,ttl,0_shot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,52,"If scenario Y happens, what is robot X’s response?",no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,53,What set of agents are required to complete primary goal y?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,54,Which objects satisfy the requirements of task x?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,kwg,no_kg,kwg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,55,What set of agents are required to complete primary goal y?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,56,What tasks are the atomic level tasks?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,57,Which objects satisfy the requirements of task x?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,53,What set of agents are required to complete primary goal y?,no_kg,ttl,0_shot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,54,Which objects satisfy the requirements of task x?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,kwg,no_kg,kwg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,55,What set of agents are required to complete primary goal y?,no_kg,nen,0_shot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,56,What tasks are the atomic level tasks?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,57,Which objects satisfy the requirements of task x?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,58,"If scenario Y happens, what is robot X’s response?",no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,59,What are the different workplace behaviors?,no_kg,ttl,0_shot,temp0.0,simple,consolidated_kgs,core_scholar_rich,no_kg,core_scholar_rich,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,60,What knowledge is in the database about behavior?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,60,What knowledge is in the database about behavior?,no_kg,nen,0_shot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,61,Which archetypes are required across all tasks in goal g?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,62,How does Robot X handle a sudden change?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,63,What are the different workplace behaviors?,no_kg,axiom,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,64,What were the states of the agent following a failed task?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,core_scholar_rich,no_kg,core_scholar_rich,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,65,Which tasks directly follow task x?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,65,Which tasks directly follow task x?,no_kg,ttl,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,66,Which archetypes are required across all tasks in goal g?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,67,What knowledge is in the database about behavior?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,67,What knowledge is in the database about behavior?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,no_kg,no_kg,no_kg,1
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,68,What capabilities are missing to achieve goal g?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,69,Which tasks share common dependent tasks across different goals?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,70,Which tasks directly precede task x?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,70,Which tasks directly precede task x?,no_kg,axiom,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,71,What tasks are decomposable?,no_kg,nen,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,72,What tasks consist of at least X tasks?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,72,What tasks consist of at least X tasks?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,73,How does the robot reason about the behaviors of its human agent?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,74,What are the dependent tasks for task z?,no_kg,ttl,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,75,Which agent can perform task z?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,core_scholar_rich,no_kg,core_scholar_rich,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,75,Which agent can perform task z?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,core_scholar_rich,no_kg,core_scholar_rich,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,76,What tasks are decomposable?,no_kg,ttl,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,77,What archetype does agent A fulfill?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,78,Which tasks directly precede task x?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,79,Which objects satisfy the requirements of task x?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,80,What set of agents are required to complete primary goal y?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,77,What archetype does agent A fulfill?,no_kg,ttl,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,78,Which tasks directly precede task x?,no_kg,nen,0_shot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,79,Which objects satisfy the requirements of task x?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,80,What set of agents are required to complete primary goal y?,no_kg,axiom,0_shot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,81,What were the states of the agent following a failed task?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,core_scholar_rich,no_kg,core_scholar_rich,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,82,What goals can be achieved from task X?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,82,What goals can be achieved from task X?,no_kg,ttl,0_shot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,83,Which tasks share common dependent tasks across different goals?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,84,What are the different workplace behaviors?,no_kg,nen,0_shot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,85,What tasks require a given capability c?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,86,What objects are required to complete task x?,no_kg,axiom,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,85,What tasks require a given capability c?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,86,What objects are required to complete task x?,no_kg,axiom,0_shot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,87,How does Robot X handle a sudden change?,no_kg,axiom,0_shot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,88,What are the classifications/categories of a set of objects?,no_kg,nen,0_shot,temp0.0,simple,consolidated_kgs,kwg,no_kg,kwg,0
-kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,89,What knowledge is in the database about behavior?,no_kg,nen,0_shot,temp0.0,complex,consolidated_kgs,enslaved,no_kg,enslaved,0
+kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,89,What knowledge is in the database about behavior?,no_kg,nen,0_shot,temp0.0,moderate,consolidated_kgs,enslaved,no_kg,enslaved,0
 kgsel_0shot_temp0_nen_axiom_ttl_falsesets.jsonl,90,What is an alternative path from task x to task y?,no_kg,ttl,0_shot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl.jsonl,1,What are all the damage details available done by tornado-specific hazards that are related to a geographical place within a certain temporal extent?,kwg,nen,cot,temp0.0,complex,kwg,kwg,kwg,kwg,1
 kgsel_cot_temp0_nen_axiom_ttl.jsonl,2,What are all the available climate-specific attributes related to all geographical places?,kwg,axiom,cot,temp0.0,moderate,kwg,kwg,kwg,kwg,1
@@ -540,53 +540,53 @@ kgsel_cot_temp0_nen_axiom_ttl.jsonl,223,"Which cruises involved the same PI, ves
 kgsel_cot_temp0_nen_axiom_ttl.jsonl,224,What are all the available storm-specific hazard attributes and their details related to all geographical places?,kwg,axiom,cot,temp0.0,moderate,kwg,kwg,kwg,kwg,1
 kgsel_cot_temp0_nen_axiom_ttl.jsonl,225,What are all the geographical places associated with enslaved people and their relationships to those places?,enslaved,nen,cot,temp0.0,simple,enslaved,enslaved,enslaved,enslaved,1
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,1,What capabilities are missing to achieve goal g?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,2,What tasks are the atomic level tasks?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,2,What tasks are the atomic level tasks?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,3,What are the dependent tasks for task z?,no_kg,axiom,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,4,How does the robot reason about the behaviors of its human agent?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,5,What objects are required to complete task x?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,5,What objects are required to complete task x?,no_kg,axiom,cot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,6,What are the different workplace behaviors?,no_kg,axiom,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,7,How does the robot reason about the behaviors of its human agent?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,8,"If scenario Y happens, what is robot X’s response?",no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,9,What are the classifications/categories of a set of objects?,no_kg,axiom,cot,temp0.0,simple,consolidated_kgs,kwg,no_kg,kwg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,10,What is an alternative path from task x to task y?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,11,What set of agents are required to complete primary goal y?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,12,Which objects satisfy the requirements of task x?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,13,What knowledge is in the database about behavior?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,11,What set of agents are required to complete primary goal y?,no_kg,axiom,cot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,12,Which objects satisfy the requirements of task x?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,no_kg,no_kg,no_kg,1
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,13,What knowledge is in the database about behavior?,no_kg,nen,cot,temp0.0,simple,consolidated_kgs,no_kg,no_kg,no_kg,1
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,14,How does robot X handle individualism in human behaviors?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,15,How does Robot X handle a sudden change?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,16,What tasks require a given capability c?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,17,What are the task(s) that can be achieved by the presence of object o?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,16,What tasks require a given capability c?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,17,What are the task(s) that can be achieved by the presence of object o?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,18,How does Robot X handle a sudden change?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,19,What are the dependent tasks for task z?,no_kg,ttl,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,20,Which tasks directly precede task x?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,20,Which tasks directly precede task x?,no_kg,axiom,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,21,Which tasks share common dependent tasks across different goals?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,22,What archetype does agent A fulfill?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,22,What archetype does agent A fulfill?,no_kg,ttl,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,23,Which archetypes are required across all tasks in goal g?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,24,What tasks are decomposable?,no_kg,axiom,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,25,Which agent can perform task z?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,26,What are the task(s) that can be achieved by the presence of object o?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,27,What are the task(s) that can be achieved by the presence of object o?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,25,Which agent can perform task z?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,26,What are the task(s) that can be achieved by the presence of object o?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,27,What are the task(s) that can be achieved by the presence of object o?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,28,What tasks are decomposable?,no_kg,nen,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,29,Which objects satisfy the requirements of task x?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,30,What knowledge is in the database about behavior?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,29,Which objects satisfy the requirements of task x?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,30,What knowledge is in the database about behavior?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,31,What were the states of the agent following a failed task?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,core_scholar_rich,no_kg,core_scholar_rich,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,32,What are the classifications/categories of a set of objects?,no_kg,nen,cot,temp0.0,simple,consolidated_kgs,kwg,no_kg,kwg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,33,Which tasks share common dependent tasks across different goals?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,34,Which tasks directly follow task x?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,35,Which tasks directly follow task x?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,36,What tasks require a given capability c?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,34,Which tasks directly follow task x?,no_kg,nen,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,35,Which tasks directly follow task x?,no_kg,ttl,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,36,What tasks require a given capability c?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,37,What were the states of the agent following a failed task?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,enslaved,no_kg,enslaved,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,38,What tasks consist of at least X tasks?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,39,What goals can be achieved from task X?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,ito,no_kg,invalid_prediction,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,40,What archetype does agent A fulfill?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,41,What objects are required to complete task x?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,42,Which tasks directly precede task x?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,38,What tasks consist of at least X tasks?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,39,What goals can be achieved from task X?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,ito,no_kg,invalid_prediction,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,40,What archetype does agent A fulfill?,no_kg,axiom,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,41,What objects are required to complete task x?,no_kg,ttl,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,42,Which tasks directly precede task x?,no_kg,ttl,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,43,"If scenario Y happens, what is robot X’s response?",no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,44,What goals can be achieved from task X?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,45,What is the sequence/task list of tasks required to complete primary goal g?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,46,What agents are required to complete task x?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,47,What tasks consist of at least X tasks?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,48,What set of agents are required to complete primary goal y?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,44,What goals can be achieved from task X?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,45,What is the sequence/task list of tasks required to complete primary goal g?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,46,What agents are required to complete task x?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,47,What tasks consist of at least X tasks?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,48,What set of agents are required to complete primary goal y?,no_kg,nen,cot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,49,What capabilities are missing to achieve goal g?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,50,What are the different workplace behaviors?,no_kg,nen,cot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,51,What objects are required for goal g?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
@@ -595,37 +595,37 @@ kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,53,Which archetypes are required a
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,54,What tasks are decomposable?,no_kg,ttl,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,55,What are the different workplace behaviors?,no_kg,ttl,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,56,What were the states of the agent following a failed task?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,core_scholar_rich,no_kg,core_scholar_rich,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,57,What knowledge is in the database about behavior?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,57,What knowledge is in the database about behavior?,no_kg,axiom,cot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,58,How does Robot X handle a sudden change?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,59,What knowledge is in the database about behavior?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,59,What knowledge is in the database about behavior?,no_kg,ttl,cot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,60,What is an alternative path from task x to task y?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,61,What knowledge is in the database about behavior?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,enslaved,no_kg,enslaved,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,61,What knowledge is in the database about behavior?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,enslaved,no_kg,enslaved,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,62,What capabilities are missing to achieve goal g?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,63,What agents are required to complete task x?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,64,What is the sequence/task list of tasks required to complete primary goal g?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,65,Which agent can perform task z?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,66,What objects are required to complete task x?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,63,What agents are required to complete task x?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,64,What is the sequence/task list of tasks required to complete primary goal g?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,65,Which agent can perform task z?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,66,What objects are required to complete task x?,no_kg,nen,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,67,What are the classifications/categories of a set of objects?,no_kg,ttl,cot,temp0.0,simple,consolidated_kgs,kwg,no_kg,kwg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,68,What objects are required for goal g?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,69,How does the robot reason about the behaviors of its human agent?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,70,Which tasks directly precede task x?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,71,Which agent can perform task z?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,enslaved,no_kg,enslaved,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,72,What goals can be achieved from task X?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,70,Which tasks directly precede task x?,no_kg,nen,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,71,Which agent can perform task z?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,enslaved,no_kg,enslaved,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,72,What goals can be achieved from task X?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,73,How does robot X handle individualism in human behaviors?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,74,Which objects satisfy the requirements of task x?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,75,What is the sequence/task list of tasks required to complete primary goal g?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,76,What archetype does agent A fulfill?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,77,What knowledge is in the database about behavior?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,74,Which objects satisfy the requirements of task x?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,75,What is the sequence/task list of tasks required to complete primary goal g?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,76,What archetype does agent A fulfill?,no_kg,nen,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,77,What knowledge is in the database about behavior?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,78,What is an alternative path from task x to task y?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,79,What objects are required for goal g?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,80,What set of agents are required to complete primary goal y?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,81,What tasks are the atomic level tasks?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,82,What tasks are the atomic level tasks?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,80,What set of agents are required to complete primary goal y?,no_kg,ttl,cot,temp0.0,simple,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,81,What tasks are the atomic level tasks?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,82,What tasks are the atomic level tasks?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,83,Which tasks share common dependent tasks across different goals?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,84,Which archetypes are required across all tasks in goal g?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,85,How does robot X handle individualism in human behaviors?,no_kg,axiom,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
 kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,86,What are the dependent tasks for task z?,no_kg,nen,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,87,What tasks require a given capability c?,no_kg,ttl,cot,temp0.0,complex,consolidated_kgs,no_kg,no_kg,no_kg,1
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,88,Which tasks directly follow task x?,no_kg,axiom,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,89,What tasks consist of at least X tasks?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,currkg,no_kg,currkg,0
-kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,90,What agents are required to complete task x?,no_kg,nen,cot,temp0.0,complex,consolidated_kgs,gmo,no_kg,gmo,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,87,What tasks require a given capability c?,no_kg,ttl,cot,temp0.0,moderate,consolidated_kgs,no_kg,no_kg,no_kg,1
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,88,Which tasks directly follow task x?,no_kg,axiom,cot,temp0.0,simple,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,89,What tasks consist of at least X tasks?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,currkg,no_kg,currkg,0
+kgsel_cot_temp0_nen_axiom_ttl_falsesets.jsonl,90,What agents are required to complete task x?,no_kg,nen,cot,temp0.0,moderate,consolidated_kgs,gmo,no_kg,gmo,0

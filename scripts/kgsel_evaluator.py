@@ -224,7 +224,7 @@ def compute_single_rejection_metrics(rows):
 
 # --- 1. Load All CQs ---
 print(f"Loading questions from '{CQS_DIR}'...")
-question_to_meta = {}
+question_to_meta = defaultdict(list)
 
 for filepath in glob.glob(os.path.join(CQS_DIR, '*.txt')):
     filename = os.path.basename(filepath)
@@ -257,19 +257,39 @@ for filepath in glob.glob(os.path.join(CQS_DIR, '*.txt')):
 
             complexity = "unknown"
             if num_bridges == 1:
-                if idx <= 5:
+                if expected_raw == "consolidated_kgs":
+                    if idx <= 10:
+                        complexity = "simple"
+                    elif idx <= 20:
+                        complexity = "moderate"
+                    else:
+                        complexity = "complex"
+                elif idx <= 5:
                     complexity = "simple"
                 elif idx <= 10:
                     complexity = "moderate"
                 else:
                     complexity = "complex"
 
-            question_to_meta[q_norm] = {
+            question_to_meta[q_norm].append({
                 "expected_set": expected_set,
                 "expected_str": expected_str,
                 "num_bridges": num_bridges,
                 "cq_complexity": complexity
-            }
+            })
+
+
+def resolve_question_meta(q_norm, occurrence_counts, occurrence_key=None):
+    metas = question_to_meta.get(q_norm, [])
+    if not metas:
+        return None
+    if len(metas) == 1:
+        return metas[0]
+
+    counter_key = occurrence_key if occurrence_key is not None else q_norm
+    occurrence_index = occurrence_counts[counter_key]
+    occurrence_counts[counter_key] += 1
+    return metas[occurrence_index % len(metas)]
 
 # --- 2. Process Single Bridge ---
 
@@ -277,6 +297,7 @@ for filepath in glob.glob(os.path.join(CQS_DIR, '*.txt')):
 def process_single_bridge():
     print(f"\nProcessing SINGLE bridge files in '{SINGLE_OUTPUTS_DIR}'...")
     rows = []
+    meta_occurrence_counts = defaultdict(int)
 
     for filepath in get_jsonl_files(SINGLE_OUTPUTS_DIR):
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -298,7 +319,8 @@ def process_single_bridge():
                     if match:
                         q_raw = match.group(3).strip()
                         q_norm = normalize_text(q_raw)
-                        meta = question_to_meta.get(q_norm)
+                        meta = resolve_question_meta(
+                            q_norm, meta_occurrence_counts, request_key)
 
                         if meta and meta["num_bridges"] == 1:
                             expected_str = meta["expected_str"]
@@ -390,6 +412,7 @@ def process_single_bridge():
 def process_multi_bridge():
     print(f"\nProcessing MULTI bridge files in '{MULTI_OUTPUTS_DIR}'...")
     rows = []
+    meta_occurrence_counts = defaultdict(int)
 
     for filepath in get_jsonl_files(MULTI_OUTPUTS_DIR):
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -412,7 +435,7 @@ def process_multi_bridge():
                 if match:
                     q_raw = match.group(3).strip()
                     q_norm = normalize_text(q_raw)
-                    meta = question_to_meta.get(q_norm)
+                    meta = resolve_question_meta(q_norm, meta_occurrence_counts)
 
                     if meta and meta["num_bridges"] > 1:
                         exp_set = meta["expected_set"]
