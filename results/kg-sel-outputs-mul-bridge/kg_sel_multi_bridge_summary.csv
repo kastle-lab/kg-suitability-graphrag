@@ -1,364 +1,364 @@
 level,dimensions,kg,representation,prompt_type,temperature_label,num_bridges,n_records,Exact_Match_Rate,Partial_Match_Rate,Complete_Mismatch_Rate,Avg_Precision (Successful Retrieval),Avg_Recall (Target Hit Rate),Avg_F1_Score
 kg,kg,"gmo, kwg",,,,,54,1.0,0.0,0.0,1.0,1.0,1.0
 kg,kg,"currkg, gmo",,,,,54,0.8519,0.1481,0.0,1.0,0.9259,0.9506
-kg,kg,"corescholarrich, currkg, kwg",,,,,60,0.6,0.4,0.0,1.0,0.8556,0.91
-kg,kg,"corescholarrich, enslaved",,,,,54,0.9815,0.0185,0.0,0.9907,0.9907,0.9907
-kg,kg,"corescholarrich, currkg, enslaved",,,,,60,0.6167,0.3833,0.0,1.0,0.8722,0.9233
+kg,kg,"core_scholar_rich, currkg, kwg",,,,,60,0.6,0.4,0.0,1.0,0.8556,0.91
+kg,kg,"core_scholar_rich, enslaved",,,,,54,0.9815,0.0185,0.0,0.9907,0.9907,0.9907
+kg,kg,"core_scholar_rich, currkg, enslaved",,,,,60,0.6167,0.3833,0.0,1.0,0.8722,0.9233
 kg,kg,"currkg, enslaved",,,,,54,0.9444,0.0556,0.0,0.9877,0.9907,0.9864
-kg,kg,"corescholarrich, currkg, gmo",,,,,59,0.661,0.339,0.0,0.9958,0.8757,0.9179
-kg,kg,"corescholarrich, gmo",,,,,54,0.9815,0.0185,0.0,1.0,0.9907,0.9938
-kg,kg,"corescholarrich, currkg",,,,,54,0.9259,0.0741,0.0,1.0,0.963,0.9753
+kg,kg,"core_scholar_rich, currkg, gmo",,,,,60,0.65,0.3333,0.0167,0.9792,0.8611,0.9026
+kg,kg,"core_scholar_rich, gmo",,,,,54,0.9815,0.0185,0.0,1.0,0.9907,0.9938
+kg,kg,"core_scholar_rich, currkg",,,,,54,0.9259,0.0741,0.0,1.0,0.963,0.9753
 kg,kg,"currkg, kwg",,,,,54,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg,kg,"corescholarrich, gmo, kwg",,,,,60,0.7667,0.2333,0.0,1.0,0.9167,0.9483
-kg,kg,"corescholarrich, enslaved, kwg",,,,,60,0.75,0.2167,0.0333,0.9611,0.8889,0.9161
+kg,kg,"core_scholar_rich, gmo, kwg",,,,,60,0.7667,0.2333,0.0,1.0,0.9167,0.9483
+kg,kg,"core_scholar_rich, enslaved, kwg",,,,,60,0.75,0.2167,0.0333,0.9611,0.8889,0.9161
 kg,kg,"enslaved, kwg",,,,,54,0.9815,0.0,0.0185,0.9815,0.9815,0.9815
 representation,representation,,axiom,,,,244,0.8443,0.1557,0.0,1.0,0.9378,0.9602
 representation,representation,,ttl,,,,244,0.8238,0.1762,0.0,0.999,0.9358,0.9594
-representation,representation,,nen,,,,243,0.8148,0.1728,0.0123,0.9815,0.9218,0.9427
+representation,representation,,nen,,,,244,0.8115,0.1721,0.0164,0.9775,0.918,0.9388
 prompt_type,prompt_type,,,0_shot,,,366,0.6967,0.2951,0.0082,0.9879,0.8802,0.9195
-prompt_type,prompt_type,,,cot,,,365,0.9589,0.0411,0.0,0.9991,0.9836,0.9889
-temperature_label,temperature_label,,,,temp0.0,,731,0.8276,0.1683,0.0041,0.9935,0.9318,0.9541
+prompt_type,prompt_type,,,cot,,,366,0.9563,0.041,0.0027,0.9964,0.9809,0.9862
+temperature_label,temperature_label,,,,temp0.0,,732,0.8265,0.168,0.0055,0.9921,0.9306,0.9528
 num_bridges,num_bridges,,,,,2,432,0.9306,0.0671,0.0023,0.995,0.9664,0.9755
-num_bridges,num_bridges,,,,,3,299,0.6789,0.3144,0.0067,0.9914,0.8818,0.9232
+num_bridges,num_bridges,,,,,3,300,0.6767,0.3133,0.01,0.9881,0.8789,0.9201
 kg__representation,kg|representation,"gmo, kwg",axiom,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation,kg|representation,"currkg, gmo",ttl,,,,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
-kg__representation,kg|representation,"corescholarrich, currkg, kwg",nen,,,,20,0.65,0.35,0.0,1.0,0.8833,0.93
-kg__representation,kg|representation,"corescholarrich, enslaved",nen,,,,18,0.9444,0.0556,0.0,0.9722,0.9722,0.9722
-kg__representation,kg|representation,"corescholarrich, currkg, enslaved",nen,,,,20,0.65,0.35,0.0,1.0,0.8833,0.93
+kg__representation,kg|representation,"core_scholar_rich, currkg, kwg",nen,,,,20,0.65,0.35,0.0,1.0,0.8833,0.93
+kg__representation,kg|representation,"core_scholar_rich, enslaved",nen,,,,18,0.9444,0.0556,0.0,0.9722,0.9722,0.9722
+kg__representation,kg|representation,"core_scholar_rich, currkg, enslaved",nen,,,,20,0.65,0.35,0.0,1.0,0.8833,0.93
 kg__representation,kg|representation,"currkg, enslaved",axiom,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation,kg|representation,"corescholarrich, currkg, enslaved",axiom,,,,20,0.6,0.4,0.0,1.0,0.8667,0.92
-kg__representation,kg|representation,"corescholarrich, currkg, gmo",nen,,,,19,0.6316,0.3684,0.0,1.0,0.8421,0.8947
+kg__representation,kg|representation,"core_scholar_rich, currkg, enslaved",axiom,,,,20,0.6,0.4,0.0,1.0,0.8667,0.92
+kg__representation,kg|representation,"core_scholar_rich, currkg, gmo",nen,,,,20,0.6,0.35,0.05,0.95,0.8,0.85
 kg__representation,kg|representation,"currkg, gmo",axiom,,,,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation,kg|representation,"currkg, enslaved",nen,,,,18,0.8889,0.1111,0.0,0.963,1.0,0.9778
-kg__representation,kg|representation,"corescholarrich, gmo",ttl,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation,kg|representation,"corescholarrich, currkg",axiom,,,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
+kg__representation,kg|representation,"core_scholar_rich, gmo",ttl,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation,kg|representation,"core_scholar_rich, currkg",axiom,,,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
 kg__representation,kg|representation,"currkg, kwg",ttl,,,,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation,kg|representation,"corescholarrich, gmo",axiom,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation,kg|representation,"corescholarrich, gmo, kwg",axiom,,,,20,0.8,0.2,0.0,1.0,0.9167,0.945
-kg__representation,kg|representation,"corescholarrich, currkg, gmo",axiom,,,,20,0.7,0.3,0.0,1.0,0.8833,0.925
-kg__representation,kg|representation,"corescholarrich, enslaved, kwg",axiom,,,,20,0.85,0.15,0.0,1.0,0.95,0.97
-kg__representation,kg|representation,"corescholarrich, gmo, kwg",nen,,,,20,0.75,0.25,0.0,1.0,0.9167,0.95
-kg__representation,kg|representation,"corescholarrich, enslaved",ttl,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation,kg|representation,"corescholarrich, enslaved, kwg",nen,,,,20,0.7,0.2,0.1,0.8833,0.8167,0.8383
+kg__representation,kg|representation,"core_scholar_rich, gmo",axiom,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation,kg|representation,"core_scholar_rich, gmo, kwg",axiom,,,,20,0.8,0.2,0.0,1.0,0.9167,0.945
+kg__representation,kg|representation,"core_scholar_rich, currkg, gmo",axiom,,,,20,0.7,0.3,0.0,1.0,0.8833,0.925
+kg__representation,kg|representation,"core_scholar_rich, enslaved, kwg",axiom,,,,20,0.85,0.15,0.0,1.0,0.95,0.97
+kg__representation,kg|representation,"core_scholar_rich, gmo, kwg",nen,,,,20,0.75,0.25,0.0,1.0,0.9167,0.95
+kg__representation,kg|representation,"core_scholar_rich, enslaved",ttl,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation,kg|representation,"core_scholar_rich, enslaved, kwg",nen,,,,20,0.7,0.2,0.1,0.8833,0.8167,0.8383
 kg__representation,kg|representation,"currkg, kwg",nen,,,,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation,kg|representation,"gmo, kwg",nen,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation,kg|representation,"corescholarrich, currkg, enslaved",ttl,,,,20,0.6,0.4,0.0,1.0,0.8667,0.92
-kg__representation,kg|representation,"corescholarrich, currkg, gmo",ttl,,,,20,0.65,0.35,0.0,0.9875,0.9,0.9329
-kg__representation,kg|representation,"corescholarrich, enslaved",axiom,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation,kg|representation,"corescholarrich, currkg, kwg",ttl,,,,20,0.55,0.45,0.0,1.0,0.8333,0.895
-kg__representation,kg|representation,"corescholarrich, currkg, kwg",axiom,,,,20,0.6,0.4,0.0,1.0,0.85,0.905
+kg__representation,kg|representation,"core_scholar_rich, currkg, enslaved",ttl,,,,20,0.6,0.4,0.0,1.0,0.8667,0.92
+kg__representation,kg|representation,"core_scholar_rich, currkg, gmo",ttl,,,,20,0.65,0.35,0.0,0.9875,0.9,0.9329
+kg__representation,kg|representation,"core_scholar_rich, enslaved",axiom,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation,kg|representation,"core_scholar_rich, currkg, kwg",ttl,,,,20,0.55,0.45,0.0,1.0,0.8333,0.895
+kg__representation,kg|representation,"core_scholar_rich, currkg, kwg",axiom,,,,20,0.6,0.4,0.0,1.0,0.85,0.905
 kg__representation,kg|representation,"enslaved, kwg",nen,,,,18,0.9444,0.0,0.0556,0.9444,0.9444,0.9444
-kg__representation,kg|representation,"corescholarrich, currkg",nen,,,,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
-kg__representation,kg|representation,"corescholarrich, currkg",ttl,,,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
+kg__representation,kg|representation,"core_scholar_rich, currkg",nen,,,,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation,kg|representation,"core_scholar_rich, currkg",ttl,,,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
 kg__representation,kg|representation,"gmo, kwg",ttl,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation,kg|representation,"currkg, gmo",nen,,,,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation,kg|representation,"enslaved, kwg",ttl,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation,kg|representation,"currkg, enslaved",ttl,,,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
-kg__representation,kg|representation,"corescholarrich, gmo",nen,,,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
-kg__representation,kg|representation,"corescholarrich, gmo, kwg",ttl,,,,20,0.75,0.25,0.0,1.0,0.9167,0.95
+kg__representation,kg|representation,"core_scholar_rich, gmo",nen,,,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
+kg__representation,kg|representation,"core_scholar_rich, gmo, kwg",ttl,,,,20,0.75,0.25,0.0,1.0,0.9167,0.95
 kg__representation,kg|representation,"enslaved, kwg",axiom,,,,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation,kg|representation,"currkg, kwg",axiom,,,,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation,kg|representation,"corescholarrich, enslaved, kwg",ttl,,,,20,0.7,0.3,0.0,1.0,0.9,0.94
+kg__representation,kg|representation,"core_scholar_rich, enslaved, kwg",ttl,,,,20,0.7,0.3,0.0,1.0,0.9,0.94
 kg__prompt_type,kg|prompt_type,"gmo, kwg",,0_shot,,,27,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type,kg|prompt_type,"currkg, gmo",,0_shot,,,27,0.7407,0.2593,0.0,1.0,0.8704,0.9136
-kg__prompt_type,kg|prompt_type,"corescholarrich, currkg, kwg",,0_shot,,,30,0.3,0.7,0.0,1.0,0.7445,0.84
-kg__prompt_type,kg|prompt_type,"corescholarrich, enslaved",,cot,,,27,1.0,0.0,0.0,1.0,1.0,1.0
-kg__prompt_type,kg|prompt_type,"corescholarrich, currkg, enslaved",,0_shot,,,30,0.2667,0.7333,0.0,1.0,0.7556,0.8533
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, currkg, kwg",,0_shot,,,30,0.3,0.7,0.0,1.0,0.7445,0.84
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, enslaved",,cot,,,27,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, currkg, enslaved",,0_shot,,,30,0.2667,0.7333,0.0,1.0,0.7556,0.8533
 kg__prompt_type,kg|prompt_type,"currkg, enslaved",,0_shot,,,27,0.963,0.037,0.0,0.9877,1.0,0.9926
-kg__prompt_type,kg|prompt_type,"corescholarrich, currkg, gmo",,cot,,,29,0.9655,0.0345,0.0,1.0,0.9885,0.9931
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, currkg, gmo",,cot,,,30,0.9333,0.0333,0.0333,0.9667,0.9556,0.96
 kg__prompt_type,kg|prompt_type,"currkg, gmo",,cot,,,27,0.963,0.037,0.0,1.0,0.9815,0.9877
-kg__prompt_type,kg|prompt_type,"corescholarrich, gmo",,cot,,,27,1.0,0.0,0.0,1.0,1.0,1.0
-kg__prompt_type,kg|prompt_type,"corescholarrich, currkg",,cot,,,27,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, gmo",,cot,,,27,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, currkg",,cot,,,27,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type,kg|prompt_type,"currkg, kwg",,0_shot,,,27,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__prompt_type,kg|prompt_type,"corescholarrich, gmo, kwg",,0_shot,,,30,0.5667,0.4333,0.0,1.0,0.8445,0.9033
-kg__prompt_type,kg|prompt_type,"corescholarrich, enslaved, kwg",,0_shot,,,30,0.5,0.4333,0.0667,0.9222,0.7778,0.8322
-kg__prompt_type,kg|prompt_type,"corescholarrich, enslaved",,0_shot,,,27,0.963,0.037,0.0,0.9815,0.9815,0.9815
-kg__prompt_type,kg|prompt_type,"corescholarrich, enslaved, kwg",,cot,,,30,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, gmo, kwg",,0_shot,,,30,0.5667,0.4333,0.0,1.0,0.8445,0.9033
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, enslaved, kwg",,0_shot,,,30,0.5,0.4333,0.0667,0.9222,0.7778,0.8322
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, enslaved",,0_shot,,,27,0.963,0.037,0.0,0.9815,0.9815,0.9815
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, enslaved, kwg",,cot,,,30,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type,kg|prompt_type,"currkg, kwg",,cot,,,27,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__prompt_type,kg|prompt_type,"gmo, kwg",,cot,,,27,1.0,0.0,0.0,1.0,1.0,1.0
-kg__prompt_type,kg|prompt_type,"corescholarrich, currkg, gmo",,0_shot,,,30,0.3667,0.6333,0.0,0.9917,0.7667,0.8452
-kg__prompt_type,kg|prompt_type,"corescholarrich, gmo, kwg",,cot,,,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
-kg__prompt_type,kg|prompt_type,"corescholarrich, gmo",,0_shot,,,27,0.963,0.037,0.0,1.0,0.9815,0.9877
-kg__prompt_type,kg|prompt_type,"corescholarrich, currkg, kwg",,cot,,,30,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, currkg, gmo",,0_shot,,,30,0.3667,0.6333,0.0,0.9917,0.7667,0.8452
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, gmo, kwg",,cot,,,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, gmo",,0_shot,,,27,0.963,0.037,0.0,1.0,0.9815,0.9877
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, currkg, kwg",,cot,,,30,0.9,0.1,0.0,1.0,0.9667,0.98
 kg__prompt_type,kg|prompt_type,"enslaved, kwg",,0_shot,,,27,0.963,0.0,0.037,0.963,0.963,0.963
-kg__prompt_type,kg|prompt_type,"corescholarrich, currkg",,0_shot,,,27,0.8519,0.1481,0.0,1.0,0.9259,0.9506
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, currkg",,0_shot,,,27,0.8519,0.1481,0.0,1.0,0.9259,0.9506
 kg__prompt_type,kg|prompt_type,"enslaved, kwg",,cot,,,27,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type,kg|prompt_type,"currkg, enslaved",,cot,,,27,0.9259,0.0741,0.0,0.9877,0.9815,0.9802
-kg__prompt_type,kg|prompt_type,"corescholarrich, currkg, enslaved",,cot,,,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
+kg__prompt_type,kg|prompt_type,"core_scholar_rich, currkg, enslaved",,cot,,,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
 kg__temperature_label,kg|temperature_label,"gmo, kwg",,,temp0.0,,54,1.0,0.0,0.0,1.0,1.0,1.0
 kg__temperature_label,kg|temperature_label,"currkg, gmo",,,temp0.0,,54,0.8519,0.1481,0.0,1.0,0.9259,0.9506
-kg__temperature_label,kg|temperature_label,"corescholarrich, currkg, kwg",,,temp0.0,,60,0.6,0.4,0.0,1.0,0.8556,0.91
-kg__temperature_label,kg|temperature_label,"corescholarrich, enslaved",,,temp0.0,,54,0.9815,0.0185,0.0,0.9907,0.9907,0.9907
-kg__temperature_label,kg|temperature_label,"corescholarrich, currkg, enslaved",,,temp0.0,,60,0.6167,0.3833,0.0,1.0,0.8722,0.9233
+kg__temperature_label,kg|temperature_label,"core_scholar_rich, currkg, kwg",,,temp0.0,,60,0.6,0.4,0.0,1.0,0.8556,0.91
+kg__temperature_label,kg|temperature_label,"core_scholar_rich, enslaved",,,temp0.0,,54,0.9815,0.0185,0.0,0.9907,0.9907,0.9907
+kg__temperature_label,kg|temperature_label,"core_scholar_rich, currkg, enslaved",,,temp0.0,,60,0.6167,0.3833,0.0,1.0,0.8722,0.9233
 kg__temperature_label,kg|temperature_label,"currkg, enslaved",,,temp0.0,,54,0.9444,0.0556,0.0,0.9877,0.9907,0.9864
-kg__temperature_label,kg|temperature_label,"corescholarrich, currkg, gmo",,,temp0.0,,59,0.661,0.339,0.0,0.9958,0.8757,0.9179
-kg__temperature_label,kg|temperature_label,"corescholarrich, gmo",,,temp0.0,,54,0.9815,0.0185,0.0,1.0,0.9907,0.9938
-kg__temperature_label,kg|temperature_label,"corescholarrich, currkg",,,temp0.0,,54,0.9259,0.0741,0.0,1.0,0.963,0.9753
+kg__temperature_label,kg|temperature_label,"core_scholar_rich, currkg, gmo",,,temp0.0,,60,0.65,0.3333,0.0167,0.9792,0.8611,0.9026
+kg__temperature_label,kg|temperature_label,"core_scholar_rich, gmo",,,temp0.0,,54,0.9815,0.0185,0.0,1.0,0.9907,0.9938
+kg__temperature_label,kg|temperature_label,"core_scholar_rich, currkg",,,temp0.0,,54,0.9259,0.0741,0.0,1.0,0.963,0.9753
 kg__temperature_label,kg|temperature_label,"currkg, kwg",,,temp0.0,,54,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__temperature_label,kg|temperature_label,"corescholarrich, gmo, kwg",,,temp0.0,,60,0.7667,0.2333,0.0,1.0,0.9167,0.9483
-kg__temperature_label,kg|temperature_label,"corescholarrich, enslaved, kwg",,,temp0.0,,60,0.75,0.2167,0.0333,0.9611,0.8889,0.9161
+kg__temperature_label,kg|temperature_label,"core_scholar_rich, gmo, kwg",,,temp0.0,,60,0.7667,0.2333,0.0,1.0,0.9167,0.9483
+kg__temperature_label,kg|temperature_label,"core_scholar_rich, enslaved, kwg",,,temp0.0,,60,0.75,0.2167,0.0333,0.9611,0.8889,0.9161
 kg__temperature_label,kg|temperature_label,"enslaved, kwg",,,temp0.0,,54,0.9815,0.0,0.0185,0.9815,0.9815,0.9815
 kg__num_bridges,kg|num_bridges,"gmo, kwg",,,,2,54,1.0,0.0,0.0,1.0,1.0,1.0
 kg__num_bridges,kg|num_bridges,"currkg, gmo",,,,2,54,0.8519,0.1481,0.0,1.0,0.9259,0.9506
-kg__num_bridges,kg|num_bridges,"corescholarrich, currkg, kwg",,,,3,60,0.6,0.4,0.0,1.0,0.8556,0.91
-kg__num_bridges,kg|num_bridges,"corescholarrich, enslaved",,,,2,54,0.9815,0.0185,0.0,0.9907,0.9907,0.9907
-kg__num_bridges,kg|num_bridges,"corescholarrich, currkg, enslaved",,,,3,60,0.6167,0.3833,0.0,1.0,0.8722,0.9233
+kg__num_bridges,kg|num_bridges,"core_scholar_rich, currkg, kwg",,,,3,60,0.6,0.4,0.0,1.0,0.8556,0.91
+kg__num_bridges,kg|num_bridges,"core_scholar_rich, enslaved",,,,2,54,0.9815,0.0185,0.0,0.9907,0.9907,0.9907
+kg__num_bridges,kg|num_bridges,"core_scholar_rich, currkg, enslaved",,,,3,60,0.6167,0.3833,0.0,1.0,0.8722,0.9233
 kg__num_bridges,kg|num_bridges,"currkg, enslaved",,,,2,54,0.9444,0.0556,0.0,0.9877,0.9907,0.9864
-kg__num_bridges,kg|num_bridges,"corescholarrich, currkg, gmo",,,,3,59,0.661,0.339,0.0,0.9958,0.8757,0.9179
-kg__num_bridges,kg|num_bridges,"corescholarrich, gmo",,,,2,54,0.9815,0.0185,0.0,1.0,0.9907,0.9938
-kg__num_bridges,kg|num_bridges,"corescholarrich, currkg",,,,2,54,0.9259,0.0741,0.0,1.0,0.963,0.9753
+kg__num_bridges,kg|num_bridges,"core_scholar_rich, currkg, gmo",,,,3,60,0.65,0.3333,0.0167,0.9792,0.8611,0.9026
+kg__num_bridges,kg|num_bridges,"core_scholar_rich, gmo",,,,2,54,0.9815,0.0185,0.0,1.0,0.9907,0.9938
+kg__num_bridges,kg|num_bridges,"core_scholar_rich, currkg",,,,2,54,0.9259,0.0741,0.0,1.0,0.963,0.9753
 kg__num_bridges,kg|num_bridges,"currkg, kwg",,,,2,54,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__num_bridges,kg|num_bridges,"corescholarrich, gmo, kwg",,,,3,60,0.7667,0.2333,0.0,1.0,0.9167,0.9483
-kg__num_bridges,kg|num_bridges,"corescholarrich, enslaved, kwg",,,,3,60,0.75,0.2167,0.0333,0.9611,0.8889,0.9161
+kg__num_bridges,kg|num_bridges,"core_scholar_rich, gmo, kwg",,,,3,60,0.7667,0.2333,0.0,1.0,0.9167,0.9483
+kg__num_bridges,kg|num_bridges,"core_scholar_rich, enslaved, kwg",,,,3,60,0.75,0.2167,0.0333,0.9611,0.8889,0.9161
 kg__num_bridges,kg|num_bridges,"enslaved, kwg",,,,2,54,0.9815,0.0,0.0185,0.9815,0.9815,0.9815
 representation__prompt_type,representation|prompt_type,,axiom,0_shot,,,122,0.7213,0.2787,0.0,1.0,0.8907,0.9303
 representation__prompt_type,representation|prompt_type,,ttl,0_shot,,,122,0.7049,0.2951,0.0,0.998,0.8948,0.9335
 representation__prompt_type,representation|prompt_type,,nen,0_shot,,,122,0.6639,0.3115,0.0246,0.9658,0.8552,0.8945
-representation__prompt_type,representation|prompt_type,,nen,cot,,,121,0.9669,0.0331,0.0,0.9972,0.989,0.9912
+representation__prompt_type,representation|prompt_type,,nen,cot,,,122,0.959,0.0328,0.0082,0.9891,0.9809,0.9831
 representation__prompt_type,representation|prompt_type,,axiom,cot,,,122,0.9672,0.0328,0.0,1.0,0.985,0.9902
 representation__prompt_type,representation|prompt_type,,ttl,cot,,,122,0.9426,0.0574,0.0,1.0,0.9768,0.9852
 representation__temperature_label,representation|temperature_label,,axiom,,temp0.0,,244,0.8443,0.1557,0.0,1.0,0.9378,0.9602
 representation__temperature_label,representation|temperature_label,,ttl,,temp0.0,,244,0.8238,0.1762,0.0,0.999,0.9358,0.9594
-representation__temperature_label,representation|temperature_label,,nen,,temp0.0,,243,0.8148,0.1728,0.0123,0.9815,0.9218,0.9427
+representation__temperature_label,representation|temperature_label,,nen,,temp0.0,,244,0.8115,0.1721,0.0164,0.9775,0.918,0.9388
 representation__num_bridges,representation|num_bridges,,axiom,,,2,144,0.9375,0.0625,0.0,1.0,0.9688,0.9792
 representation__num_bridges,representation|num_bridges,,ttl,,,2,144,0.9444,0.0556,0.0,1.0,0.9722,0.9815
-representation__num_bridges,representation|num_bridges,,nen,,,3,99,0.6768,0.303,0.0202,0.9764,0.8687,0.9088
+representation__num_bridges,representation|num_bridges,,nen,,,3,100,0.67,0.3,0.03,0.9667,0.86,0.8997
 representation__num_bridges,representation|num_bridges,,nen,,,2,144,0.9097,0.0833,0.0069,0.985,0.9583,0.966
 representation__num_bridges,representation|num_bridges,,axiom,,,3,100,0.71,0.29,0.0,1.0,0.8933,0.933
 representation__num_bridges,representation|num_bridges,,ttl,,,3,100,0.65,0.35,0.0,0.9975,0.8833,0.9276
 prompt_type__temperature_label,prompt_type|temperature_label,,,0_shot,temp0.0,,366,0.6967,0.2951,0.0082,0.9879,0.8802,0.9195
-prompt_type__temperature_label,prompt_type|temperature_label,,,cot,temp0.0,,365,0.9589,0.0411,0.0,0.9991,0.9836,0.9889
+prompt_type__temperature_label,prompt_type|temperature_label,,,cot,temp0.0,,366,0.9563,0.041,0.0027,0.9964,0.9809,0.9862
 prompt_type__num_bridges,prompt_type|num_bridges,,,0_shot,,2,216,0.9028,0.0926,0.0046,0.9915,0.9514,0.9644
 prompt_type__num_bridges,prompt_type|num_bridges,,,0_shot,,3,150,0.4,0.5867,0.0133,0.9828,0.7778,0.8548
 prompt_type__num_bridges,prompt_type|num_bridges,,,cot,,2,216,0.9583,0.0417,0.0,0.9985,0.9815,0.9867
-prompt_type__num_bridges,prompt_type|num_bridges,,,cot,,3,149,0.9597,0.0403,0.0,1.0,0.9866,0.9919
+prompt_type__num_bridges,prompt_type|num_bridges,,,cot,,3,150,0.9533,0.04,0.0067,0.9933,0.98,0.9853
 temperature_label__num_bridges,temperature_label|num_bridges,,,,temp0.0,2,432,0.9306,0.0671,0.0023,0.995,0.9664,0.9755
-temperature_label__num_bridges,temperature_label|num_bridges,,,,temp0.0,3,299,0.6789,0.3144,0.0067,0.9914,0.8818,0.9232
+temperature_label__num_bridges,temperature_label|num_bridges,,,,temp0.0,3,300,0.6767,0.3133,0.01,0.9881,0.8789,0.9201
 kg__representation__prompt_type,kg|representation|prompt_type,"gmo, kwg",axiom,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, gmo",ttl,0_shot,,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, kwg",nen,0_shot,,,10,0.4,0.6,0.0,1.0,0.8,0.88
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, enslaved",nen,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, enslaved",nen,0_shot,,,10,0.3,0.7,0.0,1.0,0.7667,0.86
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, kwg",nen,0_shot,,,10,0.4,0.6,0.0,1.0,0.8,0.88
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, enslaved",nen,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, enslaved",nen,0_shot,,,10,0.3,0.7,0.0,1.0,0.7667,0.86
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, enslaved",axiom,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, enslaved",axiom,0_shot,,,10,0.3,0.7,0.0,1.0,0.7667,0.86
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, gmo",nen,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, enslaved",axiom,0_shot,,,10,0.3,0.7,0.0,1.0,0.7667,0.86
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, gmo",nen,cot,,,10,0.9,0.0,0.1,0.9,0.9,0.9
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, gmo",axiom,cot,,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, enslaved",nen,0_shot,,,9,0.8889,0.1111,0.0,0.963,1.0,0.9778
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, gmo",ttl,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg",axiom,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, gmo",ttl,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg",axiom,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, kwg",ttl,0_shot,,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, gmo",axiom,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, gmo, kwg",axiom,0_shot,,,10,0.6,0.4,0.0,1.0,0.8333,0.89
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, gmo",axiom,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, enslaved, kwg",axiom,0_shot,,,10,0.7,0.3,0.0,1.0,0.9,0.94
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, gmo, kwg",nen,0_shot,,,10,0.5,0.5,0.0,1.0,0.8333,0.9
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, enslaved",ttl,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, enslaved, kwg",nen,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, gmo",axiom,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, gmo, kwg",axiom,0_shot,,,10,0.6,0.4,0.0,1.0,0.8333,0.89
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, gmo",axiom,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, enslaved, kwg",axiom,0_shot,,,10,0.7,0.3,0.0,1.0,0.9,0.94
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, gmo, kwg",nen,0_shot,,,10,0.5,0.5,0.0,1.0,0.8333,0.9
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, enslaved",ttl,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, enslaved, kwg",nen,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, kwg",nen,cot,,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type,kg|representation|prompt_type,"gmo, kwg",nen,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, gmo",nen,0_shot,,,10,0.3,0.7,0.0,1.0,0.7,0.8
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, enslaved",ttl,0_shot,,,10,0.2,0.8,0.0,1.0,0.7334,0.84
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, gmo, kwg",axiom,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, enslaved, kwg",axiom,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, gmo",ttl,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, gmo",ttl,cot,,,10,0.9,0.1,0.0,1.0,0.9667,0.98
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, gmo",axiom,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, enslaved",axiom,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, gmo",nen,0_shot,,,10,0.3,0.7,0.0,1.0,0.7,0.8
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, enslaved",ttl,0_shot,,,10,0.2,0.8,0.0,1.0,0.7334,0.84
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, gmo, kwg",axiom,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, enslaved, kwg",axiom,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, gmo",ttl,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, gmo",ttl,cot,,,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, gmo",axiom,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, enslaved",axiom,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type,kg|representation|prompt_type,"gmo, kwg",nen,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, enslaved",axiom,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, enslaved",ttl,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, kwg",ttl,cot,,,10,0.8,0.2,0.0,1.0,0.9333,0.96
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, kwg",axiom,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, enslaved",axiom,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, enslaved",ttl,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, kwg",ttl,cot,,,10,0.8,0.2,0.0,1.0,0.9333,0.96
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, kwg",axiom,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, gmo",ttl,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type,kg|representation|prompt_type,"enslaved, kwg",nen,0_shot,,,9,0.8889,0.0,0.1111,0.8889,0.8889,0.8889
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg",nen,0_shot,,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg",nen,0_shot,,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type,kg|representation|prompt_type,"enslaved, kwg",nen,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg",ttl,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg",ttl,0_shot,,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, kwg",axiom,0_shot,,,10,0.2,0.8,0.0,1.0,0.7,0.81
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, gmo",axiom,0_shot,,,10,0.4,0.6,0.0,1.0,0.7667,0.85
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg",ttl,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg",ttl,0_shot,,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, kwg",axiom,0_shot,,,10,0.2,0.8,0.0,1.0,0.7,0.81
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, gmo",axiom,0_shot,,,10,0.4,0.6,0.0,1.0,0.7667,0.85
 kg__representation__prompt_type,kg|representation|prompt_type,"gmo, kwg",ttl,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, gmo",nen,0_shot,,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, gmo",ttl,0_shot,,,10,0.4,0.6,0.0,0.975,0.8333,0.8857
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, gmo",ttl,0_shot,,,10,0.4,0.6,0.0,0.975,0.8333,0.8857
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, enslaved",nen,cot,,,9,0.8889,0.1111,0.0,0.963,1.0,0.9778
 kg__representation__prompt_type,kg|representation|prompt_type,"enslaved, kwg",ttl,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, enslaved",axiom,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, enslaved",ttl,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, gmo",nen,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, gmo",nen,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, kwg",ttl,cot,,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, enslaved",nen,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, gmo, kwg",ttl,0_shot,,,10,0.6,0.4,0.0,1.0,0.8667,0.92
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, gmo, kwg",ttl,cot,,,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, enslaved",nen,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, gmo, kwg",ttl,0_shot,,,10,0.6,0.4,0.0,1.0,0.8667,0.92
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, gmo, kwg",ttl,cot,,,10,0.9,0.1,0.0,1.0,0.9667,0.98
 kg__representation__prompt_type,kg|representation|prompt_type,"gmo, kwg",axiom,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, enslaved",ttl,cot,,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type,kg|representation|prompt_type,"enslaved, kwg",axiom,0_shot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, enslaved",ttl,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, enslaved",axiom,cot,,,10,0.9,0.1,0.0,1.0,0.9667,0.98
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, gmo",nen,0_shot,,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, enslaved",ttl,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, enslaved",axiom,cot,,,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, gmo",nen,0_shot,,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, kwg",axiom,0_shot,,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, gmo",nen,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, enslaved, kwg",ttl,0_shot,,,10,0.4,0.6,0.0,1.0,0.8,0.88
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, enslaved, kwg",ttl,0_shot,,,10,0.4,0.6,0.0,1.0,0.8,0.88
 kg__representation__prompt_type,kg|representation|prompt_type,"enslaved, kwg",ttl,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg",axiom,0_shot,,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg",axiom,0_shot,,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type,kg|representation|prompt_type,"enslaved, kwg",axiom,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, gmo, kwg",nen,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, enslaved, kwg",nen,0_shot,,,10,0.4,0.4,0.2,0.7667,0.6333,0.6767
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, kwg",ttl,0_shot,,,10,0.3,0.7,0.0,1.0,0.7333,0.83
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, enslaved, kwg",ttl,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, gmo, kwg",nen,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, enslaved, kwg",nen,0_shot,,,10,0.4,0.4,0.2,0.7667,0.6333,0.6767
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, kwg",ttl,0_shot,,,10,0.3,0.7,0.0,1.0,0.7333,0.83
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, enslaved, kwg",ttl,cot,,,10,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, gmo",axiom,0_shot,,,9,0.6667,0.3333,0.0,1.0,0.8333,0.8889
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, kwg",axiom,cot,,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, enslaved",nen,0_shot,,,9,0.8889,0.1111,0.0,0.9444,0.9444,0.9444
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, enslaved",nen,0_shot,,,9,0.8889,0.1111,0.0,0.9444,0.9444,0.9444
 kg__representation__prompt_type,kg|representation|prompt_type,"currkg, kwg",nen,0_shot,,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type,kg|representation|prompt_type,"gmo, kwg",ttl,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg, kwg",nen,cot,,,10,0.9,0.1,0.0,1.0,0.9667,0.98
-kg__representation__prompt_type,kg|representation|prompt_type,"corescholarrich, currkg",nen,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg, kwg",nen,cot,,,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type,kg|representation|prompt_type,"core_scholar_rich, currkg",nen,cot,,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__temperature_label,kg|representation|temperature_label,"gmo, kwg",axiom,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__temperature_label,kg|representation|temperature_label,"currkg, gmo",ttl,,temp0.0,,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, currkg, kwg",nen,,temp0.0,,20,0.65,0.35,0.0,1.0,0.8833,0.93
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, enslaved",nen,,temp0.0,,18,0.9444,0.0556,0.0,0.9722,0.9722,0.9722
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, currkg, enslaved",nen,,temp0.0,,20,0.65,0.35,0.0,1.0,0.8833,0.93
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, currkg, kwg",nen,,temp0.0,,20,0.65,0.35,0.0,1.0,0.8833,0.93
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, enslaved",nen,,temp0.0,,18,0.9444,0.0556,0.0,0.9722,0.9722,0.9722
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, currkg, enslaved",nen,,temp0.0,,20,0.65,0.35,0.0,1.0,0.8833,0.93
 kg__representation__temperature_label,kg|representation|temperature_label,"currkg, enslaved",axiom,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, currkg, enslaved",axiom,,temp0.0,,20,0.6,0.4,0.0,1.0,0.8667,0.92
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, currkg, gmo",nen,,temp0.0,,19,0.6316,0.3684,0.0,1.0,0.8421,0.8947
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, currkg, enslaved",axiom,,temp0.0,,20,0.6,0.4,0.0,1.0,0.8667,0.92
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, currkg, gmo",nen,,temp0.0,,20,0.6,0.35,0.05,0.95,0.8,0.85
 kg__representation__temperature_label,kg|representation|temperature_label,"currkg, gmo",axiom,,temp0.0,,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__temperature_label,kg|representation|temperature_label,"currkg, enslaved",nen,,temp0.0,,18,0.8889,0.1111,0.0,0.963,1.0,0.9778
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, gmo",ttl,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, currkg",axiom,,temp0.0,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, gmo",ttl,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, currkg",axiom,,temp0.0,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
 kg__representation__temperature_label,kg|representation|temperature_label,"currkg, kwg",ttl,,temp0.0,,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, gmo",axiom,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, gmo, kwg",axiom,,temp0.0,,20,0.8,0.2,0.0,1.0,0.9167,0.945
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, currkg, gmo",axiom,,temp0.0,,20,0.7,0.3,0.0,1.0,0.8833,0.925
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, enslaved, kwg",axiom,,temp0.0,,20,0.85,0.15,0.0,1.0,0.95,0.97
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, gmo, kwg",nen,,temp0.0,,20,0.75,0.25,0.0,1.0,0.9167,0.95
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, enslaved",ttl,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, enslaved, kwg",nen,,temp0.0,,20,0.7,0.2,0.1,0.8833,0.8167,0.8383
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, gmo",axiom,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, gmo, kwg",axiom,,temp0.0,,20,0.8,0.2,0.0,1.0,0.9167,0.945
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, currkg, gmo",axiom,,temp0.0,,20,0.7,0.3,0.0,1.0,0.8833,0.925
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, enslaved, kwg",axiom,,temp0.0,,20,0.85,0.15,0.0,1.0,0.95,0.97
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, gmo, kwg",nen,,temp0.0,,20,0.75,0.25,0.0,1.0,0.9167,0.95
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, enslaved",ttl,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, enslaved, kwg",nen,,temp0.0,,20,0.7,0.2,0.1,0.8833,0.8167,0.8383
 kg__representation__temperature_label,kg|representation|temperature_label,"currkg, kwg",nen,,temp0.0,,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__temperature_label,kg|representation|temperature_label,"gmo, kwg",nen,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, currkg, enslaved",ttl,,temp0.0,,20,0.6,0.4,0.0,1.0,0.8667,0.92
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, currkg, gmo",ttl,,temp0.0,,20,0.65,0.35,0.0,0.9875,0.9,0.9329
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, enslaved",axiom,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, currkg, kwg",ttl,,temp0.0,,20,0.55,0.45,0.0,1.0,0.8333,0.895
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, currkg, kwg",axiom,,temp0.0,,20,0.6,0.4,0.0,1.0,0.85,0.905
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, currkg, enslaved",ttl,,temp0.0,,20,0.6,0.4,0.0,1.0,0.8667,0.92
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, currkg, gmo",ttl,,temp0.0,,20,0.65,0.35,0.0,0.9875,0.9,0.9329
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, enslaved",axiom,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, currkg, kwg",ttl,,temp0.0,,20,0.55,0.45,0.0,1.0,0.8333,0.895
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, currkg, kwg",axiom,,temp0.0,,20,0.6,0.4,0.0,1.0,0.85,0.905
 kg__representation__temperature_label,kg|representation|temperature_label,"enslaved, kwg",nen,,temp0.0,,18,0.9444,0.0,0.0556,0.9444,0.9444,0.9444
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, currkg",nen,,temp0.0,,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, currkg",ttl,,temp0.0,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, currkg",nen,,temp0.0,,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, currkg",ttl,,temp0.0,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
 kg__representation__temperature_label,kg|representation|temperature_label,"gmo, kwg",ttl,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__temperature_label,kg|representation|temperature_label,"currkg, gmo",nen,,temp0.0,,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__temperature_label,kg|representation|temperature_label,"enslaved, kwg",ttl,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__temperature_label,kg|representation|temperature_label,"currkg, enslaved",ttl,,temp0.0,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, gmo",nen,,temp0.0,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, gmo, kwg",ttl,,temp0.0,,20,0.75,0.25,0.0,1.0,0.9167,0.95
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, gmo",nen,,temp0.0,,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, gmo, kwg",ttl,,temp0.0,,20,0.75,0.25,0.0,1.0,0.9167,0.95
 kg__representation__temperature_label,kg|representation|temperature_label,"enslaved, kwg",axiom,,temp0.0,,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__temperature_label,kg|representation|temperature_label,"currkg, kwg",axiom,,temp0.0,,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__temperature_label,kg|representation|temperature_label,"corescholarrich, enslaved, kwg",ttl,,temp0.0,,20,0.7,0.3,0.0,1.0,0.9,0.94
+kg__representation__temperature_label,kg|representation|temperature_label,"core_scholar_rich, enslaved, kwg",ttl,,temp0.0,,20,0.7,0.3,0.0,1.0,0.9,0.94
 kg__representation__num_bridges,kg|representation|num_bridges,"gmo, kwg",axiom,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__num_bridges,kg|representation|num_bridges,"currkg, gmo",ttl,,,2,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, currkg, kwg",nen,,,3,20,0.65,0.35,0.0,1.0,0.8833,0.93
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, enslaved",nen,,,2,18,0.9444,0.0556,0.0,0.9722,0.9722,0.9722
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, currkg, enslaved",nen,,,3,20,0.65,0.35,0.0,1.0,0.8833,0.93
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, currkg, kwg",nen,,,3,20,0.65,0.35,0.0,1.0,0.8833,0.93
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, enslaved",nen,,,2,18,0.9444,0.0556,0.0,0.9722,0.9722,0.9722
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, currkg, enslaved",nen,,,3,20,0.65,0.35,0.0,1.0,0.8833,0.93
 kg__representation__num_bridges,kg|representation|num_bridges,"currkg, enslaved",axiom,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, currkg, enslaved",axiom,,,3,20,0.6,0.4,0.0,1.0,0.8667,0.92
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, currkg, gmo",nen,,,3,19,0.6316,0.3684,0.0,1.0,0.8421,0.8947
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, currkg, enslaved",axiom,,,3,20,0.6,0.4,0.0,1.0,0.8667,0.92
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, currkg, gmo",nen,,,3,20,0.6,0.35,0.05,0.95,0.8,0.85
 kg__representation__num_bridges,kg|representation|num_bridges,"currkg, gmo",axiom,,,2,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__num_bridges,kg|representation|num_bridges,"currkg, enslaved",nen,,,2,18,0.8889,0.1111,0.0,0.963,1.0,0.9778
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, gmo",ttl,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, currkg",axiom,,,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, gmo",ttl,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, currkg",axiom,,,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
 kg__representation__num_bridges,kg|representation|num_bridges,"currkg, kwg",ttl,,,2,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, gmo",axiom,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, gmo, kwg",axiom,,,3,20,0.8,0.2,0.0,1.0,0.9167,0.945
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, currkg, gmo",axiom,,,3,20,0.7,0.3,0.0,1.0,0.8833,0.925
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, enslaved, kwg",axiom,,,3,20,0.85,0.15,0.0,1.0,0.95,0.97
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, gmo, kwg",nen,,,3,20,0.75,0.25,0.0,1.0,0.9167,0.95
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, enslaved",ttl,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, enslaved, kwg",nen,,,3,20,0.7,0.2,0.1,0.8833,0.8167,0.8383
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, gmo",axiom,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, gmo, kwg",axiom,,,3,20,0.8,0.2,0.0,1.0,0.9167,0.945
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, currkg, gmo",axiom,,,3,20,0.7,0.3,0.0,1.0,0.8833,0.925
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, enslaved, kwg",axiom,,,3,20,0.85,0.15,0.0,1.0,0.95,0.97
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, gmo, kwg",nen,,,3,20,0.75,0.25,0.0,1.0,0.9167,0.95
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, enslaved",ttl,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, enslaved, kwg",nen,,,3,20,0.7,0.2,0.1,0.8833,0.8167,0.8383
 kg__representation__num_bridges,kg|representation|num_bridges,"currkg, kwg",nen,,,2,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__num_bridges,kg|representation|num_bridges,"gmo, kwg",nen,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, currkg, enslaved",ttl,,,3,20,0.6,0.4,0.0,1.0,0.8667,0.92
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, currkg, gmo",ttl,,,3,20,0.65,0.35,0.0,0.9875,0.9,0.9329
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, enslaved",axiom,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, currkg, kwg",ttl,,,3,20,0.55,0.45,0.0,1.0,0.8333,0.895
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, currkg, kwg",axiom,,,3,20,0.6,0.4,0.0,1.0,0.85,0.905
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, currkg, enslaved",ttl,,,3,20,0.6,0.4,0.0,1.0,0.8667,0.92
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, currkg, gmo",ttl,,,3,20,0.65,0.35,0.0,0.9875,0.9,0.9329
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, enslaved",axiom,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, currkg, kwg",ttl,,,3,20,0.55,0.45,0.0,1.0,0.8333,0.895
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, currkg, kwg",axiom,,,3,20,0.6,0.4,0.0,1.0,0.85,0.905
 kg__representation__num_bridges,kg|representation|num_bridges,"enslaved, kwg",nen,,,2,18,0.9444,0.0,0.0556,0.9444,0.9444,0.9444
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, currkg",nen,,,2,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, currkg",ttl,,,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, currkg",nen,,,2,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, currkg",ttl,,,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
 kg__representation__num_bridges,kg|representation|num_bridges,"gmo, kwg",ttl,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__num_bridges,kg|representation|num_bridges,"currkg, gmo",nen,,,2,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__num_bridges,kg|representation|num_bridges,"enslaved, kwg",ttl,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__num_bridges,kg|representation|num_bridges,"currkg, enslaved",ttl,,,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, gmo",nen,,,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, gmo, kwg",ttl,,,3,20,0.75,0.25,0.0,1.0,0.9167,0.95
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, gmo",nen,,,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, gmo, kwg",ttl,,,3,20,0.75,0.25,0.0,1.0,0.9167,0.95
 kg__representation__num_bridges,kg|representation|num_bridges,"enslaved, kwg",axiom,,,2,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__num_bridges,kg|representation|num_bridges,"currkg, kwg",axiom,,,2,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__num_bridges,kg|representation|num_bridges,"corescholarrich, enslaved, kwg",ttl,,,3,20,0.7,0.3,0.0,1.0,0.9,0.94
+kg__representation__num_bridges,kg|representation|num_bridges,"core_scholar_rich, enslaved, kwg",ttl,,,3,20,0.7,0.3,0.0,1.0,0.9,0.94
 kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"gmo, kwg",,0_shot,temp0.0,,27,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"currkg, gmo",,0_shot,temp0.0,,27,0.7407,0.2593,0.0,1.0,0.8704,0.9136
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, currkg, kwg",,0_shot,temp0.0,,30,0.3,0.7,0.0,1.0,0.7445,0.84
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, enslaved",,cot,temp0.0,,27,1.0,0.0,0.0,1.0,1.0,1.0
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, currkg, enslaved",,0_shot,temp0.0,,30,0.2667,0.7333,0.0,1.0,0.7556,0.8533
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, currkg, kwg",,0_shot,temp0.0,,30,0.3,0.7,0.0,1.0,0.7445,0.84
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, enslaved",,cot,temp0.0,,27,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, currkg, enslaved",,0_shot,temp0.0,,30,0.2667,0.7333,0.0,1.0,0.7556,0.8533
 kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"currkg, enslaved",,0_shot,temp0.0,,27,0.963,0.037,0.0,0.9877,1.0,0.9926
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, currkg, gmo",,cot,temp0.0,,29,0.9655,0.0345,0.0,1.0,0.9885,0.9931
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, currkg, gmo",,cot,temp0.0,,30,0.9333,0.0333,0.0333,0.9667,0.9556,0.96
 kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"currkg, gmo",,cot,temp0.0,,27,0.963,0.037,0.0,1.0,0.9815,0.9877
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, gmo",,cot,temp0.0,,27,1.0,0.0,0.0,1.0,1.0,1.0
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, currkg",,cot,temp0.0,,27,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, gmo",,cot,temp0.0,,27,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, currkg",,cot,temp0.0,,27,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"currkg, kwg",,0_shot,temp0.0,,27,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, gmo, kwg",,0_shot,temp0.0,,30,0.5667,0.4333,0.0,1.0,0.8445,0.9033
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, enslaved, kwg",,0_shot,temp0.0,,30,0.5,0.4333,0.0667,0.9222,0.7778,0.8322
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, enslaved",,0_shot,temp0.0,,27,0.963,0.037,0.0,0.9815,0.9815,0.9815
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, enslaved, kwg",,cot,temp0.0,,30,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, gmo, kwg",,0_shot,temp0.0,,30,0.5667,0.4333,0.0,1.0,0.8445,0.9033
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, enslaved, kwg",,0_shot,temp0.0,,30,0.5,0.4333,0.0667,0.9222,0.7778,0.8322
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, enslaved",,0_shot,temp0.0,,27,0.963,0.037,0.0,0.9815,0.9815,0.9815
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, enslaved, kwg",,cot,temp0.0,,30,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"currkg, kwg",,cot,temp0.0,,27,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"gmo, kwg",,cot,temp0.0,,27,1.0,0.0,0.0,1.0,1.0,1.0
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, currkg, gmo",,0_shot,temp0.0,,30,0.3667,0.6333,0.0,0.9917,0.7667,0.8452
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, gmo, kwg",,cot,temp0.0,,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, gmo",,0_shot,temp0.0,,27,0.963,0.037,0.0,1.0,0.9815,0.9877
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, currkg, kwg",,cot,temp0.0,,30,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, currkg, gmo",,0_shot,temp0.0,,30,0.3667,0.6333,0.0,0.9917,0.7667,0.8452
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, gmo, kwg",,cot,temp0.0,,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, gmo",,0_shot,temp0.0,,27,0.963,0.037,0.0,1.0,0.9815,0.9877
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, currkg, kwg",,cot,temp0.0,,30,0.9,0.1,0.0,1.0,0.9667,0.98
 kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"enslaved, kwg",,0_shot,temp0.0,,27,0.963,0.0,0.037,0.963,0.963,0.963
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, currkg",,0_shot,temp0.0,,27,0.8519,0.1481,0.0,1.0,0.9259,0.9506
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, currkg",,0_shot,temp0.0,,27,0.8519,0.1481,0.0,1.0,0.9259,0.9506
 kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"enslaved, kwg",,cot,temp0.0,,27,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"currkg, enslaved",,cot,temp0.0,,27,0.9259,0.0741,0.0,0.9877,0.9815,0.9802
-kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"corescholarrich, currkg, enslaved",,cot,temp0.0,,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
+kg__prompt_type__temperature_label,kg|prompt_type|temperature_label,"core_scholar_rich, currkg, enslaved",,cot,temp0.0,,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
 kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"gmo, kwg",,0_shot,,2,27,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"currkg, gmo",,0_shot,,2,27,0.7407,0.2593,0.0,1.0,0.8704,0.9136
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, currkg, kwg",,0_shot,,3,30,0.3,0.7,0.0,1.0,0.7445,0.84
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, enslaved",,cot,,2,27,1.0,0.0,0.0,1.0,1.0,1.0
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, currkg, enslaved",,0_shot,,3,30,0.2667,0.7333,0.0,1.0,0.7556,0.8533
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, currkg, kwg",,0_shot,,3,30,0.3,0.7,0.0,1.0,0.7445,0.84
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, enslaved",,cot,,2,27,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, currkg, enslaved",,0_shot,,3,30,0.2667,0.7333,0.0,1.0,0.7556,0.8533
 kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"currkg, enslaved",,0_shot,,2,27,0.963,0.037,0.0,0.9877,1.0,0.9926
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, currkg, gmo",,cot,,3,29,0.9655,0.0345,0.0,1.0,0.9885,0.9931
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, currkg, gmo",,cot,,3,30,0.9333,0.0333,0.0333,0.9667,0.9556,0.96
 kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"currkg, gmo",,cot,,2,27,0.963,0.037,0.0,1.0,0.9815,0.9877
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, gmo",,cot,,2,27,1.0,0.0,0.0,1.0,1.0,1.0
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, currkg",,cot,,2,27,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, gmo",,cot,,2,27,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, currkg",,cot,,2,27,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"currkg, kwg",,0_shot,,2,27,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, gmo, kwg",,0_shot,,3,30,0.5667,0.4333,0.0,1.0,0.8445,0.9033
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, enslaved, kwg",,0_shot,,3,30,0.5,0.4333,0.0667,0.9222,0.7778,0.8322
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, enslaved",,0_shot,,2,27,0.963,0.037,0.0,0.9815,0.9815,0.9815
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, enslaved, kwg",,cot,,3,30,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, gmo, kwg",,0_shot,,3,30,0.5667,0.4333,0.0,1.0,0.8445,0.9033
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, enslaved, kwg",,0_shot,,3,30,0.5,0.4333,0.0667,0.9222,0.7778,0.8322
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, enslaved",,0_shot,,2,27,0.963,0.037,0.0,0.9815,0.9815,0.9815
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, enslaved, kwg",,cot,,3,30,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"currkg, kwg",,cot,,2,27,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"gmo, kwg",,cot,,2,27,1.0,0.0,0.0,1.0,1.0,1.0
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, currkg, gmo",,0_shot,,3,30,0.3667,0.6333,0.0,0.9917,0.7667,0.8452
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, gmo, kwg",,cot,,3,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, gmo",,0_shot,,2,27,0.963,0.037,0.0,1.0,0.9815,0.9877
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, currkg, kwg",,cot,,3,30,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, currkg, gmo",,0_shot,,3,30,0.3667,0.6333,0.0,0.9917,0.7667,0.8452
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, gmo, kwg",,cot,,3,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, gmo",,0_shot,,2,27,0.963,0.037,0.0,1.0,0.9815,0.9877
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, currkg, kwg",,cot,,3,30,0.9,0.1,0.0,1.0,0.9667,0.98
 kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"enslaved, kwg",,0_shot,,2,27,0.963,0.0,0.037,0.963,0.963,0.963
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, currkg",,0_shot,,2,27,0.8519,0.1481,0.0,1.0,0.9259,0.9506
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, currkg",,0_shot,,2,27,0.8519,0.1481,0.0,1.0,0.9259,0.9506
 kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"enslaved, kwg",,cot,,2,27,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"currkg, enslaved",,cot,,2,27,0.9259,0.0741,0.0,0.9877,0.9815,0.9802
-kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"corescholarrich, currkg, enslaved",,cot,,3,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
+kg__prompt_type__num_bridges,kg|prompt_type|num_bridges,"core_scholar_rich, currkg, enslaved",,cot,,3,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
 kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"gmo, kwg",,,temp0.0,2,54,1.0,0.0,0.0,1.0,1.0,1.0
 kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"currkg, gmo",,,temp0.0,2,54,0.8519,0.1481,0.0,1.0,0.9259,0.9506
-kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"corescholarrich, currkg, kwg",,,temp0.0,3,60,0.6,0.4,0.0,1.0,0.8556,0.91
-kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"corescholarrich, enslaved",,,temp0.0,2,54,0.9815,0.0185,0.0,0.9907,0.9907,0.9907
-kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"corescholarrich, currkg, enslaved",,,temp0.0,3,60,0.6167,0.3833,0.0,1.0,0.8722,0.9233
+kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"core_scholar_rich, currkg, kwg",,,temp0.0,3,60,0.6,0.4,0.0,1.0,0.8556,0.91
+kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"core_scholar_rich, enslaved",,,temp0.0,2,54,0.9815,0.0185,0.0,0.9907,0.9907,0.9907
+kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"core_scholar_rich, currkg, enslaved",,,temp0.0,3,60,0.6167,0.3833,0.0,1.0,0.8722,0.9233
 kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"currkg, enslaved",,,temp0.0,2,54,0.9444,0.0556,0.0,0.9877,0.9907,0.9864
-kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"corescholarrich, currkg, gmo",,,temp0.0,3,59,0.661,0.339,0.0,0.9958,0.8757,0.9179
-kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"corescholarrich, gmo",,,temp0.0,2,54,0.9815,0.0185,0.0,1.0,0.9907,0.9938
-kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"corescholarrich, currkg",,,temp0.0,2,54,0.9259,0.0741,0.0,1.0,0.963,0.9753
+kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"core_scholar_rich, currkg, gmo",,,temp0.0,3,60,0.65,0.3333,0.0167,0.9792,0.8611,0.9026
+kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"core_scholar_rich, gmo",,,temp0.0,2,54,0.9815,0.0185,0.0,1.0,0.9907,0.9938
+kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"core_scholar_rich, currkg",,,temp0.0,2,54,0.9259,0.0741,0.0,1.0,0.963,0.9753
 kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"currkg, kwg",,,temp0.0,2,54,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"corescholarrich, gmo, kwg",,,temp0.0,3,60,0.7667,0.2333,0.0,1.0,0.9167,0.9483
-kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"corescholarrich, enslaved, kwg",,,temp0.0,3,60,0.75,0.2167,0.0333,0.9611,0.8889,0.9161
+kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"core_scholar_rich, gmo, kwg",,,temp0.0,3,60,0.7667,0.2333,0.0,1.0,0.9167,0.9483
+kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"core_scholar_rich, enslaved, kwg",,,temp0.0,3,60,0.75,0.2167,0.0333,0.9611,0.8889,0.9161
 kg__temperature_label__num_bridges,kg|temperature_label|num_bridges,"enslaved, kwg",,,temp0.0,2,54,0.9815,0.0,0.0185,0.9815,0.9815,0.9815
 representation__prompt_type__temperature_label,representation|prompt_type|temperature_label,,axiom,0_shot,temp0.0,,122,0.7213,0.2787,0.0,1.0,0.8907,0.9303
 representation__prompt_type__temperature_label,representation|prompt_type|temperature_label,,ttl,0_shot,temp0.0,,122,0.7049,0.2951,0.0,0.998,0.8948,0.9335
 representation__prompt_type__temperature_label,representation|prompt_type|temperature_label,,nen,0_shot,temp0.0,,122,0.6639,0.3115,0.0246,0.9658,0.8552,0.8945
-representation__prompt_type__temperature_label,representation|prompt_type|temperature_label,,nen,cot,temp0.0,,121,0.9669,0.0331,0.0,0.9972,0.989,0.9912
+representation__prompt_type__temperature_label,representation|prompt_type|temperature_label,,nen,cot,temp0.0,,122,0.959,0.0328,0.0082,0.9891,0.9809,0.9831
 representation__prompt_type__temperature_label,representation|prompt_type|temperature_label,,axiom,cot,temp0.0,,122,0.9672,0.0328,0.0,1.0,0.985,0.9902
 representation__prompt_type__temperature_label,representation|prompt_type|temperature_label,,ttl,cot,temp0.0,,122,0.9426,0.0574,0.0,1.0,0.9768,0.9852
 representation__prompt_type__num_bridges,representation|prompt_type|num_bridges,,axiom,0_shot,,2,72,0.9167,0.0833,0.0,1.0,0.9583,0.9722
@@ -366,7 +366,7 @@ representation__prompt_type__num_bridges,representation|prompt_type|num_bridges,
 representation__prompt_type__num_bridges,representation|prompt_type|num_bridges,,nen,0_shot,,3,50,0.38,0.58,0.04,0.9533,0.7467,0.8233
 representation__prompt_type__num_bridges,representation|prompt_type|num_bridges,,nen,cot,,2,72,0.9583,0.0417,0.0,0.9954,0.9861,0.988
 representation__prompt_type__num_bridges,representation|prompt_type|num_bridges,,axiom,0_shot,,3,50,0.44,0.56,0.0,1.0,0.7933,0.87
-representation__prompt_type__num_bridges,representation|prompt_type|num_bridges,,nen,cot,,3,49,0.9796,0.0204,0.0,1.0,0.9932,0.9959
+representation__prompt_type__num_bridges,representation|prompt_type|num_bridges,,nen,cot,,3,50,0.96,0.02,0.02,0.98,0.9733,0.976
 representation__prompt_type__num_bridges,representation|prompt_type|num_bridges,,axiom,cot,,2,72,0.9583,0.0417,0.0,1.0,0.9792,0.9861
 representation__prompt_type__num_bridges,representation|prompt_type|num_bridges,,nen,0_shot,,2,72,0.8611,0.125,0.0139,0.9745,0.9306,0.944
 representation__prompt_type__num_bridges,representation|prompt_type|num_bridges,,ttl,cot,,2,72,0.9583,0.0417,0.0,1.0,0.9792,0.9861
@@ -375,241 +375,241 @@ representation__prompt_type__num_bridges,representation|prompt_type|num_bridges,
 representation__prompt_type__num_bridges,representation|prompt_type|num_bridges,,ttl,cot,,3,50,0.92,0.08,0.0,1.0,0.9733,0.984
 representation__temperature_label__num_bridges,representation|temperature_label|num_bridges,,axiom,,temp0.0,2,144,0.9375,0.0625,0.0,1.0,0.9688,0.9792
 representation__temperature_label__num_bridges,representation|temperature_label|num_bridges,,ttl,,temp0.0,2,144,0.9444,0.0556,0.0,1.0,0.9722,0.9815
-representation__temperature_label__num_bridges,representation|temperature_label|num_bridges,,nen,,temp0.0,3,99,0.6768,0.303,0.0202,0.9764,0.8687,0.9088
+representation__temperature_label__num_bridges,representation|temperature_label|num_bridges,,nen,,temp0.0,3,100,0.67,0.3,0.03,0.9667,0.86,0.8997
 representation__temperature_label__num_bridges,representation|temperature_label|num_bridges,,nen,,temp0.0,2,144,0.9097,0.0833,0.0069,0.985,0.9583,0.966
 representation__temperature_label__num_bridges,representation|temperature_label|num_bridges,,axiom,,temp0.0,3,100,0.71,0.29,0.0,1.0,0.8933,0.933
 representation__temperature_label__num_bridges,representation|temperature_label|num_bridges,,ttl,,temp0.0,3,100,0.65,0.35,0.0,0.9975,0.8833,0.9276
 prompt_type__temperature_label__num_bridges,prompt_type|temperature_label|num_bridges,,,0_shot,temp0.0,2,216,0.9028,0.0926,0.0046,0.9915,0.9514,0.9644
 prompt_type__temperature_label__num_bridges,prompt_type|temperature_label|num_bridges,,,0_shot,temp0.0,3,150,0.4,0.5867,0.0133,0.9828,0.7778,0.8548
 prompt_type__temperature_label__num_bridges,prompt_type|temperature_label|num_bridges,,,cot,temp0.0,2,216,0.9583,0.0417,0.0,0.9985,0.9815,0.9867
-prompt_type__temperature_label__num_bridges,prompt_type|temperature_label|num_bridges,,,cot,temp0.0,3,149,0.9597,0.0403,0.0,1.0,0.9866,0.9919
+prompt_type__temperature_label__num_bridges,prompt_type|temperature_label|num_bridges,,,cot,temp0.0,3,150,0.9533,0.04,0.0067,0.9933,0.98,0.9853
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"gmo, kwg",axiom,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, gmo",ttl,0_shot,temp0.0,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, kwg",nen,0_shot,temp0.0,,10,0.4,0.6,0.0,1.0,0.8,0.88
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, enslaved",nen,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, enslaved",nen,0_shot,temp0.0,,10,0.3,0.7,0.0,1.0,0.7667,0.86
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, kwg",nen,0_shot,temp0.0,,10,0.4,0.6,0.0,1.0,0.8,0.88
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, enslaved",nen,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, enslaved",nen,0_shot,temp0.0,,10,0.3,0.7,0.0,1.0,0.7667,0.86
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, enslaved",axiom,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, enslaved",axiom,0_shot,temp0.0,,10,0.3,0.7,0.0,1.0,0.7667,0.86
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, gmo",nen,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, enslaved",axiom,0_shot,temp0.0,,10,0.3,0.7,0.0,1.0,0.7667,0.86
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, gmo",nen,cot,temp0.0,,10,0.9,0.0,0.1,0.9,0.9,0.9
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, gmo",axiom,cot,temp0.0,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, enslaved",nen,0_shot,temp0.0,,9,0.8889,0.1111,0.0,0.963,1.0,0.9778
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, gmo",ttl,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg",axiom,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, gmo",ttl,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg",axiom,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, kwg",ttl,0_shot,temp0.0,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, gmo",axiom,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, gmo, kwg",axiom,0_shot,temp0.0,,10,0.6,0.4,0.0,1.0,0.8333,0.89
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, gmo",axiom,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, enslaved, kwg",axiom,0_shot,temp0.0,,10,0.7,0.3,0.0,1.0,0.9,0.94
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, gmo, kwg",nen,0_shot,temp0.0,,10,0.5,0.5,0.0,1.0,0.8333,0.9
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, enslaved",ttl,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, enslaved, kwg",nen,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, gmo",axiom,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, gmo, kwg",axiom,0_shot,temp0.0,,10,0.6,0.4,0.0,1.0,0.8333,0.89
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, gmo",axiom,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, enslaved, kwg",axiom,0_shot,temp0.0,,10,0.7,0.3,0.0,1.0,0.9,0.94
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, gmo, kwg",nen,0_shot,temp0.0,,10,0.5,0.5,0.0,1.0,0.8333,0.9
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, enslaved",ttl,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, enslaved, kwg",nen,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, kwg",nen,cot,temp0.0,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"gmo, kwg",nen,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, gmo",nen,0_shot,temp0.0,,10,0.3,0.7,0.0,1.0,0.7,0.8
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, enslaved",ttl,0_shot,temp0.0,,10,0.2,0.8,0.0,1.0,0.7334,0.84
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, gmo, kwg",axiom,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, enslaved, kwg",axiom,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, gmo",ttl,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, gmo",ttl,cot,temp0.0,,10,0.9,0.1,0.0,1.0,0.9667,0.98
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, gmo",axiom,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, enslaved",axiom,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, gmo",nen,0_shot,temp0.0,,10,0.3,0.7,0.0,1.0,0.7,0.8
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, enslaved",ttl,0_shot,temp0.0,,10,0.2,0.8,0.0,1.0,0.7334,0.84
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, gmo, kwg",axiom,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, enslaved, kwg",axiom,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, gmo",ttl,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, gmo",ttl,cot,temp0.0,,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, gmo",axiom,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, enslaved",axiom,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"gmo, kwg",nen,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, enslaved",axiom,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, enslaved",ttl,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, kwg",ttl,cot,temp0.0,,10,0.8,0.2,0.0,1.0,0.9333,0.96
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, kwg",axiom,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, enslaved",axiom,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, enslaved",ttl,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, kwg",ttl,cot,temp0.0,,10,0.8,0.2,0.0,1.0,0.9333,0.96
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, kwg",axiom,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, gmo",ttl,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"enslaved, kwg",nen,0_shot,temp0.0,,9,0.8889,0.0,0.1111,0.8889,0.8889,0.8889
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg",nen,0_shot,temp0.0,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg",nen,0_shot,temp0.0,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"enslaved, kwg",nen,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg",ttl,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg",ttl,0_shot,temp0.0,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, kwg",axiom,0_shot,temp0.0,,10,0.2,0.8,0.0,1.0,0.7,0.81
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, gmo",axiom,0_shot,temp0.0,,10,0.4,0.6,0.0,1.0,0.7667,0.85
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg",ttl,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg",ttl,0_shot,temp0.0,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, kwg",axiom,0_shot,temp0.0,,10,0.2,0.8,0.0,1.0,0.7,0.81
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, gmo",axiom,0_shot,temp0.0,,10,0.4,0.6,0.0,1.0,0.7667,0.85
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"gmo, kwg",ttl,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, gmo",nen,0_shot,temp0.0,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, gmo",ttl,0_shot,temp0.0,,10,0.4,0.6,0.0,0.975,0.8333,0.8857
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, gmo",ttl,0_shot,temp0.0,,10,0.4,0.6,0.0,0.975,0.8333,0.8857
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, enslaved",nen,cot,temp0.0,,9,0.8889,0.1111,0.0,0.963,1.0,0.9778
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"enslaved, kwg",ttl,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, enslaved",axiom,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, enslaved",ttl,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, gmo",nen,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, gmo",nen,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, kwg",ttl,cot,temp0.0,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, enslaved",nen,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, gmo, kwg",ttl,0_shot,temp0.0,,10,0.6,0.4,0.0,1.0,0.8667,0.92
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, gmo, kwg",ttl,cot,temp0.0,,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, enslaved",nen,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, gmo, kwg",ttl,0_shot,temp0.0,,10,0.6,0.4,0.0,1.0,0.8667,0.92
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, gmo, kwg",ttl,cot,temp0.0,,10,0.9,0.1,0.0,1.0,0.9667,0.98
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"gmo, kwg",axiom,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, enslaved",ttl,cot,temp0.0,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"enslaved, kwg",axiom,0_shot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, enslaved",ttl,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, enslaved",axiom,cot,temp0.0,,10,0.9,0.1,0.0,1.0,0.9667,0.98
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, gmo",nen,0_shot,temp0.0,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, enslaved",ttl,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, enslaved",axiom,cot,temp0.0,,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, gmo",nen,0_shot,temp0.0,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, kwg",axiom,0_shot,temp0.0,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, gmo",nen,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, enslaved, kwg",ttl,0_shot,temp0.0,,10,0.4,0.6,0.0,1.0,0.8,0.88
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, enslaved, kwg",ttl,0_shot,temp0.0,,10,0.4,0.6,0.0,1.0,0.8,0.88
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"enslaved, kwg",ttl,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg",axiom,0_shot,temp0.0,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg",axiom,0_shot,temp0.0,,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"enslaved, kwg",axiom,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, gmo, kwg",nen,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, enslaved, kwg",nen,0_shot,temp0.0,,10,0.4,0.4,0.2,0.7667,0.6333,0.6767
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, kwg",ttl,0_shot,temp0.0,,10,0.3,0.7,0.0,1.0,0.7333,0.83
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, enslaved, kwg",ttl,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, gmo, kwg",nen,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, enslaved, kwg",nen,0_shot,temp0.0,,10,0.4,0.4,0.2,0.7667,0.6333,0.6767
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, kwg",ttl,0_shot,temp0.0,,10,0.3,0.7,0.0,1.0,0.7333,0.83
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, enslaved, kwg",ttl,cot,temp0.0,,10,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, gmo",axiom,0_shot,temp0.0,,9,0.6667,0.3333,0.0,1.0,0.8333,0.8889
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, kwg",axiom,cot,temp0.0,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, enslaved",nen,0_shot,temp0.0,,9,0.8889,0.1111,0.0,0.9444,0.9444,0.9444
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, enslaved",nen,0_shot,temp0.0,,9,0.8889,0.1111,0.0,0.9444,0.9444,0.9444
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"currkg, kwg",nen,0_shot,temp0.0,,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"gmo, kwg",ttl,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg, kwg",nen,cot,temp0.0,,10,0.9,0.1,0.0,1.0,0.9667,0.98
-kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"corescholarrich, currkg",nen,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg, kwg",nen,cot,temp0.0,,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type__temperature_label,kg|representation|prompt_type|temperature_label,"core_scholar_rich, currkg",nen,cot,temp0.0,,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"gmo, kwg",axiom,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, gmo",ttl,0_shot,,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, kwg",nen,0_shot,,3,10,0.4,0.6,0.0,1.0,0.8,0.88
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, enslaved",nen,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, enslaved",nen,0_shot,,3,10,0.3,0.7,0.0,1.0,0.7667,0.86
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, kwg",nen,0_shot,,3,10,0.4,0.6,0.0,1.0,0.8,0.88
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, enslaved",nen,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, enslaved",nen,0_shot,,3,10,0.3,0.7,0.0,1.0,0.7667,0.86
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, enslaved",axiom,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, enslaved",axiom,0_shot,,3,10,0.3,0.7,0.0,1.0,0.7667,0.86
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, gmo",nen,cot,,3,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, enslaved",axiom,0_shot,,3,10,0.3,0.7,0.0,1.0,0.7667,0.86
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, gmo",nen,cot,,3,10,0.9,0.0,0.1,0.9,0.9,0.9
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, gmo",axiom,cot,,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, enslaved",nen,0_shot,,2,9,0.8889,0.1111,0.0,0.963,1.0,0.9778
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, gmo",ttl,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg",axiom,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, gmo",ttl,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg",axiom,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, kwg",ttl,0_shot,,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, gmo",axiom,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, gmo, kwg",axiom,0_shot,,3,10,0.6,0.4,0.0,1.0,0.8333,0.89
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, gmo",axiom,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, enslaved, kwg",axiom,0_shot,,3,10,0.7,0.3,0.0,1.0,0.9,0.94
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, gmo, kwg",nen,0_shot,,3,10,0.5,0.5,0.0,1.0,0.8333,0.9
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, enslaved",ttl,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, enslaved, kwg",nen,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, gmo",axiom,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, gmo, kwg",axiom,0_shot,,3,10,0.6,0.4,0.0,1.0,0.8333,0.89
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, gmo",axiom,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, enslaved, kwg",axiom,0_shot,,3,10,0.7,0.3,0.0,1.0,0.9,0.94
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, gmo, kwg",nen,0_shot,,3,10,0.5,0.5,0.0,1.0,0.8333,0.9
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, enslaved",ttl,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, enslaved, kwg",nen,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, kwg",nen,cot,,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"gmo, kwg",nen,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, gmo",nen,0_shot,,3,10,0.3,0.7,0.0,1.0,0.7,0.8
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, enslaved",ttl,0_shot,,3,10,0.2,0.8,0.0,1.0,0.7334,0.84
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, gmo, kwg",axiom,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, enslaved, kwg",axiom,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, gmo",ttl,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, gmo",ttl,cot,,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, gmo",axiom,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, enslaved",axiom,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, gmo",nen,0_shot,,3,10,0.3,0.7,0.0,1.0,0.7,0.8
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, enslaved",ttl,0_shot,,3,10,0.2,0.8,0.0,1.0,0.7334,0.84
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, gmo, kwg",axiom,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, enslaved, kwg",axiom,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, gmo",ttl,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, gmo",ttl,cot,,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, gmo",axiom,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, enslaved",axiom,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"gmo, kwg",nen,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, enslaved",axiom,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, enslaved",ttl,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, kwg",ttl,cot,,3,10,0.8,0.2,0.0,1.0,0.9333,0.96
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, kwg",axiom,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, enslaved",axiom,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, enslaved",ttl,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, kwg",ttl,cot,,3,10,0.8,0.2,0.0,1.0,0.9333,0.96
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, kwg",axiom,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, gmo",ttl,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"enslaved, kwg",nen,0_shot,,2,9,0.8889,0.0,0.1111,0.8889,0.8889,0.8889
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg",nen,0_shot,,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg",nen,0_shot,,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"enslaved, kwg",nen,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg",ttl,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg",ttl,0_shot,,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, kwg",axiom,0_shot,,3,10,0.2,0.8,0.0,1.0,0.7,0.81
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, gmo",axiom,0_shot,,3,10,0.4,0.6,0.0,1.0,0.7667,0.85
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg",ttl,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg",ttl,0_shot,,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, kwg",axiom,0_shot,,3,10,0.2,0.8,0.0,1.0,0.7,0.81
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, gmo",axiom,0_shot,,3,10,0.4,0.6,0.0,1.0,0.7667,0.85
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"gmo, kwg",ttl,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, gmo",nen,0_shot,,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, gmo",ttl,0_shot,,3,10,0.4,0.6,0.0,0.975,0.8333,0.8857
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, gmo",ttl,0_shot,,3,10,0.4,0.6,0.0,0.975,0.8333,0.8857
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, enslaved",nen,cot,,2,9,0.8889,0.1111,0.0,0.963,1.0,0.9778
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"enslaved, kwg",ttl,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, enslaved",axiom,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, enslaved",ttl,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, gmo",nen,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, gmo",nen,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, kwg",ttl,cot,,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, enslaved",nen,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, gmo, kwg",ttl,0_shot,,3,10,0.6,0.4,0.0,1.0,0.8667,0.92
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, gmo, kwg",ttl,cot,,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, enslaved",nen,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, gmo, kwg",ttl,0_shot,,3,10,0.6,0.4,0.0,1.0,0.8667,0.92
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, gmo, kwg",ttl,cot,,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"gmo, kwg",axiom,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, enslaved",ttl,cot,,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"enslaved, kwg",axiom,0_shot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, enslaved",ttl,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, enslaved",axiom,cot,,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, gmo",nen,0_shot,,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, enslaved",ttl,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, enslaved",axiom,cot,,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, gmo",nen,0_shot,,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, kwg",axiom,0_shot,,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, gmo",nen,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, enslaved, kwg",ttl,0_shot,,3,10,0.4,0.6,0.0,1.0,0.8,0.88
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, enslaved, kwg",ttl,0_shot,,3,10,0.4,0.6,0.0,1.0,0.8,0.88
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"enslaved, kwg",ttl,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg",axiom,0_shot,,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg",axiom,0_shot,,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"enslaved, kwg",axiom,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, gmo, kwg",nen,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, enslaved, kwg",nen,0_shot,,3,10,0.4,0.4,0.2,0.7667,0.6333,0.6767
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, kwg",ttl,0_shot,,3,10,0.3,0.7,0.0,1.0,0.7333,0.83
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, enslaved, kwg",ttl,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, gmo, kwg",nen,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, enslaved, kwg",nen,0_shot,,3,10,0.4,0.4,0.2,0.7667,0.6333,0.6767
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, kwg",ttl,0_shot,,3,10,0.3,0.7,0.0,1.0,0.7333,0.83
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, enslaved, kwg",ttl,cot,,3,10,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, gmo",axiom,0_shot,,2,9,0.6667,0.3333,0.0,1.0,0.8333,0.8889
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, kwg",axiom,cot,,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, enslaved",nen,0_shot,,2,9,0.8889,0.1111,0.0,0.9444,0.9444,0.9444
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, enslaved",nen,0_shot,,2,9,0.8889,0.1111,0.0,0.9444,0.9444,0.9444
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"currkg, kwg",nen,0_shot,,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"gmo, kwg",ttl,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg, kwg",nen,cot,,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
-kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"corescholarrich, currkg",nen,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg, kwg",nen,cot,,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type__num_bridges,kg|representation|prompt_type|num_bridges,"core_scholar_rich, currkg",nen,cot,,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"gmo, kwg",axiom,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"currkg, gmo",ttl,,temp0.0,2,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, currkg, kwg",nen,,temp0.0,3,20,0.65,0.35,0.0,1.0,0.8833,0.93
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, enslaved",nen,,temp0.0,2,18,0.9444,0.0556,0.0,0.9722,0.9722,0.9722
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, currkg, enslaved",nen,,temp0.0,3,20,0.65,0.35,0.0,1.0,0.8833,0.93
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, currkg, kwg",nen,,temp0.0,3,20,0.65,0.35,0.0,1.0,0.8833,0.93
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, enslaved",nen,,temp0.0,2,18,0.9444,0.0556,0.0,0.9722,0.9722,0.9722
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, currkg, enslaved",nen,,temp0.0,3,20,0.65,0.35,0.0,1.0,0.8833,0.93
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"currkg, enslaved",axiom,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, currkg, enslaved",axiom,,temp0.0,3,20,0.6,0.4,0.0,1.0,0.8667,0.92
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, currkg, gmo",nen,,temp0.0,3,19,0.6316,0.3684,0.0,1.0,0.8421,0.8947
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, currkg, enslaved",axiom,,temp0.0,3,20,0.6,0.4,0.0,1.0,0.8667,0.92
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, currkg, gmo",nen,,temp0.0,3,20,0.6,0.35,0.05,0.95,0.8,0.85
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"currkg, gmo",axiom,,temp0.0,2,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"currkg, enslaved",nen,,temp0.0,2,18,0.8889,0.1111,0.0,0.963,1.0,0.9778
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, gmo",ttl,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, currkg",axiom,,temp0.0,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, gmo",ttl,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, currkg",axiom,,temp0.0,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"currkg, kwg",ttl,,temp0.0,2,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, gmo",axiom,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, gmo, kwg",axiom,,temp0.0,3,20,0.8,0.2,0.0,1.0,0.9167,0.945
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, currkg, gmo",axiom,,temp0.0,3,20,0.7,0.3,0.0,1.0,0.8833,0.925
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, enslaved, kwg",axiom,,temp0.0,3,20,0.85,0.15,0.0,1.0,0.95,0.97
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, gmo, kwg",nen,,temp0.0,3,20,0.75,0.25,0.0,1.0,0.9167,0.95
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, enslaved",ttl,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, enslaved, kwg",nen,,temp0.0,3,20,0.7,0.2,0.1,0.8833,0.8167,0.8383
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, gmo",axiom,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, gmo, kwg",axiom,,temp0.0,3,20,0.8,0.2,0.0,1.0,0.9167,0.945
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, currkg, gmo",axiom,,temp0.0,3,20,0.7,0.3,0.0,1.0,0.8833,0.925
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, enslaved, kwg",axiom,,temp0.0,3,20,0.85,0.15,0.0,1.0,0.95,0.97
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, gmo, kwg",nen,,temp0.0,3,20,0.75,0.25,0.0,1.0,0.9167,0.95
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, enslaved",ttl,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, enslaved, kwg",nen,,temp0.0,3,20,0.7,0.2,0.1,0.8833,0.8167,0.8383
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"currkg, kwg",nen,,temp0.0,2,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"gmo, kwg",nen,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, currkg, enslaved",ttl,,temp0.0,3,20,0.6,0.4,0.0,1.0,0.8667,0.92
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, currkg, gmo",ttl,,temp0.0,3,20,0.65,0.35,0.0,0.9875,0.9,0.9329
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, enslaved",axiom,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, currkg, kwg",ttl,,temp0.0,3,20,0.55,0.45,0.0,1.0,0.8333,0.895
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, currkg, kwg",axiom,,temp0.0,3,20,0.6,0.4,0.0,1.0,0.85,0.905
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, currkg, enslaved",ttl,,temp0.0,3,20,0.6,0.4,0.0,1.0,0.8667,0.92
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, currkg, gmo",ttl,,temp0.0,3,20,0.65,0.35,0.0,0.9875,0.9,0.9329
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, enslaved",axiom,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, currkg, kwg",ttl,,temp0.0,3,20,0.55,0.45,0.0,1.0,0.8333,0.895
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, currkg, kwg",axiom,,temp0.0,3,20,0.6,0.4,0.0,1.0,0.85,0.905
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"enslaved, kwg",nen,,temp0.0,2,18,0.9444,0.0,0.0556,0.9444,0.9444,0.9444
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, currkg",nen,,temp0.0,2,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, currkg",ttl,,temp0.0,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, currkg",nen,,temp0.0,2,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, currkg",ttl,,temp0.0,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"gmo, kwg",ttl,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"currkg, gmo",nen,,temp0.0,2,18,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"enslaved, kwg",ttl,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"currkg, enslaved",ttl,,temp0.0,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, gmo",nen,,temp0.0,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, gmo, kwg",ttl,,temp0.0,3,20,0.75,0.25,0.0,1.0,0.9167,0.95
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, gmo",nen,,temp0.0,2,18,0.9444,0.0556,0.0,1.0,0.9722,0.9815
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, gmo, kwg",ttl,,temp0.0,3,20,0.75,0.25,0.0,1.0,0.9167,0.95
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"enslaved, kwg",axiom,,temp0.0,2,18,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"currkg, kwg",axiom,,temp0.0,2,18,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"corescholarrich, enslaved, kwg",ttl,,temp0.0,3,20,0.7,0.3,0.0,1.0,0.9,0.94
+kg__representation__temperature_label__num_bridges,kg|representation|temperature_label|num_bridges,"core_scholar_rich, enslaved, kwg",ttl,,temp0.0,3,20,0.7,0.3,0.0,1.0,0.9,0.94
 kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"gmo, kwg",,0_shot,temp0.0,2,27,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"currkg, gmo",,0_shot,temp0.0,2,27,0.7407,0.2593,0.0,1.0,0.8704,0.9136
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, kwg",,0_shot,temp0.0,3,30,0.3,0.7,0.0,1.0,0.7445,0.84
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved",,cot,temp0.0,2,27,1.0,0.0,0.0,1.0,1.0,1.0
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, enslaved",,0_shot,temp0.0,3,30,0.2667,0.7333,0.0,1.0,0.7556,0.8533
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, kwg",,0_shot,temp0.0,3,30,0.3,0.7,0.0,1.0,0.7445,0.84
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved",,cot,temp0.0,2,27,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, enslaved",,0_shot,temp0.0,3,30,0.2667,0.7333,0.0,1.0,0.7556,0.8533
 kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"currkg, enslaved",,0_shot,temp0.0,2,27,0.963,0.037,0.0,0.9877,1.0,0.9926
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, gmo",,cot,temp0.0,3,29,0.9655,0.0345,0.0,1.0,0.9885,0.9931
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, gmo",,cot,temp0.0,3,30,0.9333,0.0333,0.0333,0.9667,0.9556,0.96
 kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"currkg, gmo",,cot,temp0.0,2,27,0.963,0.037,0.0,1.0,0.9815,0.9877
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo",,cot,temp0.0,2,27,1.0,0.0,0.0,1.0,1.0,1.0
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg",,cot,temp0.0,2,27,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo",,cot,temp0.0,2,27,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg",,cot,temp0.0,2,27,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"currkg, kwg",,0_shot,temp0.0,2,27,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo, kwg",,0_shot,temp0.0,3,30,0.5667,0.4333,0.0,1.0,0.8445,0.9033
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved, kwg",,0_shot,temp0.0,3,30,0.5,0.4333,0.0667,0.9222,0.7778,0.8322
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved",,0_shot,temp0.0,2,27,0.963,0.037,0.0,0.9815,0.9815,0.9815
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved, kwg",,cot,temp0.0,3,30,1.0,0.0,0.0,1.0,1.0,1.0
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo, kwg",,0_shot,temp0.0,3,30,0.5667,0.4333,0.0,1.0,0.8445,0.9033
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved, kwg",,0_shot,temp0.0,3,30,0.5,0.4333,0.0667,0.9222,0.7778,0.8322
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved",,0_shot,temp0.0,2,27,0.963,0.037,0.0,0.9815,0.9815,0.9815
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved, kwg",,cot,temp0.0,3,30,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"currkg, kwg",,cot,temp0.0,2,27,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"gmo, kwg",,cot,temp0.0,2,27,1.0,0.0,0.0,1.0,1.0,1.0
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, gmo",,0_shot,temp0.0,3,30,0.3667,0.6333,0.0,0.9917,0.7667,0.8452
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo, kwg",,cot,temp0.0,3,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo",,0_shot,temp0.0,2,27,0.963,0.037,0.0,1.0,0.9815,0.9877
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, kwg",,cot,temp0.0,3,30,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, gmo",,0_shot,temp0.0,3,30,0.3667,0.6333,0.0,0.9917,0.7667,0.8452
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo, kwg",,cot,temp0.0,3,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo",,0_shot,temp0.0,2,27,0.963,0.037,0.0,1.0,0.9815,0.9877
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, kwg",,cot,temp0.0,3,30,0.9,0.1,0.0,1.0,0.9667,0.98
 kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"enslaved, kwg",,0_shot,temp0.0,2,27,0.963,0.0,0.037,0.963,0.963,0.963
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg",,0_shot,temp0.0,2,27,0.8519,0.1481,0.0,1.0,0.9259,0.9506
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg",,0_shot,temp0.0,2,27,0.8519,0.1481,0.0,1.0,0.9259,0.9506
 kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"enslaved, kwg",,cot,temp0.0,2,27,1.0,0.0,0.0,1.0,1.0,1.0
 kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"currkg, enslaved",,cot,temp0.0,2,27,0.9259,0.0741,0.0,0.9877,0.9815,0.9802
-kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, enslaved",,cot,temp0.0,3,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
+kg__prompt_type__temperature_label__num_bridges,kg|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, enslaved",,cot,temp0.0,3,30,0.9667,0.0333,0.0,1.0,0.9889,0.9933
 representation__prompt_type__temperature_label__num_bridges,representation|prompt_type|temperature_label|num_bridges,,axiom,0_shot,temp0.0,2,72,0.9167,0.0833,0.0,1.0,0.9583,0.9722
 representation__prompt_type__temperature_label__num_bridges,representation|prompt_type|temperature_label|num_bridges,,ttl,0_shot,temp0.0,2,72,0.9306,0.0694,0.0,1.0,0.9653,0.9769
 representation__prompt_type__temperature_label__num_bridges,representation|prompt_type|temperature_label|num_bridges,,nen,0_shot,temp0.0,3,50,0.38,0.58,0.04,0.9533,0.7467,0.8233
 representation__prompt_type__temperature_label__num_bridges,representation|prompt_type|temperature_label|num_bridges,,nen,cot,temp0.0,2,72,0.9583,0.0417,0.0,0.9954,0.9861,0.988
 representation__prompt_type__temperature_label__num_bridges,representation|prompt_type|temperature_label|num_bridges,,axiom,0_shot,temp0.0,3,50,0.44,0.56,0.0,1.0,0.7933,0.87
-representation__prompt_type__temperature_label__num_bridges,representation|prompt_type|temperature_label|num_bridges,,nen,cot,temp0.0,3,49,0.9796,0.0204,0.0,1.0,0.9932,0.9959
+representation__prompt_type__temperature_label__num_bridges,representation|prompt_type|temperature_label|num_bridges,,nen,cot,temp0.0,3,50,0.96,0.02,0.02,0.98,0.9733,0.976
 representation__prompt_type__temperature_label__num_bridges,representation|prompt_type|temperature_label|num_bridges,,axiom,cot,temp0.0,2,72,0.9583,0.0417,0.0,1.0,0.9792,0.9861
 representation__prompt_type__temperature_label__num_bridges,representation|prompt_type|temperature_label|num_bridges,,nen,0_shot,temp0.0,2,72,0.8611,0.125,0.0139,0.9745,0.9306,0.944
 representation__prompt_type__temperature_label__num_bridges,representation|prompt_type|temperature_label|num_bridges,,ttl,cot,temp0.0,2,72,0.9583,0.0417,0.0,1.0,0.9792,0.9861
@@ -618,79 +618,79 @@ representation__prompt_type__temperature_label__num_bridges,representation|promp
 representation__prompt_type__temperature_label__num_bridges,representation|prompt_type|temperature_label|num_bridges,,ttl,cot,temp0.0,3,50,0.92,0.08,0.0,1.0,0.9733,0.984
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"gmo, kwg",axiom,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, gmo",ttl,0_shot,temp0.0,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, kwg",nen,0_shot,temp0.0,3,10,0.4,0.6,0.0,1.0,0.8,0.88
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved",nen,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, enslaved",nen,0_shot,temp0.0,3,10,0.3,0.7,0.0,1.0,0.7667,0.86
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, kwg",nen,0_shot,temp0.0,3,10,0.4,0.6,0.0,1.0,0.8,0.88
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved",nen,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, enslaved",nen,0_shot,temp0.0,3,10,0.3,0.7,0.0,1.0,0.7667,0.86
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, enslaved",axiom,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, enslaved",axiom,0_shot,temp0.0,3,10,0.3,0.7,0.0,1.0,0.7667,0.86
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, gmo",nen,cot,temp0.0,3,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, enslaved",axiom,0_shot,temp0.0,3,10,0.3,0.7,0.0,1.0,0.7667,0.86
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, gmo",nen,cot,temp0.0,3,10,0.9,0.0,0.1,0.9,0.9,0.9
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, gmo",axiom,cot,temp0.0,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, enslaved",nen,0_shot,temp0.0,2,9,0.8889,0.1111,0.0,0.963,1.0,0.9778
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo",ttl,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg",axiom,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo",ttl,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg",axiom,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, kwg",ttl,0_shot,temp0.0,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo",axiom,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo, kwg",axiom,0_shot,temp0.0,3,10,0.6,0.4,0.0,1.0,0.8333,0.89
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, gmo",axiom,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved, kwg",axiom,0_shot,temp0.0,3,10,0.7,0.3,0.0,1.0,0.9,0.94
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo, kwg",nen,0_shot,temp0.0,3,10,0.5,0.5,0.0,1.0,0.8333,0.9
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved",ttl,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved, kwg",nen,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo",axiom,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo, kwg",axiom,0_shot,temp0.0,3,10,0.6,0.4,0.0,1.0,0.8333,0.89
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, gmo",axiom,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved, kwg",axiom,0_shot,temp0.0,3,10,0.7,0.3,0.0,1.0,0.9,0.94
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo, kwg",nen,0_shot,temp0.0,3,10,0.5,0.5,0.0,1.0,0.8333,0.9
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved",ttl,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved, kwg",nen,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, kwg",nen,cot,temp0.0,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"gmo, kwg",nen,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, gmo",nen,0_shot,temp0.0,3,10,0.3,0.7,0.0,1.0,0.7,0.8
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, enslaved",ttl,0_shot,temp0.0,3,10,0.2,0.8,0.0,1.0,0.7334,0.84
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo, kwg",axiom,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved, kwg",axiom,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo",ttl,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, gmo",ttl,cot,temp0.0,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo",axiom,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved",axiom,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, gmo",nen,0_shot,temp0.0,3,10,0.3,0.7,0.0,1.0,0.7,0.8
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, enslaved",ttl,0_shot,temp0.0,3,10,0.2,0.8,0.0,1.0,0.7334,0.84
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo, kwg",axiom,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved, kwg",axiom,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo",ttl,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, gmo",ttl,cot,temp0.0,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo",axiom,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved",axiom,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"gmo, kwg",nen,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved",axiom,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved",ttl,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, kwg",ttl,cot,temp0.0,3,10,0.8,0.2,0.0,1.0,0.9333,0.96
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, kwg",axiom,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved",axiom,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved",ttl,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, kwg",ttl,cot,temp0.0,3,10,0.8,0.2,0.0,1.0,0.9333,0.96
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, kwg",axiom,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, gmo",ttl,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"enslaved, kwg",nen,0_shot,temp0.0,2,9,0.8889,0.0,0.1111,0.8889,0.8889,0.8889
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg",nen,0_shot,temp0.0,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg",nen,0_shot,temp0.0,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"enslaved, kwg",nen,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg",ttl,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg",ttl,0_shot,temp0.0,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, kwg",axiom,0_shot,temp0.0,3,10,0.2,0.8,0.0,1.0,0.7,0.81
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, gmo",axiom,0_shot,temp0.0,3,10,0.4,0.6,0.0,1.0,0.7667,0.85
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg",ttl,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg",ttl,0_shot,temp0.0,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, kwg",axiom,0_shot,temp0.0,3,10,0.2,0.8,0.0,1.0,0.7,0.81
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, gmo",axiom,0_shot,temp0.0,3,10,0.4,0.6,0.0,1.0,0.7667,0.85
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"gmo, kwg",ttl,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, gmo",nen,0_shot,temp0.0,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, gmo",ttl,0_shot,temp0.0,3,10,0.4,0.6,0.0,0.975,0.8333,0.8857
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, gmo",ttl,0_shot,temp0.0,3,10,0.4,0.6,0.0,0.975,0.8333,0.8857
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, enslaved",nen,cot,temp0.0,2,9,0.8889,0.1111,0.0,0.963,1.0,0.9778
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"enslaved, kwg",ttl,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, enslaved",axiom,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, enslaved",ttl,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo",nen,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo",nen,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, kwg",ttl,cot,temp0.0,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, enslaved",nen,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo, kwg",ttl,0_shot,temp0.0,3,10,0.6,0.4,0.0,1.0,0.8667,0.92
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo, kwg",ttl,cot,temp0.0,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, enslaved",nen,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo, kwg",ttl,0_shot,temp0.0,3,10,0.6,0.4,0.0,1.0,0.8667,0.92
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo, kwg",ttl,cot,temp0.0,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"gmo, kwg",axiom,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, enslaved",ttl,cot,temp0.0,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"enslaved, kwg",axiom,0_shot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, enslaved",ttl,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, enslaved",axiom,cot,temp0.0,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo",nen,0_shot,temp0.0,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, enslaved",ttl,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, enslaved",axiom,cot,temp0.0,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo",nen,0_shot,temp0.0,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, kwg",axiom,0_shot,temp0.0,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, gmo",nen,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved, kwg",ttl,0_shot,temp0.0,3,10,0.4,0.6,0.0,1.0,0.8,0.88
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved, kwg",ttl,0_shot,temp0.0,3,10,0.4,0.6,0.0,1.0,0.8,0.88
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"enslaved, kwg",ttl,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg",axiom,0_shot,temp0.0,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg",axiom,0_shot,temp0.0,2,9,0.8889,0.1111,0.0,1.0,0.9444,0.963
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"enslaved, kwg",axiom,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, gmo, kwg",nen,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved, kwg",nen,0_shot,temp0.0,3,10,0.4,0.4,0.2,0.7667,0.6333,0.6767
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, kwg",ttl,0_shot,temp0.0,3,10,0.3,0.7,0.0,1.0,0.7333,0.83
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved, kwg",ttl,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, gmo, kwg",nen,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved, kwg",nen,0_shot,temp0.0,3,10,0.4,0.4,0.2,0.7667,0.6333,0.6767
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, kwg",ttl,0_shot,temp0.0,3,10,0.3,0.7,0.0,1.0,0.7333,0.83
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved, kwg",ttl,cot,temp0.0,3,10,1.0,0.0,0.0,1.0,1.0,1.0
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, gmo",axiom,0_shot,temp0.0,2,9,0.6667,0.3333,0.0,1.0,0.8333,0.8889
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, kwg",axiom,cot,temp0.0,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, enslaved",nen,0_shot,temp0.0,2,9,0.8889,0.1111,0.0,0.9444,0.9444,0.9444
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, enslaved",nen,0_shot,temp0.0,2,9,0.8889,0.1111,0.0,0.9444,0.9444,0.9444
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"currkg, kwg",nen,0_shot,temp0.0,2,9,0.7778,0.2222,0.0,1.0,0.8889,0.9259
 kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"gmo, kwg",ttl,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg, kwg",nen,cot,temp0.0,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
-kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"corescholarrich, currkg",nen,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg, kwg",nen,cot,temp0.0,3,10,0.9,0.1,0.0,1.0,0.9667,0.98
+kg__representation__prompt_type__temperature_label__num_bridges,kg|representation|prompt_type|temperature_label|num_bridges,"core_scholar_rich, currkg",nen,cot,temp0.0,2,9,1.0,0.0,0.0,1.0,1.0,1.0
