@@ -1,0 +1,2 @@
+task,n_records,TP_correct_rejection,FP_false_rejection,TN_correct_acceptance,FN_false_acceptance,Rejection_Precision,Rejection_Recall,Rejection_F1,Answerable_Specificity,False_Rejection_Rate,False_Acceptance_Rate
+no_kg_vs_answerable,630,25,0,450,155,1.0,0.1389,0.2439,1.0,0.0,0.8611
