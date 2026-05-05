@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which curriculum topics can be aligned with hazard categories?",
+      "answer": "currkg, kwg"
+    },
+    {
+      "cq": "Which media resources can be compared with hazard events through shared hazard terminology?",
+      "answer": "currkg, kwg"
+    },
+    {
+      "cq": "Which modules about environmental risks can be joined to hazard records by hazard type and place?",
+      "answer": "currkg, kwg"
+    },
+    {
+      "cq": "Which learning paths include hazard topics that match events filtered by temporal scope or affected area?",
+      "answer": "currkg, kwg"
+    },
+    {
+      "cq": "Which personas, paths, steps, modules, media, hazard topics, events, places, temporal scopes, damage, health, climate, and demographic attributes are connected?",
+      "answer": "currkg, kwg"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify the curriculum side: media resources, modules, learning paths, personas, and topics.",
+    "Next, identify the hazard side: hazard events, types, places, temporal scopes, damage, impact, climate, health, and demographic attributes.",
+    "Then, check whether the CQ asks to connect educational topics to real KG hazard records.",
+    "Finally, select currkg and kwg for curriculum-to-hazard bridge questions."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to connect learning resources about hazards with real hazard events and affected places?",
+    "reasoning": [
+      "First, I identify that the CQ asks to connect learning resources about hazards with real hazard events and affected places.",
+      "CurrKG is needed for curriculum topics, media resources, modules, learning paths, learning steps, and personas. KWG is needed for hazard events, hazard types, affected places, temporal intervals, damage, impact, climate, health, and demographic attributes.",
+      "CurrKG alone can describe hazard-related learning content but not real hazard-event records. KWG can describe hazards but not curriculum resources or learning paths.",
+      "The bridge axes are hazard topic/type, place, and sometimes time, so the minimal combination is currkg and kwg."
+    ],
+    "answer": "currkg, kwg"
+  }
+}

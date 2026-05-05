@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which shared locations connect documented enslaved-person records with recorded hazard events?",
+      "answer": "kwg, enslaved"
+    },
+    {
+      "cq": "Which time spans can be compared between enslaved-person location records and hazard-event records?",
+      "answer": "kwg, enslaved"
+    },
+    {
+      "cq": "Which places have enslaved-person demographic records and hazard events filtered to matching periods?",
+      "answer": "kwg, enslaved"
+    },
+    {
+      "cq": "For shared places, which hazard categories co-occur with enslaved-person records grouped by owner or event?",
+      "answer": "kwg, enslaved"
+    },
+    {
+      "cq": "Which locations require joining enslaved-person names, roles, relationships, temporal extents, hazard types, and damage observations?",
+      "answer": "kwg, enslaved"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify the required historical people, records, places, population details, hazards, and time constraints.",
+    "Next, determine which KG covers enslaved-person records and which KG covers hazard events and impact details.",
+    "Then, verify that neither KG alone covers both sides of the CQ.",
+    "Finally, select kwg and enslaved as the minimal bridge combination."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to identify historical places that contain enslaved-person records and temporally comparable hazard events?",
+    "reasoning": [
+      "First, I identify that the CQ asks for historical places with enslaved-person records and hazard events that can be compared by place and time.",
+      "The enslaved KG is needed for enslaved individuals, agent records, events, locations, and temporal extents. KWG is needed for hazard events, hazard types, affected places, and temporal scopes.",
+      "A single KG is not enough: enslaved does not provide hazard-event schema, and KWG does not provide enslaved-person historical records.",
+      "The shared bridge axes are place and time, so the minimal combination is kwg and enslaved."
+    ],
+    "answer": "kwg, enslaved"
+  }
+}

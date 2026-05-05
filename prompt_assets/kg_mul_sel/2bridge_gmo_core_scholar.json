@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which cruise participants can be compared with publication authors?",
+      "answer": "gmo, core_scholar_rich"
+    },
+    {
+      "cq": "Which cruise organizations can be compared with scholarly departments or universities?",
+      "answer": "gmo, core_scholar_rich"
+    },
+    {
+      "cq": "Which publications are linked to people who had cruise roles after filtering by role type?",
+      "answer": "gmo, core_scholar_rich"
+    },
+    {
+      "cq": "Which scholarly fields are connected to cruises through shared people, organizations, or datasets?",
+      "answer": "gmo, core_scholar_rich"
+    },
+    {
+      "cq": "Which cruise roles, awards, vessels, organizations, samples, datasets, authors, publications, departments, universities, fields, and dates form connected research networks?",
+      "answer": "gmo, core_scholar_rich"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify cruise-domain requirements including cruises, vessels, people, organizations, roles, samples, datasets, and awards.",
+    "Next, identify scholarly requirements including publications, authors, contributors, fields of study, departments, universities, and publication dates.",
+    "Then, determine whether the CQ bridges oceanographic participation with scholarly production.",
+    "Finally, select gmo, and core_scholar_rich for oceanographic-to-scholar bridge CQs."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to connect oceanographic cruise participation with scholarly publication authorship and institutions?",
+    "reasoning": [
+      "First, I identify that the CQ asks to connect oceanographic cruise participation with scholarly publication authorship and institutions.",
+      "GBO and GMO are needed for cruises, vessels, people, organizations, roles, awards, samples, datasets, and cruise events. Core Scholar Rich is needed for authors, contributors, publications, departments, universities, fields of study, and dates.",
+      "The cruise schemas cannot answer publication and department metadata, while Core Scholar Rich cannot answer cruise roles, vessels, samples, or datasets.",
+      "The bridge axes are people, organizations, and research topics, so the minimal combination for this asset is gbo, gmo, and core_scholar_rich."
+    ],
+    "answer": "gmo, core_scholar_rich"
+  }
+}

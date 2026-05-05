@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which scholarly fields can be associated with historical records about enslaved people?",
+      "answer": "enslaved, core_scholar_rich"
+    },
+    {
+      "cq": "Which publication authors can be compared with topics about enslaved-person locations or events?",
+      "answer": "enslaved, core_scholar_rich"
+    },
+    {
+      "cq": "Which publications should be joined to enslaved-person records through matching historical places and periods?",
+      "answer": "enslaved, core_scholar_rich"
+    },
+    {
+      "cq": "Which departments publish work connected to enslaved-person occupations, events, or relationships after filtering by field of study?",
+      "answer": "enslaved, core_scholar_rich"
+    },
+    {
+      "cq": "Which author, advisor, department, publication, field, enslaved-person record, event, location, occupation, relationship, and period links can be traced together?",
+      "answer": "enslaved, core_scholar_rich"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify whether the CQ requires both historical enslaved-person records and scholarly publication metadata.",
+    "Next, map enslaved-person entities, places, events, occupations, and periods to the enslaved KG.",
+    "Then, map publications, authors, departments, universities, fields of study, dates, and DOI values to core_scholar_rich.",
+    "Finally, select enslaved and core_scholar_rich when both historical records and scholarly metadata are required."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to connect scholarly publication metadata with historical records about enslaved people and their locations?",
+    "reasoning": [
+      "First, I identify that the CQ asks to connect scholarly publication metadata with historical records about enslaved people and their locations.",
+      "The enslaved KG is needed for enslaved individuals, historical events, locations, occupations, relationships, demographic records, and temporal extents. Core Scholar Rich is needed for publications, authors, departments, universities, fields of study, DOI values, and publication dates.",
+      "The enslaved KG alone cannot answer publication metadata, and Core Scholar Rich alone cannot provide the detailed historical enslaved-person record structure.",
+      "The bridge axes are historical subject matter, place, period, and research topic, so the minimal combination is enslaved and core_scholar_rich."
+    ],
+    "answer": "enslaved, core_scholar_rich"
+  }
+}

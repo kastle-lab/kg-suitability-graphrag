@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which curriculum topics can be compared with cruise or vessel concepts?",
+      "answer": "gmo, currkg"
+    },
+    {
+      "cq": "Which media resources can be aligned with oceanographic sample or dataset topics?",
+      "answer": "gmo, currkg"
+    },
+    {
+      "cq": "Which modules cover topics that match cruises filtered by vessel or organization?",
+      "answer": "gmo, currkg"
+    },
+    {
+      "cq": "Which learning paths include media about sampling topics that can be joined to cruise sample records?",
+      "answer": "gmo, currkg"
+    },
+    {
+      "cq": "Which personas, paths, modules, media, topics, cruises, vessels, people, organizations, datasets, samples, places, and time spans connect through oceanographic content?",
+      "answer": "gmo, currkg"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify curriculum requirements such as media resources, topics, modules, personas, and learning paths.",
+    "Next, identify oceanographic requirements such as cruises, vessels, expeditions, samples, datasets, people, organizations, places, and times.",
+    "Then, check whether the CQ bridges learning resources with oceanographic records.",
+    "Finally, select gmo, and currkg when both oceanographic schemas and curriculum schema are needed."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to connect curriculum resources with oceanographic cruise records and sample metadata?",
+    "reasoning": [
+      "First, I identify that the CQ asks to connect curriculum resources with oceanographic cruise records and sample metadata.",
+      "CurrKG is needed for media resources, curriculum topics, modules, learning paths, and personas. GBO and GMO are needed for cruises, vessels, expeditions, organizations, people, samples, datasets, places, and times.",
+      "CurrKG alone cannot answer cruise or sample metadata, and the oceanographic KGs alone cannot answer learning path or media-resource questions.",
+      "The bridge axes are oceanographic topic, cruise entity, sample/dataset concept, and educational resource, so the minimal combination is gbo, gmo, and currkg."
+    ],
+    "answer": "gmo, currkg"
+  }
+}

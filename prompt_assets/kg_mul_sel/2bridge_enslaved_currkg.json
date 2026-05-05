@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which curriculum topics can be aligned with records about enslaved people?",
+      "answer": "enslaved, currkg"
+    },
+    {
+      "cq": "Which media resources can be compared with historical events involving enslaved individuals?",
+      "answer": "enslaved, currkg"
+    },
+    {
+      "cq": "Which modules cover historical topics that can be joined to enslaved-person locations and periods?",
+      "answer": "enslaved, currkg"
+    },
+    {
+      "cq": "Which learning paths include media about occupations or relationships represented in enslaved-person records?",
+      "answer": "enslaved, currkg"
+    },
+    {
+      "cq": "Which personas, paths, steps, modules, media, topics, enslaved-person names, records, occupations, relationships, events, places, and temporal extents are connected?",
+      "answer": "enslaved, currkg"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify learning-resource requirements such as media, topics, modules, learning paths, and personas.",
+    "Next, identify historical-record requirements such as enslaved individuals, names, relationships, occupations, events, locations, and temporal extents.",
+    "Then, check whether the CQ connects curriculum resources to historical enslaved-person records.",
+    "Finally, select enslaved and currkg when both domains are required."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to connect curriculum media about slavery-related topics with historical enslaved-person records?",
+    "reasoning": [
+      "First, I identify that the CQ asks to connect curriculum media about slavery-related topics with historical enslaved-person records.",
+      "CurrKG is needed for media resources, topics, modules, learning paths, and personas. The enslaved KG is needed for enslaved individuals, names, occupations, relationships, events, owners, places, and temporal extents.",
+      "CurrKG can identify educational content but cannot provide the historical records. The enslaved KG can provide historical records but not curriculum structure or learning resources.",
+      "The bridge axes are historical topic, place, period, occupation, relationship, and learning content, so the minimal combination is enslaved and currkg."
+    ],
+    "answer": "enslaved, currkg"
+  }
+}

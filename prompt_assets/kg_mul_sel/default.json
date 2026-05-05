@@ -1,0 +1,21 @@
+{
+  "few_shot_examples": [
+  ],
+  "reasoning_steps": [
+    "First, identify the main entities, relationships, constraints, and answer requirements mentioned in the competency question.",
+    "Next, compare those needs against the provided schema contexts for each candidate KG.",
+    "Then, check whether a single KG directly and sufficiently covers the full question.",
+    "If the CQ bridges domains, identify the smallest set of KGs that jointly covers every required entity, relation, filter, and join axis.",
+    "Finally, return one KG when it is sufficient, or a comma-separated minimal KG combination when multiple schemas are necessary."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to connect enslaved-person records in historical places with hazard events recorded for the same places?",
+    "reasoning": [
+      "First, I identify that the CQ needs historical records about enslaved people and places, as well as hazard events tied to places.",
+      "Next, I compare the schemas. The enslaved KG covers enslaved-person records, locations, events, and temporal extents, while KWG covers hazards, affected places, hazard types, and temporal scopes.",
+      "Then, I check whether one KG covers both domains. Neither KG alone can answer the full bridge question.",
+      "Therefore, the minimal combination is kwg and enslaved."
+    ],
+    "answer": "kwg, enslaved"
+  }
+}

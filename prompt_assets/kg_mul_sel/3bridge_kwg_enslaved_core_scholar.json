@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which scholarly topics can be compared with places that have both enslaved-person and hazard records?",
+      "answer": "kwg, enslaved, core_scholar_rich"
+    },
+    {
+      "cq": "Which publication authors can be connected to historical places that also have hazard events?",
+      "answer": "kwg, enslaved, core_scholar_rich"
+    },
+    {
+      "cq": "Which publications align with enslaved-person records and hazards after filtering by shared place and period?",
+      "answer": "kwg, enslaved, core_scholar_rich"
+    },
+    {
+      "cq": "Which departments publish work connected to historical locations with both demographic records and hazard impact data?",
+      "answer": "kwg, enslaved, core_scholar_rich"
+    },
+    {
+      "cq": "Which authors, departments, fields, publications, enslaved-person records, owners, relationships, events, hazard types, places, periods, damage, and impact details are connected?",
+      "answer": "kwg, enslaved, core_scholar_rich"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify scholarly, enslaved-person historical, and hazard-event requirements.",
+    "Next, map publications, authors, departments, universities, and fields of study to Core Scholar Rich.",
+    "Then, map enslaved-person records to the enslaved KG and hazards, places, temporal scopes, damage, impact, and climate details to KWG.",
+    "Finally, select kwg, enslaved, and core_scholar_rich when all three domains are required."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to connect scholarly publications with places that have both enslaved-person records and hazard records?",
+    "reasoning": [
+      "First, I identify that the CQ asks to connect scholarly publications with places that have both enslaved-person records and hazard records.",
+      "Core Scholar Rich is needed for publications, authors, departments, universities, fields of study, and publication dates. The enslaved KG is needed for enslaved-person records, owners, relationships, events, places, and temporal extents. KWG is needed for hazards, hazard types, affected places, temporal scopes, damage, impact, and climate details.",
+      "No single KG or two-KG pair covers all three required layers: scholarship, historical enslaved-person records, and hazard-event records.",
+      "The bridge axes are place, time, historical topic, and scholarly field, so the minimal combination is kwg, enslaved, and core_scholar_rich."
+    ],
+    "answer": "kwg, enslaved, core_scholar_rich"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which cruise regions can be compared with places that have hazard records?",
+      "answer": "kwg, gmo"
+    },
+    {
+      "cq": "Which vessels operated in locations that can also be matched to hazard events?",
+      "answer": "kwg, gmo"
+    },
+    {
+      "cq": "Which cruise tracks overlap places with hazard events after filtering by time period?",
+      "answer": "kwg, gmo"
+    },
+    {
+      "cq": "Which samples collected during cruises can be joined to hazard-affected regions by place and date?",
+      "answer": "kwg, gmo"
+    },
+    {
+      "cq": "Which cruise participants, vessels, samples, datasets, hazard geometries, temporal scopes, and impact details are connected for affected marine regions?",
+      "answer": "kwg, gmo"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify the cruise, vessel, sample, organization, place, hazard, and temporal requirements.",
+    "Next, use the oceanographic KGs for cruises, vessels, samples, datasets, people, and organizations, and KWG for hazards and affected places.",
+    "Then, check whether the CQ needs both hazard context and cruise context.",
+    "Finally, select kwg and gmo when both oceanographic schemas and hazard schema are needed."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to link cruise activity and samples with hazards observed in the same regions?",
+    "reasoning": [
+      "First, I identify that the CQ asks to relate cruise activity and samples to hazards observed in the same regions.",
+      "KWG is needed for hazard events, affected places, temporal scopes, damage, impact, and climate attributes. GBO and GMO are needed for cruises, vessels, platforms, samples, datasets, organizations, people, trajectories, and cruise times.",
+      "No single oceanographic KG can supply hazard records, and KWG cannot answer cruise, vessel, organization, or sample details.",
+      "Because the bridge uses region/place and time across hazard and cruise schemas, the minimal combination for this asset is kwg, gbo, and gmo."
+    ],
+    "answer": "kwg, gmo"
+  }
+}

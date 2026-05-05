@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which curriculum and scholarly topics can be compared with oceanographic cruise concepts?",
+      "answer": "gmo, currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which media authors and publication authors can be connected to cruise-related topics?",
+      "answer": "gmo, currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which learning modules and publications align with cruises filtered by vessel or organization?",
+      "answer": "gmo, currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which learning paths and scholarly fields connect to cruise samples, datasets, or participant roles?",
+      "answer": "gmo, currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which personas, paths, media, topics, publication authors, departments, universities, cruise participants, roles, vessels, organizations, datasets, samples, places, and time periods are connected?",
+      "answer": "gmo, currkg, core_scholar_rich"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify curriculum, scholarly, and oceanographic cruise requirements.",
+    "Next, map media resources, modules, topics, personas, and learning paths to CurrKG.",
+    "Then, map publications, authors, departments, universities, and fields of study to Core Scholar Rich, and cruises, vessels, organizations, roles, samples, datasets, places, and times to GBO and GMO.",
+    "Finally, select gmo, currkg, and core_scholar_rich when the CQ bridges all of these domains."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to connect curriculum resources, scholarly publications, and oceanographic cruise records?",
+    "reasoning": [
+      "First, I identify that the CQ asks to connect curriculum resources, scholarly publications, and oceanographic cruise records.",
+      "CurrKG is needed for learning resources, topics, modules, personas, paths, and media authors. Core Scholar Rich is needed for publications, publication authors, departments, universities, fields of study, and dates. GBO and GMO are needed for cruises, vessels, participants, roles, organizations, datasets, samples, places, and time periods.",
+      "Leaving out CurrKG loses the educational layer, leaving out Core Scholar loses publication metadata, and leaving out the oceanographic KGs loses cruise, vessel, sample, and dataset records.",
+      "The bridge axes are oceanographic topic, author/person, organization, dataset/sample, place, and time, so the minimal combination is gbo, gmo, currkg, and core_scholar_rich."
+    ],
+    "answer": "gmo, currkg, core_scholar_rich"
+  }
+}

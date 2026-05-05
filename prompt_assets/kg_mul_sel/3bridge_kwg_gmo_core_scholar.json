@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which scholarly topics can be compared with cruises in regions that have hazard records?",
+      "answer": "kwg, gmo, core_scholar_rich"
+    },
+    {
+      "cq": "Which publication authors can be compared with cruise participants from hazard-affected regions?",
+      "answer": "kwg, gmo, core_scholar_rich"
+    },
+    {
+      "cq": "Which publications are linked to cruise organizations operating in places filtered by hazard type?",
+      "answer": "kwg, gmo, core_scholar_rich"
+    },
+    {
+      "cq": "Which cruise samples from hazard-affected areas correspond to scholarly fields after joining by place and research topic?",
+      "answer": "kwg, gmo, core_scholar_rich"
+    },
+    {
+      "cq": "Which publication authors, institutions, cruise roles, vessels, organizations, datasets, samples, hazard places, temporal scopes, impact records, and fields of study are connected?",
+      "answer": "kwg, gmo, core_scholar_rich"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify the hazard, oceanographic, and scholarly publication requirements.",
+    "Next, map hazards, places, temporal scopes, damage, and climate observations to KWG.",
+    "Then, map cruises, vessels, organizations, samples, datasets, and roles to GMO, and publications, authors, departments, and fields of study to Core Scholar Rich.",
+    "Finally, select the minimal combination spanning all required domains."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to connect scholarly publications, cruise activity, and hazard-affected regions?",
+    "reasoning": [
+      "First, I identify that the CQ asks to connect scholarly publications, cruise activity, and hazard-affected regions.",
+      "KWG is needed for hazards, places, temporal scopes, damage, impact, and climate observations. GBO and GMO are needed for cruises, vessels, organizations, people, roles, samples, datasets, and trajectories. Core Scholar Rich is needed for publications, authors, departments, universities, fields of study, and dates.",
+      "Leaving out any one domain would miss part of the question: hazards, cruise records, or scholarly publication metadata.",
+      "The bridge axes are place/region, time, people/organizations, and research topic, so the minimal combination is kwg, gbo, gmo, and core_scholar_rich."
+    ],
+    "answer": "kwg, gmo, core_scholar_rich"
+  }
+}

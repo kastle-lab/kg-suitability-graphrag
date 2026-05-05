@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which educational and scholarly topics can be compared with hazard categories?",
+      "answer": "kwg, currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which media authors and publication authors can be connected through hazard-related topics?",
+      "answer": "kwg, currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which modules and publications about hazards can be joined to event records by hazard type?",
+      "answer": "kwg, currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which learning paths and scholarly fields connect to hazard events filtered by affected place or temporal interval?",
+      "answer": "kwg, currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which personas, paths, media, topics, authors, publications, departments, hazard events, places, temporal scopes, impacts, health attributes, and demographic attributes are connected?",
+      "answer": "kwg, currkg, core_scholar_rich"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify curriculum, scholarly, and hazard-event requirements.",
+    "Next, map curriculum media, modules, topics, learning paths, and personas to CurrKG.",
+    "Then, map publications, authors, departments, universities, and fields of study to Core Scholar Rich, and hazards, places, temporal scopes, damage, impact, climate, health, and demographics to KWG.",
+    "Finally, select kwg, currkg, and core_scholar_rich for hazard education and publication bridge CQs."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to connect hazard education resources, scholarly publications, and real hazard event records?",
+    "reasoning": [
+      "First, I identify that the CQ asks to connect hazard education resources, scholarly publications, and real hazard event records.",
+      "CurrKG is needed for learning resources, modules, topics, learning paths, and personas. Core Scholar Rich is needed for publications, authors, departments, universities, fields of study, and publication metadata. KWG is needed for hazard events, affected places, temporal scopes, damage, impact, health, climate, and demographic attributes.",
+      "No pair covers the full CQ: curriculum plus publications lacks real hazard records, curriculum plus KWG lacks scholarly metadata, and KWG plus publications lacks learning-resource structure.",
+      "The bridge axes are hazard topic/type, scholarly field, curriculum topic, place, and time, so the minimal combination is kwg, currkg, and core_scholar_rich."
+    ],
+    "answer": "kwg, currkg, core_scholar_rich"
+  }
+}

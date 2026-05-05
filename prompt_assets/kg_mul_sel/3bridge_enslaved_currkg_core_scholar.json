@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which educational and scholarly topics can be compared with historical records about enslaved people?",
+      "answer": "enslaved, currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which media authors and publication authors can be connected through slavery-related topics?",
+      "answer": "enslaved, currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which modules and publications align with enslaved-person records after filtering by place or period?",
+      "answer": "enslaved, currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which learning paths and scholarly fields connect to enslaved-person events, occupations, or relationships?",
+      "answer": "enslaved, currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which personas, media, topics, publication authors, departments, fields, enslaved individuals, names, owners, relatives, events, occupations, places, and temporal extents connect?",
+      "answer": "enslaved, currkg, core_scholar_rich"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify historical, curriculum, and scholarly publication requirements.",
+    "Next, map enslaved individuals, records, events, occupations, relationships, places, and periods to the enslaved KG.",
+    "Then, map learning resources and paths to CurrKG, and publications, authors, departments, universities, and fields of study to Core Scholar Rich.",
+    "Finally, select enslaved, currkg, and core_scholar_rich when all three domains are necessary."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to connect educational resources, scholarly publications, and historical enslaved-person records?",
+    "reasoning": [
+      "First, I identify that the CQ asks to connect educational resources, scholarly publications, and historical enslaved-person records.",
+      "The enslaved KG is needed for enslaved individuals, names, occupations, relationships, events, places, and temporal extents. CurrKG is needed for media resources, topics, modules, learning paths, personas, and media authors. Core Scholar Rich is needed for publications, authors, departments, universities, fields of study, and publication dates.",
+      "Any two KGs would omit either the historical records, the curriculum layer, or the scholarly publication layer.",
+      "The bridge axes are historical topic, person/author, place, period, and field of study, so the minimal combination is enslaved, currkg, and core_scholar_rich."
+    ],
+    "answer": "enslaved, currkg, core_scholar_rich"
+  }
+}

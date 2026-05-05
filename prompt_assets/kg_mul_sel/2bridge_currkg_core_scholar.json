@@ -1,0 +1,40 @@
+{
+  "few_shot_examples": [
+    {
+      "cq": "Which curriculum topics can be compared with scholarly publication fields?",
+      "answer": "currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which media authors can be compared with scholarly publication contributors?",
+      "answer": "currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which modules cover topics that match publication fields after filtering publications by type?",
+      "answer": "currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which learning paths contain media by authors who can be joined to publication authors or contributors?",
+      "answer": "currkg, core_scholar_rich"
+    },
+    {
+      "cq": "Which personas, paths, steps, modules, media, topics, publication authors, departments, universities, fields, and dates connect through shared subject matter?",
+      "answer": "currkg, core_scholar_rich"
+    }
+  ],
+  "reasoning_steps": [
+    "First, identify learning-resource requirements such as media, modules, topics, learning paths, personas, and authors.",
+    "Next, identify scholarly requirements such as publications, contributors, fields of study, departments, universities, and dates.",
+    "Then, check whether shared topics or authors bridge the curriculum and scholarly domains.",
+    "Finally, select currkg and core_scholar_rich when both learning resources and scholarly publications are required."
+  ],
+  "reasoning_example": {
+    "cq": "Which KGs are needed to connect educational media topics with scholarly publication fields and contributors?",
+    "reasoning": [
+      "First, I identify that the CQ asks to connect educational media topics with scholarly publication fields and contributors.",
+      "CurrKG is needed for learning media, modules, topics, authors, learning paths, personas, and curriculum structure. Core Scholar Rich is needed for publications, fields of study, authors, contributors, departments, universities, and publication metadata.",
+      "CurrKG alone cannot provide scholarly publication fields or departments, and Core Scholar Rich alone cannot provide curriculum paths or media-resource structure.",
+      "The bridge axes are topic/field and author/contributor, so the minimal combination is currkg and core_scholar_rich."
+    ],
+    "answer": "currkg, core_scholar_rich"
+  }
+}
